@@ -1,0 +1,248 @@
+{
+    "title": "rps",
+    "type": "object",
+    "properties": {
+        "nrversaoxml": {
+            "required": true,
+            "type": "integer"
+        },
+        "nrrps": {
+            "required": true,
+            "type": "integer"
+        },
+        "nremissorrps": {
+            "required": true,
+            "type": "integer"
+        },
+        "dtemissaorps": {
+            "required": true,
+            "type": "string",
+            "pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])T(2[0-3]|[01][0-9]):[0-5][0-9]:[0-5][0-9])$"
+        },
+        "strps": {
+            "required": true,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+        },
+        "tptributacao": {
+            "required": true,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+        },
+        "isissretido": {
+            "required": true,
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2
+        },
+        "vltotalrps": {
+            "required": true,
+            "type": "number"
+        },
+        "vlliquidorps": {
+            "required": true,
+            "type": "number"
+        },
+        "tomador": {
+            "required": true,
+            "type": "object",
+            "properties": {
+                "nrdocumento": {
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 20
+                },
+                "tpdocumento": {
+                    "required": true,
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 3
+                },
+                "dsDocumentoEstrangeiro": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "maxLength": 30
+                },
+                "nmtomador": {
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 80
+                },
+                "dsemail": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 6,
+                    "maxLength": 60
+                },
+                "nrinscricaoestadual": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 1,
+                    "maxLength": 20
+                },
+                "nrinscricaomunicipal": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "pattern": "^[0-9]{1,20}$"
+                },
+                "dsendereco": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 0,
+                    "maxLength": 40
+                },
+                "nrendereco": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 0,
+                    "maxLength": 10
+                },
+                "dscomplemento": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 0,
+                    "maxLength": 40
+                },
+                "nmbairro": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 0,
+                    "maxLength": 30
+                },
+                "nrcidadeibge": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "pattern": "^[0-9]{1,7}$"
+                },
+                "nmuf": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "maxLength": 2
+                },
+                "nmcidadeestrangeira": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "minLength": 0,
+                    "maxLength": 30
+                },
+                "nmpais": {
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 40
+                },
+                "nrcep": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "pattern": "^[0-9]{8}$"
+                },
+                "nrtelefone": {
+                    "required": false,
+                    "type": ["string","null"],
+                    "maxLength": 20
+                }
+            }
+        },
+        "servico": {
+            "required": true,
+            "type": "object",
+            "properties": {
+                "nrservicoitem": {
+                    "required": true,
+                    "type": "integer"
+                },    
+                "nrservicosubitem": {
+                    "required": true,
+                    "type": "integer"
+                },
+                "vlservico": {
+                    "required": true,
+                    "type": "number"
+                },
+                "vlaliquota": {
+                    "required": true,
+                    "type": "number"
+                },
+                "vlbasecalculo": {
+                    "required": true,
+                    "type": "number"
+                },
+                "vlissservico": {
+                    "required": true,
+                    "type": "number"
+                },
+                "dsdiscriminacaoservico": {
+                    "required": true,
+                    "type": "string",
+                    "maxLength": 1024
+                },
+                "deducao": {
+                    "required": false,
+                    "type": ["object","null"],
+                    "properties": {
+                        "vldeducao": {
+                            "required": true,
+                            "type": "number"
+                        },
+                        "dsjustificativadeducao": {
+                            "required": true,
+                            "type": "string",
+                            "maxLength": 255
+                        }
+                    }
+                }
+            }
+        },    
+        "retencoes": {
+            "required": false,
+            "type": ["object","null"],
+            "properties": {
+                "vlcofins": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlcsll": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlinss": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlirrf": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlpis": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vliss": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlaliquotacofins": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlaliquotacsll": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlaliquotainss": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlaliquotairrf": {
+                    "required": false,
+                    "type": ["number","null"]
+                },
+                "vlaliquotapis": {
+                    "required": false,
+                    "type": ["number","null"]
+                } 
+            }    
+        }
+    }
+}
