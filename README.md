@@ -22,31 +22,31 @@
 
 |n|Município|UF|Ibge|
 |:---:|:---|:---:|:---:|
-|Balsa Nova|PR|4102307|
-|Cafelândia|PR|4103453|
-|Candói|PR|4104428|
-|Capanema|PA|1502202|
-|Carambeí|PR|4104659|
-|Dois Vizinhos|PR|4107207|
-|Fernandes Pinheiro|PR|4107736|
-|Francisco Beltrão|PR|4108403|
-|Guamiranga|PR|4108957|
-|Ibaiti|PR|4109708|
-|Ibiporã|PR|4109807|
-|Imbituva|PR|4110102|
-|Ivaí|PR|4111407|
-|Laranjeiras do Sul|PR|4113304|
-|Missal|PR|4116059|
-|Pranchita|PR|4120358|
-|Prudentópolis|PR|4120606|
-|Quedas do Iguaçu|PR|4120903|
-|Realeza|PR|4121406|
-|Rio Azul|PR|4122008|
-|Rio Branco do Sul|PR|4122206|
-|Santo Antônio do Sudoeste|PR|4124400|
-|São João|PR|4124806|
-|Sengés|PR|4126306|
-|Toledo|PR|4127700|
+|1|Balsa Nova|PR|4102307|
+|2|Cafelândia|PR|4103453|
+|3|Candói|PR|4104428|
+|4|Capanema|PA|1502202|
+|5|Carambeí|PR|4104659|
+|6|Dois Vizinhos|PR|4107207|
+|7|Fernandes Pinheiro|PR|4107736|
+|8|Francisco Beltrão|PR|4108403|
+|9|Guamiranga|PR|4108957|
+|10|Ibaiti|PR|4109708|
+|11|Ibiporã|PR|4109807|
+|12|Imbituva|PR|4110102|
+|13|Ivaí|PR|4111407|
+|14|Laranjeiras do Sul|PR|4113304|
+|15|Missal|PR|4116059|
+|16|Pranchita|PR|4120358|
+|17|Prudentópolis|PR|4120606|
+|18|Quedas do Iguaçu|PR|4120903|
+|19|Realeza|PR|4121406|
+|20|Rio Azul|PR|4122008|
+|21|Rio Branco do Sul|PR|4122206|
+|22|Santo Antônio do Sudoeste|PR|4124400|
+|23|São João|PR|4124806|
+|24|Sengés|PR|4126306|
+|25|Toledo|PR|4127700|
 
 
 ## Observações
