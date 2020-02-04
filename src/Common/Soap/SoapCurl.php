@@ -7,7 +7,7 @@ namespace NFePHP\NFSeEquiplano\Common\Soap;
  *
  * @category  Library
  * @package   NFePHP\NFSeEquiplano
- * @copyright NFePHP Copyright (c) 2016
+ * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
@@ -53,6 +53,10 @@ class SoapCurl extends SoapBase implements SoapInterface
         $response = '';
         $this->requestHead = implode("\n", $parameters);
         $this->requestBody = $envelope;
+        
+        $ts = time();
+        $ac = str_replace('urn:', '', $action);
+        //file_put_contents("/var/www/sped/sped-nfse-equiplano/local/fixtures/req_{$ac}_{$ts}.xml", $envelope);
         
         try {
             $this->saveTemporarilyKeyFiles();
@@ -111,6 +115,12 @@ class SoapCurl extends SoapBase implements SoapInterface
                 . $this->getFaultString($this->responseBody)
             );
         }
+        //file_put_contents("/var/www/sped/sped-nfse-equiplano/local/fixtures/res_{$ac}_{$ts}.xml", $this->responseBody);
+        
+        header("Content-type: text/xml");
+        echo $this->responseBody;
+        die;
+        
         return $this->responseBody;
     }
     

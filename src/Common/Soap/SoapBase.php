@@ -5,9 +5,9 @@ namespace NFePHP\NFSeEquiplano\Common\Soap;
 /**
  * Soap base class
  *
- * @category  Library
+ * @category  NFePHP
  * @package   NFePHP\NFSeEquiplano
- * @copyright NFePHP Copyright (c) 2017
+ * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
@@ -20,6 +20,8 @@ use NFePHP\NFSeEquiplano\Common\Soap\SoapInterface;
 use NFePHP\Common\Exception\SoapException;
 use NFePHP\Common\Exception\RuntimeException;
 use NFePHP\Common\Strings;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
 use Psr\Log\LoggerInterface;
 
 abstract class SoapBase implements SoapInterface
@@ -64,7 +66,6 @@ abstract class SoapBase implements SoapInterface
      * @var string
      */
     protected $tempdir;
-    protected $localfolder;
     /**
      * @var string
      */
@@ -97,6 +98,14 @@ abstract class SoapBase implements SoapInterface
      * @var bool
      */
     protected $disableCertValidation = false;
+    /**
+     * @var \League\Flysystem\Adapter\Local
+     */
+    protected $adapter;
+    /**
+     * @var \League\Flysystem\Filesystem
+     */
+    protected $filesystem;
     /**
      * @var string
      */
@@ -241,13 +250,8 @@ abstract class SoapBase implements SoapInterface
      */
     protected function setLocalFolder($folder = '')
     {
-        if (!is_dir($folder)) {
-            $result = mkdir($folder);
-            if (!$result) {
-                throw new Exception("Pasta $folder para gravar arquivos temporários não pode ser criada!");
-            }
-        }
-        $this->localfolder = $folder;
+        $this->adapter = new Local($folder);
+        $this->filesystem = new Filesystem($this->adapter);
     }
 
     /**
@@ -379,8 +383,7 @@ abstract class SoapBase implements SoapInterface
                 'Certificate not found.'
             );
         }
-        $cnpj = $this->certificate->getCnpj() ?? $this->certificate->getCpf();
-        $this->certsdir = $this->localfolder . '/' . $cnpj . '/certs/';
+        $this->certsdir = $this->certificate->getCnpj() . '/certs/';
         $this->prifile = $this->certsdir. Strings::randomString(10).'.pem';
         $this->pubfile = $this->certsdir . Strings::randomString(10).'.pem';
         $this->certfile = $this->certsdir . Strings::randomString(10).'.pem';
@@ -398,21 +401,21 @@ abstract class SoapBase implements SoapInterface
                 $this->temppass
             );
         }
-        $ret &= file_put_contents(
+        $ret &= $this->filesystem->put(
             $this->prifile,
             $private
         );
-        $ret &= file_put_contents(
+        $ret &= $this->filesystem->put(
             $this->pubfile,
             $this->certificate->publicKey
         );
-        $ret &= file_put_contents(
+        $ret &= $this->filesystem->put(
             $this->certfile,
             $private."{$this->certificate}"
         );
         if (!$ret) {
             throw new RuntimeException(
-                'Não foi possivel salvar os arquivos temporários no caminho indicado.'
+                'Unable to save temporary key files in folder.'
             );
         }
     }
@@ -422,7 +425,7 @@ abstract class SoapBase implements SoapInterface
      */
     public function removeTemporarilyFiles()
     {
-        $contents = glob("{$this->certsdir}/*.pfx");
+        $contents = $this->filesystem->listContents($this->certsdir, true);
         //define um limite de $waitingTime min, ou seja qualquer arquivo criado a mais
         //de $waitingTime min será removido
         //NOTA: quando ocorre algum erro interno na execução do script, alguns
@@ -438,17 +441,19 @@ abstract class SoapBase implements SoapInterface
         $tint->invert = 1;
         $tsLimit = $dt->add($tint)->getTimestamp();
         foreach ($contents as $item) {
-            if ($item == $this->prifile
-                || $item == $this->pubfile
-                || $item == $this->certfile
-            ) {
-                unlink($item);
-                continue;
-            }
-            $timestamp = filemtime($item);
-            if ($timestamp < $tsLimit) {
-                //remove arquivos criados a mais de 45 min
-                unlink($item);
+            if ($item['type'] == 'file') {
+                if ($item['path'] == $this->prifile
+                    || $item['path'] == $this->pubfile
+                    || $item['path'] == $this->certfile
+                ) {
+                    $this->filesystem->delete($item['path']);
+                    continue;
+                }
+                $timestamp = $this->filesystem->getTimestamp($item['path']);
+                if ($timestamp < $tsLimit) {
+                    //remove arquivos criados a mais de 45 min
+                    $this->filesystem->delete($item['path']);
+                }
             }
         }
     }
@@ -467,23 +472,23 @@ abstract class SoapBase implements SoapInterface
         }
         $cnpj = '';
         if (!empty($this->certificate)) {
-            $cnpj = $this->certificate->getCnpj() ?? $this->certificate->getCpf();
+            $cnpj = $this->certificate->getCnpj();
         }
-        $this->debugdir = $this->localfolder . '/' . $cnpj . '/debug/';
+        $this->debugdir = $cnpj . '/debug/';
         $now = \DateTime::createFromFormat('U.u', number_format(microtime(true), 6, '.', ''));
         $time = substr($now->format("ymdHisu"), 0, 16);
         try {
-            file_put_contents(
+            $this->filesystem->put(
                 $this->debugdir . $time . "_" . $operation . "_sol.txt",
                 $request
             );
-            file_put_contents(
+            $this->filesystem->put(
                 $this->debugdir . $time . "_" . $operation . "_res.txt",
                 $response
             );
         } catch (\Exception $e) {
             throw new RuntimeException(
-                'Não foi possivel criar os arquivos de debug.'
+                'Unable to create debug files.'
             );
         }
     }

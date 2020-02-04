@@ -141,9 +141,12 @@ class Tools
         }
         $msgSize = strlen($request);
         $parameters = [
-            "Content-Type: text/xml;charset=UTF-8;action=$action",
+            //"Content-Type: text/xml;charset=UTF-8;action=$action",
+            //"Accept-Encoding: gzip,deflate",
+            //"POST /enfsws/services/Enfs.EnfsHttpsSoap12Endpoint",
+            "Content-Type: application/soap+xml;charset=UTF-8;action=\"{$action}\"",
             "Content-length: $msgSize"
-        ];
+            ];
         $response = (string) $this->soap->send(
             $operation,
             $url,
@@ -162,17 +165,15 @@ class Tools
      */
     protected function createSoapRequest($message, $operation, $version = null)
     {
-        $msg = "<![CDATA[". htmlentities($message, ENT_NOQUOTES) . "]]>";
+        $msg = htmlentities($message, ENT_NOQUOTES);
         $env = "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" "
             . "xmlns:ser=\"{$this->wsobj->soapns}\">"
             . "<soap:Header/>"
             . "<soap:Body>"
-            . "<ser:{$operation}>";
-        if ($version) {
-            $env .= "<ser:nrVersaoXml>{$config->versao}</ser:nrVersaoXml>";
-        }
-        $env .= "<ser:xml>$msg</ser:xml>";
-        $env .= "</ser:{$operation}>"
+            . "<ser:{$operation}>"
+            . "<ser:nrVersaoXml>{$this->wsobj->version}</ser:nrVersaoXml>"
+            . "<ser:xml>$msg</ser:xml>"
+            . "</ser:{$operation}>"
             . "</soap:Body>"
             . "</soap:Envelope>";
         return $env;
