@@ -9,16 +9,12 @@ use JsonSchema\Constraints\Factory;
 use JsonSchema\SchemaStorage;
 use JsonSchema\Validator;
 
-$version = '01';
+$version = '1';
 
 $jsonSchema = '{
     "title": "rps",
     "type": "object",
     "properties": {
-        "nrversaoxml": {
-            "required": true,
-            "type": "integer"
-        },
         "nrrps": {
             "required": true,
             "type": "integer"
@@ -59,98 +55,98 @@ $jsonSchema = '{
             "type": "number"
         },
         "tomador": {
-            "required": true,
-            "type": "object",
+            "required": false,
+            "type": ["object","null"],
             "properties": {
                 "nrdocumento": {
-                    "required": true,
-                    "type": "string",
+                    "required": false,
+                    "type": ["string","null"],
                     "maxLength": 20
                 },
                 "tpdocumento": {
-                    "required": true,
-                    "type": "integer",
+                    "required": false,
+                    "type": ["integer","null"],
                     "minimum": 1,
                     "maximum": 3
                 },
-                "dsDocumentoEstrangeiro": {
+                "docestrangeiro": {
                     "required": false,
                     "type": ["string","null"],
                     "maxLength": 30
                 },
-                "nmtomador": {
+                "nome": {
                     "required": true,
                     "type": "string",
                     "maxLength": 80
                 },
-                "dsemail": {
+                "email": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 6,
                     "maxLength": 60
                 },
-                "nrinscricaoestadual": {
+                "ie": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 1,
                     "maxLength": 20
                 },
-                "nrinscricaomunicipal": {
+                "im": {
                     "required": false,
                     "type": ["string","null"],
                     "pattern": "^[0-9]{1,20}$"
                 },
-                "dsendereco": {
+                "logradouro": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 0,
                     "maxLength": 40
                 },
-                "nrendereco": {
+                "numero": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 0,
                     "maxLength": 10
                 },
-                "dscomplemento": {
+                "complemento": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 0,
                     "maxLength": 40
                 },
-                "nmbairro": {
+                "bairro": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 0,
                     "maxLength": 30
                 },
-                "nrcidadeibge": {
+                "cidade": {
                     "required": false,
                     "type": ["string","null"],
                     "pattern": "^[0-9]{1,7}$"
                 },
-                "nmuf": {
+                "uf": {
                     "required": false,
                     "type": ["string","null"],
                     "maxLength": 2
                 },
-                "nmcidadeestrangeira": {
+                "cidadeestrangeira": {
                     "required": false,
                     "type": ["string","null"],
                     "minLength": 0,
                     "maxLength": 30
                 },
-                "nmpais": {
+                "pais": {
                     "required": true,
                     "type": "string",
                     "maxLength": 40
                 },
-                "nrcep": {
+                "cep": {
                     "required": false,
                     "type": ["string","null"],
                     "pattern": "^[0-9]{8}$"
                 },
-                "nrtelefone": {
+                "telefone": {
                     "required": false,
                     "type": ["string","null"],
                     "maxLength": 20
@@ -185,7 +181,7 @@ $jsonSchema = '{
                     "required": true,
                     "type": "number"
                 },
-                "dsdiscriminacaoservico": {
+                "discriminacao": {
                     "required": true,
                     "type": "string",
                     "maxLength": 1024
@@ -198,7 +194,7 @@ $jsonSchema = '{
                             "required": true,
                             "type": "number"
                         },
-                        "dsjustificativadeducao": {
+                        "justificativa": {
                             "required": true,
                             "type": "string",
                             "maxLength": 255
@@ -275,21 +271,21 @@ $std->vlliquidorps = 100.00;
 $std->tomador = new \stdClass();
 $std->tomador->nrdocumento = '12345678901234';
 $std->tomador->tpdocumento = 2; //1=cpf, 2=cnpj, 3=estrangeiro
-$std->tomador->dsDocumentoEstrangeiro = null; //obrigatório se tpDocumento=3 max 30 caracteres
-$std->tomador->nmtomador = 'Fulano da Tal';
-$std->tomador->dsemail = null;
-$std->tomador->nrinscricaoestadual = null;
-$std->tomador->nrinscricaomunicipal = null;
-$std->tomador->dsendereco = null;
-$std->tomador->nrendereco = null;
-$std->tomador->dscomplemento = null;
-$std->tomador->nmbairro = null;
-$std->tomador->nrcidadeibge = null;
-$std->tomador->nmuf = null;
-$std->tomador->nmcidadeestrangeira = null;
-$std->tomador->nmpais = 'BRASIL';
-$std->tomador->nrcep = null;
-$std->tomador->nrtelefone = null;
+$std->tomador->documentoestrangeiro = null; //obrigatório se tpDocumento=3 max 30 caracteres
+$std->tomador->nome = 'Fulano da Tal';
+$std->tomador->email = null;
+$std->tomador->ie = null;
+$std->tomador->im = null;
+$std->tomador->logradouro = null;
+$std->tomador->numero = null;
+$std->tomador->complemento = null;
+$std->tomador->bairro = null;
+$std->tomador->cidade = null;
+$std->tomador->uf = null;
+$std->tomador->cidadeestrangeira = null;
+$std->tomador->pais = 'BRASIL';
+$std->tomador->cep = null;
+$std->tomador->telefone = null;
 
 $std->servico = new \stdClass();
 $std->servico->nrservicoitem = 4;
@@ -298,11 +294,11 @@ $std->servico->vlservico = 100.00;
 $std->servico->vlaliquota = 0.5;
 $std->servico->vlbasecalculo = 100.00;
 $std->servico->vlissservico = 5.00;
-$std->servico->dsdiscriminacaoservico = 'Teste de Emissao';
+$std->servico->discriminacao = 'Teste de Emissao';
 
-//$std->servico->deducao = new \stdClass();
-//$std->servico->deducao->vldeducao = 12;
-//$std->servico->deducao->dsjustificativadeducao = 'Sem justificativa';
+$std->servico->deducao = new \stdClass();
+$std->servico->deducao->vldeducao = 12;
+$std->servico->deducao->justificativa = 'Sem justificativa';
 
 $std->retencoes = new \stdClass();
 $std->retencoes->vlcofins = 0;

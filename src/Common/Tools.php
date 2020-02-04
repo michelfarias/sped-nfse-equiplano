@@ -3,11 +3,11 @@
 namespace NFePHP\NFSeEquiplano\Common;
 
 /**
- * Auxiar Tools Class for comunications with NFSe webserver in Nacional Standard
+ * Auxiar Tools Class for comunications with NFSe webserver in Equiplano Provider
  *
  * @category  Library
  * @package   NFePHP\NFSeEquiplano
- * @copyright NFePHP Copyright (c) 2019
+ * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
@@ -33,7 +33,6 @@ class Tools
     protected $soap;
     protected $environment;
     protected $xsdpath;
-    protected $version = '01';
     
     /**
      * Constructor
@@ -44,12 +43,11 @@ class Tools
     {
         $this->config = json_decode($config);
         $this->certificate = $cert;
-        $this->version = $this->config->versao ?? '01';
         $this->xsdpath = realpath(
-            __DIR__ . "/../storage/schemes/v{$this->version}"
+            __DIR__ . "/../../storage/schemes"
         );
-        $this->buildPrestadorTag();
         $this->wsobj = $this->loadWsobj($this->config->cmun);
+        $this->buildPrestadorTag();
         $this->environment = 'homologacao';
         if ($this->config->tpamb === 1) {
             $this->environment = 'producao';
@@ -84,14 +82,15 @@ class Tools
     
     /**
      * Build tag Prestador
+     * @return void
      */
     protected function buildPrestadorTag()
     {
         $this->prestador = "<prestador>"
-            . "<nrInscricaoMunicipal>" . $this->config->im . "</nrInscricaoMunicipal>"
-            . "<cnpj>" . $this->config->cnpj . "</cnpj>"
-            . "<idEntidade>" . $this->config->identidade . "</idEntidade>"
-            . "</Prestador>";
+            . "<nrInscricaoMunicipal>{$this->config->im}</nrInscricaoMunicipal>"
+            . "<cnpj>{$this->config->cnpj}</cnpj>"
+            . "<idEntidade>{$this->wsobj->entidade}</idEntidade>"
+            . "</prestador>";
     }
 
     /**
@@ -163,18 +162,19 @@ class Tools
      */
     protected function createSoapRequest($message, $operation, $version = null)
     {
-        $env = "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:ser=\"{$this->wsobj->soapns}\">"
+        $msg = "<![CDATA[". htmlentities($message, ENT_NOQUOTES) . "]]>";
+        $env = "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" "
+            . "xmlns:ser=\"{$this->wsobj->soapns}\">"
             . "<soap:Header/>"
             . "<soap:Body>"
             . "<ser:{$operation}>";
-        if ($version) {    
+        if ($version) {
             $env .= "<ser:nrVersaoXml>{$config->versao}</ser:nrVersaoXml>";
-        }    
-        $env .= "<ser:xml>?</ser:xml>";
+        }
+        $env .= "<ser:xml>$msg</ser:xml>";
         $env .= "</ser:{$operation}>"
             . "</soap:Body>"
             . "</soap:Envelope>";
-            
         return $env;
     }
 }

@@ -34,7 +34,16 @@ class Rps implements RpsInterface
      * @var string
      */
     protected $jsonschema;
+    /**
+     * @var \stdClass
+     */
+    protected $config;
+    /**
+     * @var string
+     */
+    protected $version = '1';
     
+
     /**
      * Constructor
      * @param stdClass $rps
@@ -45,12 +54,24 @@ class Rps implements RpsInterface
     }
     
     /**
+     * Add config
+     * @param stdClass $config
+     */
+    public function config(\stdClass $config)
+    {
+        $this->config = $config;
+    }
+    
+    /**
      * {@inheritdoc}
      */
     public function render(stdClass $rps = null)
     {
         $this->init($rps);
         $fac = new Factory($this->std);
+        if (!empty($this->config)) {
+            $fac->addConfig($this->config);
+        }
         return $fac->render();
     }
     
@@ -62,8 +83,7 @@ class Rps implements RpsInterface
     {
         if (!empty($rps)) {
             $this->std = $this->propertiesToLower($rps);
-            $ver = str_pad($this->std->nrversaoxml, 2, '0', STR_PAD_LEFT);
-            $this->jsonschema = realpath("../storage/jsonSchemes/v$ver/rps.schema");
+            $this->jsonschema = realpath("../storage/jsonSchemes/v{$this->version}/rps.schema");
             $this->validInputData($this->std);
         }
     }

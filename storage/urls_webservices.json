@@ -2,225 +2,150 @@
     "4102307": {
         "municipio": "Balsa Nova",
         "uf": "PR",
+        "entidade": "23",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4103453": {
-        "municipio": "Cafel\u00e2ndia",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4104428": {
-        "municipio": "Cand\u00f3i",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "1502202": {
         "municipio": "Capanema",
         "uf": "PA",
+        "entidade": "50",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4104659": {
         "municipio": "Carambe\u00ed",
         "uf": "PR",
+        "entidade": "141",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4107207": {
         "municipio": "Dois Vizinhos",
         "uf": "PR",
+        "entidade": "68",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4107736": {
         "municipio": "Fernandes Pinheiro",
         "uf": "PR",
+        "entidade": "140",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4108403": {
         "municipio": "Francisco Beltr\u00e3o",
         "uf": "PR",
+        "entidade": "35",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4108957": {
-        "municipio": "Guamiranga",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4109708": {
-        "municipio": "Ibaiti",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4109807": {
         "municipio": "Ibipor\u00e3",
         "uf": "PR",
+        "entidade": "332",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4110102": {
-        "municipio": "Imbituva",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4111407": {
-        "municipio": "Iva\u00ed",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4113304": {
         "municipio": "Laranjeiras do Sul",
         "uf": "PR",
+        "entidade": "53",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4116059": {
-        "municipio": "Missal",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4120358": {
-        "municipio": "Pranchita",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4120606": {
         "municipio": "Prudent\u00f3polis",
         "uf": "PR",
+        "entidade": "28",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4120903": {
-        "municipio": "Quedas do Igua\u00e7u",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4121406": {
-        "municipio": "Realeza",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4122008": {
         "municipio": "Rio Azul",
         "uf": "PR",
+        "entidade": "19",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
-    "4122206": {
-        "municipio": "Rio Branco do Sul",
+    "4123501": {
+        "municipio": "Santa Helena",
         "uf": "PR",
+        "entidade": "54",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
-    "4124400": {
-        "municipio": "Santo Ant\u00f4nio do Sudoeste",
+    "4125209": {
+        "municipio": "S\u00e3o Jorge D Oeste",
         "uf": "PR",
+        "entidade": "163",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
-    "4124806": {
-        "municipio": "S\u00e3o Jo\u00e3o",
-        "uf": "PR",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4126306": {
         "municipio": "Seng\u00e9s",
         "uf": "PR",
+        "entidade": "61",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
+        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
+        "soapns": "http:\/\/services.enfsws.es"
+    },
+    "4127106": {
+        "municipio": "Telemaco Borba",
+        "uf": "PR",
+        "entidade": "260",
+        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
+        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
     "4127700": {
         "municipio": "Toledo",
         "uf": "PR",
+        "entidade": "136",
         "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
         "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "01",
+        "version": "1",
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     }

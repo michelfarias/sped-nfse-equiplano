@@ -7,7 +7,7 @@ namespace NFePHP\NFSeEquiplano\Common;
  *
  * @category  Library
  * @package   NFePHP\NFSeEquiplano
- * @copyright NFePHP Copyright (c) 2019
+ * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
@@ -34,6 +34,10 @@ class Factory
      * @var DOMNode
      */
     protected $rps;
+    /**
+     * @var \stdClass
+     */
+    protected $config;
 
     /**
      * Constructor
@@ -47,6 +51,11 @@ class Factory
         $this->dom->preserveWhiteSpace = false;
         $this->dom->formatOutput = false;
         $this->rps = $this->dom->createElement('rps');
+    }
+    
+    public function addConfig(stdClass $config)
+    {
+        $this->config = $config;
     }
     
     /**
@@ -93,155 +102,192 @@ class Factory
             true
         );
         
+        $this->addTomador();
+        $this->addServico();
+        
+        $this->dom->addChild(
+            $this->rps,
+            "vlTotalRps",
+            number_format($this->std->vltotalrps, 2, '.', ''),
+            true
+        );
+        $this->dom->addChild(
+            $this->rps,
+            "vlLiquidoRps",
+            number_format($this->std->vlliquidorps, 2, '.', ''),
+            true
+        );
+        
+        $this->addRetencoes();
+        
+        $this->dom->appendChild($this->rps);
+        return str_replace('<?xml version="1.0" encoding="UTF-8"?>', '', $this->dom->saveXML());
+    }
+    
+    /**
+     * Adiciona o tamador do serviço
+     * @return void
+     */
+    protected function addTomador()
+    {
+        if (empty($this->std->tomador)) {
+            return;
+        }
+        $tom = $this->std->tomador;
         $tomador = $this->dom->createElement('tomador');
-        $documento = $this->dom->createElement('documento');
-        $this->dom->addChild(
-            $documento,
-            "nrDocumento",
-            $this->std->tomador->nrdocumento,
-            true
-        );
-        $this->dom->addChild(
-            $documento,
-            "tpDocumento",
-            $this->std->tomador->tpdocumento,
-            true
-        );
-        $this->dom->addChild(
-            $documento,
-            "dsDocumentoEstrangeiro",
-            $this->std->tomador->dsdocumentoestrangeiro,
-            false
-        );
-        $tomador->appendChild($documento);
+        
+        $this->addTomadorDocumento($tomador, $tom);
+        
         $this->dom->addChild(
             $tomador,
             "nmTomador",
-            $this->std->tomador->nmtomador,
+            $tom->nome,
             true
         );
         $this->dom->addChild(
             $tomador,
             "dsEmail",
-            $this->std->tomador->dsemail,
+            !empty($tom->email) ? $tom->email : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nrInscricaoEstadual",
-            $this->std->tomador->nrinscricaoestadual,
-            false
-        );
-        $this->dom->addChild(
-            $tomador,
-            "nrInscricaoMunicipal",
-            $this->std->tomador->nrinscricaomunicipal,
+            !empty($tom->ie) ? $tom->ie : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "dsEndereco",
-            $this->std->tomador->dsendereco,
+            !empty($tom->logradouro) ? $tom->logradouro : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nrEndereco",
-            $this->std->tomador->nrendereco,
+            !empty($tom->numero) ? $tom->numero : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "dsComplemento",
-            $this->std->tomador->dscomplemento,
+            !empty($tom->complemento) ? $tom->complemento : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nmBairro",
-            $this->std->tomador->nmbairro,
+            !empty($tom->bairro) ? $tom->bairro : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nrCidadeIbge",
-            $this->std->tomador->nrcidadeibge,
+            !empty($tom->cidade) ? $tom->cidade : null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nmUf",
-            $this->std->tomador->nmuf,
+            !empty($tom->uf) ? :  null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nmCidadeEstrangeira",
-            $this->std->tomador->nmcidadeestrangeira,
+            !empty($tom->cidadeestrangeira) ? $tom->cidadeestrangeira :  null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nmPais",
-            $this->std->tomador->nmpais,
+            $tom->pais,
             true
         );
         $this->dom->addChild(
             $tomador,
             "nrCep",
-            $this->std->tomador->nrcep,
+            !empty($tom->cep) ? $tom->cep :  null,
             false
         );
         $this->dom->addChild(
             $tomador,
             "nrTelefone",
-            $this->std->tomador->nrtelefone,
+            !empty($tom->telefone) ? $tom->telefone :  null,
             false
         );
         $this->rps->appendChild($tomador);
-        
+    }
+    
+    /**
+     * Adiciona o documento do tomador (se houver)
+     * @param DOMElement $node
+     * @param stdClass $tom
+     * @return void
+     */
+    protected function addTomadorDocumento(&$node, stdClass $tom)
+    {
+        if (empty($tom->nrdocumento)) {
+            return;
+        }
+        $documento = $this->dom->createElement('documento');
+        $this->dom->addChild(
+            $documento,
+            "nrDocumento",
+            $tom->nrdocumento,
+            true
+        );
+        $this->dom->addChild(
+            $documento,
+            "tpDocumento",
+            $tom->tpdocumento,
+            true
+        );
+        $this->dom->addChild(
+            $documento,
+            "dsDocumentoEstrangeiro",
+            !empty($tom->documentoestrangeiro) ? $tom->documentoestrangeiro : null,
+            false
+        );
+        $node->appendChild($documento);
+    }
+
+    /**
+     * Adiciona os dados do Serviço
+     * @return void
+     */
+    protected function addServico()
+    {
+        $serv = $this->std->servico;
         $listaServicos = $this->dom->createElement('listaServicos');
         $servico = $this->dom->createElement('servico');
         $this->dom->addChild(
             $servico,
             "nrServicoItem",
-            $this->std->servico->nrservicoitem,
+            $serv->nrservicoitem,
             true
         );
         $this->dom->addChild(
             $servico,
             "nrServicoSubItem",
-            $this->std->servico->nrservicosubitem,
+            $serv->nrservicosubitem,
             true
         );
         $this->dom->addChild(
             $servico,
             "vlServico",
-            number_format($this->std->servico->vlservico, 2, '.', ''),
+            number_format($serv->vlservico, 2, '.', ''),
             true
         );
         $this->dom->addChild(
             $servico,
             "vlAliquota",
-            number_format($this->std->servico->vlaliquota, 4, '.', ''),
+            number_format($serv->vlaliquota, 4, '.', ''),
             true
         );
-        if (!empty($this->std->servico->deducao)) {
-            $deducao = $this->dom->createElement('deducao');
-            $this->dom->addChild(
-                $deducao,
-                "vlDeducao",
-                number_format($this->std->servico->deducao->vldeducao, 2, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $deducao,
-                "dsJustificativaDeducao",
-                $this->std->servico->deducao->dsjustificativadeducao,
-                false
-            );
-            $servico->appendChild($deducao);
-        }
+        
+        $this->addDeducao($servico, $serv);
+        
         $this->dom->addChild(
             $servico,
             "vlBaseCalculo",
@@ -257,96 +303,118 @@ class Factory
         $this->dom->addChild(
             $servico,
             "dsDiscriminacaoServico",
-            $this->std->servico->dsdiscriminacaoservico,
+            $this->std->servico->discriminacao,
             true
         );
         $listaServicos->appendChild($servico);
         $this->rps->appendChild($listaServicos);
-        
-        $this->dom->addChild(
-            $this->rps,
-            "vlTotalRps",
-            number_format($this->std->vltotalrps, 2, '.', ''),
-            true
-        );
-        $this->dom->addChild(
-            $this->rps,
-            "vlLiquidoRps",
-            number_format($this->std->vlliquidorps, 2, '.', ''),
-            true
-        );
-        
-        if (!empty($this->std->retencoes)) {
-            $retencoes = $this->dom->createElement('retencoes');
-            $this->dom->addChild(
-                $retencoes,
-                "vlCofins",
-                number_format($this->std->retencoes->vlcofins, 2, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlCsll",
-                number_format($this->std->retencoes->vlcsll, 2, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlInss",
-                number_format($this->std->retencoes->vlinss, 2, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlIrrf",
-                number_format($this->std->retencoes->vlirrf, 2, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlPis",
-                number_format($this->std->retencoes->vlpis, 2, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlIss",
-                number_format($this->std->retencoes->vliss, 2, '.', ''),
-                $this->std->isissretido === 1 ? true : false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlAliquotaCofins",
-                number_format($this->std->retencoes->vlaliquotacofins, 4, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlAliquotaCsll",
-                number_format($this->std->retencoes->vlaliquotacsll, 4, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlAliquotaInss",
-                number_format($this->std->retencoes->vlaliquotainss, 4, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlAliquotaIrrf",
-                number_format($this->std->retencoes->vlaliquotairrf, 4, '.', ''),
-                false
-            );
-            $this->dom->addChild(
-                $retencoes,
-                "vlAliquotaPis",
-                number_format($this->std->retencoes->vlaliquotapis, 4, '.', ''),
-                false
-            );
-            $this->rps->appendChild($retencoes);
+    }
+    
+    /**
+     * Addiciona deduções
+     * @param DOMElement $node
+     * @param stdClass $serv
+     * @return void
+     */
+    protected function addDeducao(&$node, stdClass $serv)
+    {
+        if (empty($this->std->servico->deducao)) {
+            return;
         }
-        $this->dom->appendChild($this->rps);
-        return $this->dom->saveXML();
+        $ded = $serv->deducao;
+        $deducao = $this->dom->createElement('deducao');
+        $this->dom->addChild(
+            $deducao,
+            "vlDeducao",
+            number_format($ded->vldeducao, 2, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $deducao,
+            "dsJustificativaDeducao",
+            !empty($ded->justificativa) ? $ded->justificativa : null,
+            false
+        );
+        $node->appendChild($deducao);
+    }
+
+    /**
+     * Adiciona retenções
+     * @return void
+     */
+    protected function addRetencoes()
+    {
+        if (empty($this->std->retencoes)) {
+            return;
+        }
+        $ret = $this->std->retencoes;
+        $retencoes = $this->dom->createElement('retencoes');
+        $this->dom->addChild(
+            $retencoes,
+            "vlCofins",
+            number_format($ret->vlcofins, 2, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlCsll",
+            number_format($ret->vlcsll, 2, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlInss",
+            number_format($ret->vlinss, 2, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlIrrf",
+            number_format($ret->vlirrf, 2, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlPis",
+            number_format($ret->vlpis, 2, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlIss",
+            number_format($ret->vliss, 2, '.', ''),
+            $this->std->isissretido === 1 ? true : false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlAliquotaCofins",
+            number_format($ret->vlaliquotacofins, 4, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlAliquotaCsll",
+            number_format($ret->vlaliquotacsll, 4, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlAliquotaInss",
+            number_format($ret->vlaliquotainss, 4, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlAliquotaIrrf",
+            number_format($ret->vlaliquotairrf, 4, '.', ''),
+            false
+        );
+        $this->dom->addChild(
+            $retencoes,
+            "vlAliquotaPis",
+            number_format($ret->vlaliquotapis, 4, '.', ''),
+            false
+        );
+        $this->rps->appendChild($retencoes);
     }
 }

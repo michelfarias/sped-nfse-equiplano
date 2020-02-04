@@ -43,7 +43,7 @@ class Signer
         Certificate $certificate,
         $content,
         $tagname,
-        $mark = 'Id',
+        $mark = '',
         $algorithm = OPENSSL_ALGO_SHA1,
         $canonical = self::CANONICAL,
         $rootname = ''
@@ -63,21 +63,23 @@ class Signer
             $root = $dom->getElementsByTagName($rootname)->item(0);
         }
         $node = $dom->getElementsByTagName($tagname)->item(0);
+        
+        echo $dom->saveXML($node);
+        die;
+        
         if (empty($node) || empty($root)) {
             throw SignerException::tagNotFound($tagname);
         }
         
-        //if (!self::existsSignature($content)) {
-            $dom = self::createSignature(
-                $certificate,
-                $dom,
-                $root,
-                $node,
-                $mark,
-                $algorithm,
-                $canonical
-            );
-        //}
+        $dom = self::createSignature(
+            $certificate,
+            $dom,
+            $root,
+            $node,
+            $mark,
+            $algorithm,
+            $canonical
+        );
         
         return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
             . $dom->saveXML($dom->documentElement, LIBXML_NOXMLDECL);

@@ -912,7 +912,7 @@
     	</xsd:annotation>
     	<xsd:sequence>
     		<xsd:element name="nrRps" type="xsd:integer" minOccurs="1" maxOccurs="1" />
-			<xsd:element name="nrEmissorRps" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+		<xsd:element name="nrEmissorRps" type="xsd:integer" minOccurs="1" maxOccurs="1" />
     	</xsd:sequence>
     </xsd:complexType>
     
