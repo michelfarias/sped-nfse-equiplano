@@ -17,9 +17,9 @@ namespace NFePHP\NFSeEquiplano;
 
 use NFePHP\Common\Certificate;
 use NFePHP\Common\Validator;
-use NFePHP\Common\Signer;
 use NFePHP\NFSeEquiplano\Common\Tools as BaseTools;
 use NFePHP\NFSeEquiplano\RpsInterface;
+use NFePHP\Common\Signer;
 use \stdClass;
 
 class Tools extends BaseTools
@@ -131,7 +131,7 @@ class Tools extends BaseTools
             "{$operation}Envio",
             '',
             OPENSSL_ALGO_SHA1,
-            [true,false,null,null],
+            [false,false,null,null],
             "{$operation}Envio"
         );
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
@@ -171,9 +171,9 @@ class Tools extends BaseTools
             . $this->prestador
             . "<periodoEmissao>"
             . "<dtInicial>{$dtini}T00:00:00</dtInicial>"
-        . "<dtFinal>{$dtfim}T23:59:59</dtFinal>"
+            . "<dtFinal>{$dtfim}T23:59:59</dtFinal>"
             . $tom
-        . "</periodoEmissao>"
+            . "</periodoEmissao>"
             . "</es:{$operation}Envio>";
         $content = Signer::sign(
             $this->certificate,
@@ -181,10 +181,9 @@ class Tools extends BaseTools
             "{$operation}Envio",
             '',
             OPENSSL_ALGO_SHA1,
-            [true,false,null,null],
+            [false,false,null,null],
             "{$operation}Envio"
         );
-        
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }

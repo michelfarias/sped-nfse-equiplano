@@ -5,9 +5,9 @@ namespace NFePHP\NFSeEquiplano\Common;
 /**
  * Class for signing XML in Nacional Standard NFSe
  *
- * @category  Library
+ * @category  NFePHP
  * @package   NFePHP\NFSeEquiplano
- * @copyright NFePHP Copyright (c) 2019
+ * @copyright NFePHP Copyright (c) 2020
  * @license   http://www.gnu.org/licenses/lgpl.txt LGPLv3+
  * @license   https://opensource.org/licenses/MIT MIT
  * @license   http://www.gnu.org/licenses/gpl.txt GPLv3+
@@ -25,7 +25,7 @@ use DOMElement;
 
 class Signer
 {
-    const CANONICAL = [true,false,null,null];
+    const CANONICAL = [false,false,null,null];
     
     /**
      * Make Signature tag
@@ -43,7 +43,7 @@ class Signer
         Certificate $certificate,
         $content,
         $tagname,
-        $mark = '',
+        $mark = 'Id',
         $algorithm = OPENSSL_ALGO_SHA1,
         $canonical = self::CANONICAL,
         $rootname = ''
@@ -63,14 +63,9 @@ class Signer
             $root = $dom->getElementsByTagName($rootname)->item(0);
         }
         $node = $dom->getElementsByTagName($tagname)->item(0);
-        
-        echo $dom->saveXML($node);
-        die;
-        
         if (empty($node) || empty($root)) {
             throw SignerException::tagNotFound($tagname);
         }
-        
         $dom = self::createSignature(
             $certificate,
             $dom,
@@ -80,9 +75,7 @@ class Signer
             $algorithm,
             $canonical
         );
-        
-        return "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-            . $dom->saveXML($dom->documentElement, LIBXML_NOXMLDECL);
+        return $dom->saveXML($dom->documentElement);
     }
     
     /**
@@ -106,23 +99,18 @@ class Signer
         $canonical = self::CANONICAL
     ) {
         $nsDSIG = 'http://www.w3.org/2000/09/xmldsig#';
-        $nsCannonMethod = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
+        $nsCannonMethod = 'http://www.w3.org/2001/10/xml-exc-c14n#';
         $nsSignatureMethod = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1';
         $nsDigestMethod = 'http://www.w3.org/2000/09/xmldsig#sha1';
         $digestAlgorithm = 'sha1';
-        if ($algorithm == OPENSSL_ALGO_SHA256) {
-            $digestAlgorithm = 'sha256';
-            $nsSignatureMethod = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256';
-            $nsDigestMethod = 'http://www.w3.org/2001/04/xmlenc#sha256';
-        }
         $nsTransformMethod1 ='http://www.w3.org/2000/09/xmldsig#enveloped-signature';
         $nsTransformMethod2 = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
         $idSigned = trim($node->getAttribute($mark));
         $digestValue = self::makeDigest($node, $digestAlgorithm, $canonical);
         $signatureNode = $dom->createElementNS($nsDSIG, 'Signature');
-        $signatureNode->setAttribute('Id', 'Ass_'.$idSigned);
         
         $root->appendChild($signatureNode);
+        
         $signedInfoNode = $dom->createElement('SignedInfo');
         $signatureNode->appendChild($signedInfoNode);
         $canonicalNode = $dom->createElement('CanonicalizationMethod');
@@ -162,6 +150,7 @@ class Signer
         $pubKeyClean = $certificate->publicKey->unFormated();
         $x509CertificateNode = $dom->createElement('X509Certificate', $pubKeyClean);
         $x509DataNode->appendChild($x509CertificateNode);
+
         return $dom;
     }
 
