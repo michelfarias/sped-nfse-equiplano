@@ -1,0 +1,8 @@
+.idea
+.vscode
+tests/Tags
+local
+vendor
+nbproject
+composer.lock
+.phpunit.result.cache
