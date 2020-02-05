@@ -187,11 +187,13 @@ class Tools extends BaseTools
      * @param string $lote Número do lote de envio
      * @return string
      */
-    public function recepcionarLoteRps($arps, $lote, $optsimples)
+    public function recepcionarLoteRps($arps, $lote)
     {
         $operation = 'esRecepcionarLoteRps';
         $xsd = "{$operation}Envio_v01.xsd";
         $countRps = count($arps);
+        
+        $optsimples = $this->config->optante_simples ? 1 : 2;
         
         $content = "<es:enviarLoteRpsEnvio "
             . "xmlns:es=\"{$this->wsobj->msgns}\" "
