@@ -17,6 +17,7 @@ try {
         'optsimples' => 1,
         'cmun' => '4108403', //ira determinar as urls e outros dados
         'razao' => 'Empresa Test Ltda',
+        'optante_simples' => true,
         'tpamb' => 2 //1-producao, 2-homologacao
     ];
     
