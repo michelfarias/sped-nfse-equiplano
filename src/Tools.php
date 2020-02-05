@@ -54,16 +54,7 @@ class Tools extends BaseTools
             . "<nrNfse>{$numero}</nrNfse>"
             . "<dsMotivoCancelamento>Cancelamento</dsMotivoCancelamento>"
             . "</es:{$operation}Envio>";
-            
-        $content = Signer::sign(
-            $this->certificate,
-            $content,
-            "{$operation}Envio",
-            '',
-            OPENSSL_ALGO_SHA1,
-            [true,false,null,null],
-            "{$operation}Envio"
-        );
+        $content = $this->sign($content, "{$operation}Envio");
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }
@@ -90,15 +81,7 @@ class Tools extends BaseTools
             $content .= "<nrLoteRps>{$lote}</nrLoteRps>";
         }
         $content .= "</es:{$operation}Envio>";
-        $content = Signer::sign(
-            $this->certificate,
-            $content,
-            "{$operation}Envio",
-            '',
-            OPENSSL_ALGO_SHA1,
-            [true,false,null,null],
-            "{$operation}Envio"
-        );
+        $content = $this->sign($content, "{$operation}Envio");
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }
@@ -125,15 +108,7 @@ class Tools extends BaseTools
             $content .= "<nrLoteRps>{$lote}</nrLoteRps>";
         }
         $content .= "</es:{$operation}Envio>";
-        $content = Signer::sign(
-            $this->certificate,
-            $content,
-            "{$operation}Envio",
-            '',
-            OPENSSL_ALGO_SHA1,
-            [false,false,null,null],
-            "{$operation}Envio"
-        );
+        $content = $this->sign($content, "{$operation}Envio");
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }
@@ -175,15 +150,7 @@ class Tools extends BaseTools
             . $tom
             . "</periodoEmissao>"
             . "</es:{$operation}Envio>";
-        $content = Signer::sign(
-            $this->certificate,
-            $content,
-            "{$operation}Envio",
-            '',
-            OPENSSL_ALGO_SHA1,
-            [false,false,null,null],
-            "{$operation}Envio"
-        );
+        $content = $this->sign($content, "{$operation}Envio");
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }
@@ -209,16 +176,7 @@ class Tools extends BaseTools
         . "</rps>"
             . $this->prestador
             . "</es:{$operation}Envio>";
-            
-        $content = Signer::sign(
-            $this->certificate,
-            $content,
-            "{$operation}Envio",
-            '',
-            OPENSSL_ALGO_SHA1,
-            [true,false,null,null],
-            "{$operation}Envio"
-        );
+        $content = $this->sign($content, "{$operation}Envio");
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }
@@ -241,8 +199,8 @@ class Tools extends BaseTools
             . "xsi:schemaLocation=\"{$this->wsobj->msgns} {$xsd}\">"
             . "<lote>"
             . "<nrLote>$lote</nrLote>"
-        . "<qtRps>$countRps</qtRps>"
-        . "<nrVersaoXml>{$this->wsobj->version}</nrVersaoXml>"
+            . "<qtRps>$countRps</qtRps>"
+            . "<nrVersaoXml>{$this->wsobj->version}</nrVersaoXml>"
             . "<prestador>"
             . "<nrCnpj>{$this->config->cnpj}</nrCnpj>"
             . "<nrInscricaoMunicipal>{$this->config->im}</nrInscricaoMunicipal>"
@@ -257,15 +215,7 @@ class Tools extends BaseTools
         $content .= "</listaRps>"
             . "</lote>"
             . "</es:enviarLoteRpsEnvio>";
-        
-        $content = Signer::sign(
-            $this->certificate,
-            $content,
-            "lote",
-            '',
-            OPENSSL_ALGO_SHA1,
-            [true,false,null,null]
-        );
+        $content = $this->sign($content, "enviarLoteRpsEnvio");
         Validator::isValid($content, "{$this->xsdpath}/{$xsd}");
         return $this->send($content, $operation);
     }

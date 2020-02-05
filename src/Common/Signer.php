@@ -3,7 +3,7 @@
 namespace NFePHP\NFSeEquiplano\Common;
 
 /**
- * Class for signing XML in Nacional Standard NFSe
+ * Class to signner a Xml
  *
  * @category  NFePHP
  * @package   NFePHP\NFSeEquiplano
@@ -16,9 +16,9 @@ namespace NFePHP\NFSeEquiplano\Common;
  */
 
 use NFePHP\Common\Certificate;
-use NFePHP\Common\Validator;
 use NFePHP\Common\Certificate\PublicKey;
 use NFePHP\Common\Exception\SignerException;
+use NFePHP\Common\Validator;
 use DOMDocument;
 use DOMNode;
 use DOMElement;
@@ -46,7 +46,8 @@ class Signer
         $mark = 'Id',
         $algorithm = OPENSSL_ALGO_SHA1,
         $canonical = self::CANONICAL,
-        $rootname = ''
+        $rootname = '',
+        $options = []
     ) {
         if (empty($content)) {
             throw SignerException::isNotXml();
@@ -66,16 +67,19 @@ class Signer
         if (empty($node) || empty($root)) {
             throw SignerException::tagNotFound($tagname);
         }
-        $dom = self::createSignature(
-            $certificate,
-            $dom,
-            $root,
-            $node,
-            $mark,
-            $algorithm,
-            $canonical
-        );
-        return $dom->saveXML($dom->documentElement);
+        if (!self::existsSignature($content)) {
+            $dom = self::createSignature(
+                $certificate,
+                $dom,
+                $root,
+                $node,
+                $mark,
+                $algorithm,
+                $canonical,
+                $options
+            );
+        }
+        return $dom->saveXML($dom->documentElement, LIBXML_NOXMLDECL);
     }
     
     /**
@@ -96,21 +100,25 @@ class Signer
         DOMElement $node,
         $mark,
         $algorithm = OPENSSL_ALGO_SHA1,
-        $canonical = self::CANONICAL
+        $canonical = self::CANONICAL,
+        $options = []
     ) {
         $nsDSIG = 'http://www.w3.org/2000/09/xmldsig#';
-        $nsCannonMethod = 'http://www.w3.org/2001/10/xml-exc-c14n#';
+        $nsCannonMethod = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
         $nsSignatureMethod = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1';
         $nsDigestMethod = 'http://www.w3.org/2000/09/xmldsig#sha1';
         $digestAlgorithm = 'sha1';
+        if ($algorithm == OPENSSL_ALGO_SHA256) {
+            $digestAlgorithm = 'sha256';
+            $nsSignatureMethod = 'http://www.w3.org/2001/04/xmldsig-more#rsa-sha256';
+            $nsDigestMethod = 'http://www.w3.org/2001/04/xmlenc#sha256';
+        }
         $nsTransformMethod1 ='http://www.w3.org/2000/09/xmldsig#enveloped-signature';
         $nsTransformMethod2 = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315';
         $idSigned = trim($node->getAttribute($mark));
         $digestValue = self::makeDigest($node, $digestAlgorithm, $canonical);
         $signatureNode = $dom->createElementNS($nsDSIG, 'Signature');
-        
         $root->appendChild($signatureNode);
-        
         $signedInfoNode = $dom->createElement('SignedInfo');
         $signatureNode->appendChild($signedInfoNode);
         $canonicalNode = $dom->createElement('CanonicalizationMethod');
@@ -147,13 +155,18 @@ class Signer
         $signatureNode->appendChild($keyInfoNode);
         $x509DataNode = $dom->createElement('X509Data');
         $keyInfoNode->appendChild($x509DataNode);
+
+        if (!empty($options["subjectName"])) {
+            $subjectName = $certificate->publicKey->subjectNameValue;
+            $x509SubjectNode = $dom->createElement('X509SubjectName', $subjectName);
+            $x509DataNode->appendChild($x509SubjectNode);
+        }
+
         $pubKeyClean = $certificate->publicKey->unFormated();
         $x509CertificateNode = $dom->createElement('X509Certificate', $pubKeyClean);
         $x509DataNode->appendChild($x509CertificateNode);
-
         return $dom;
     }
-
     /**
      * Remove old signature from document to replace it
      * @param string $content
@@ -176,7 +189,6 @@ class Signer
         }
         return $dom->saveXML();
     }
-
     /**
      * Verify if xml signature is valid
      * @param string $content
