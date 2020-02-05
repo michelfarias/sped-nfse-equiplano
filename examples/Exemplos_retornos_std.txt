@@ -1,0 +1,4088 @@
+res_esCancelarNfse_1580906602.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 1057
+                            [dsMensagem] => Rejeição: Assinatura difere do calculado.
+                        )
+
+                )
+
+        )
+
+)
+
+
+res_esCancelarNfse_1580906636.xml
+stdClass Object
+(
+    [sucesso] => true
+    [dtCancelamento] => 2020-02-05T09:43:56
+)
+
+
+res_esConsultarLoteRps_1580906341.xml
+stdClass Object
+(
+    [listaNfse] => stdClass Object
+        (
+            [attributes] => stdClass Object
+                (
+                    [class] => list
+                )
+
+            [nfse] => stdClass Object
+                (
+                    [nrNfse] => 1
+                    [cdAutenticacao] => 8146C39FA9BA94316DBE8E30D4DA8E29
+                    [dtEmissaoNfs] => 2020-02-05T09:36:58
+                    [nrRps] => 1
+                    [nrEmissorRps] => 1
+                )
+
+        )
+
+)
+
+
+res_esConsultarNfsePorRps_1580906844.xml
+stdClass Object
+(
+    [nfse] => stdClass Object
+        (
+            [nrNfse] => 1
+            [cdAutenticacao] => 8146C39FA9BA94316DBE8E30D4DA8E29
+            [dtEmissaoNfs] => 2020-02-05T09:36:58
+            [nrRps] => 1
+            [nrEmissorRps] => 1
+            [cancelamento] => stdClass Object
+                (
+                    [dtCancelamento] => 2020-02-05T09:43:56
+                    [dsCancelamento] => Cancelamento
+                )
+
+        )
+
+)
+
+
+res_esConsultarNfse_1580904657.xml
+stdClass Object
+(
+    [listaNfse] => stdClass Object
+        (
+            [attributes] => stdClass Object
+                (
+                    [class] => list
+                )
+
+            [nfse] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [nrNfse] => 5192
+                            [cdAutenticacao] => E6872FE53F89663F5EBAAED78BD6EDF8
+                            [dtEmissaoNfs] => 2020-01-10T17:00:41
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [nrNfse] => 5193
+                            [cdAutenticacao] => CFBD5B8D2238A6E270F93D7FEA7665F6
+                            [dtEmissaoNfs] => 2020-01-21T15:09:58
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [nrNfse] => 5194
+                            [cdAutenticacao] => A0A966DDF437B340B2CF39A469809FF
+                            [dtEmissaoNfs] => 2020-01-21T15:30:31
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [nrNfse] => 5195
+                            [cdAutenticacao] => E94DEF48091C6DB4E733E95E7CEAF9CB
+                            [dtEmissaoNfs] => 2020-01-21T15:30:54
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [nrNfse] => 5196
+                            [cdAutenticacao] => 2A2DF91F8287C5D418F5D2C224F39851
+                            [dtEmissaoNfs] => 2020-01-21T15:31:26
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [nrNfse] => 5197
+                            [cdAutenticacao] => 314716BB6C39CF86C898B51F4A9C5FD2
+                            [dtEmissaoNfs] => 2020-01-21T15:32:00
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [nrNfse] => 5198
+                            [cdAutenticacao] => E0175C0B73D32729A77762E1CDD3E3B3
+                            [dtEmissaoNfs] => 2020-01-21T16:45:50
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [nrNfse] => 5199
+                            [cdAutenticacao] => 5B11BD35EC57AB86F95E8E81D1E25728
+                            [dtEmissaoNfs] => 2020-01-21T16:46:15
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [nrNfse] => 5200
+                            [cdAutenticacao] => 1ABCAA43D658272F2C8B8525BAE1038B
+                            [dtEmissaoNfs] => 2020-01-21T16:46:58
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [nrNfse] => 5201
+                            [cdAutenticacao] => 258B40413B942228F84FF218525CB3D
+                            [dtEmissaoNfs] => 2020-01-21T16:47:23
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [nrNfse] => 5202
+                            [cdAutenticacao] => C9FFEB086D95D3ECE422D8AAEAE8B6A0
+                            [dtEmissaoNfs] => 2020-01-21T16:47:47
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [nrNfse] => 5203
+                            [cdAutenticacao] => D1545DC8D2168A4BDA768CFD539ADE5
+                            [dtEmissaoNfs] => 2020-01-21T16:48:09
+                        )
+
+                    [12] => stdClass Object
+                        (
+                            [nrNfse] => 5204
+                            [cdAutenticacao] => 2CAE4196213AE403DC162EF64F7AA4A
+                            [dtEmissaoNfs] => 2020-01-21T16:48:41
+                        )
+
+                    [13] => stdClass Object
+                        (
+                            [nrNfse] => 5205
+                            [cdAutenticacao] => 4794142BF6A3609E52362C69356EA5FC
+                            [dtEmissaoNfs] => 2020-01-21T16:49:06
+                        )
+
+                    [14] => stdClass Object
+                        (
+                            [nrNfse] => 5206
+                            [cdAutenticacao] => 4C1F69B15930C13BC18EA90932257711
+                            [dtEmissaoNfs] => 2020-01-21T16:59:06
+                        )
+
+                    [15] => stdClass Object
+                        (
+                            [nrNfse] => 5207
+                            [cdAutenticacao] => FDDF92C0BF6F25B31A04AD2F65362C67
+                            [dtEmissaoNfs] => 2020-01-21T16:59:30
+                        )
+
+                    [16] => stdClass Object
+                        (
+                            [nrNfse] => 5208
+                            [cdAutenticacao] => 707620E5A066CED9CA5C11656A728E60
+                            [dtEmissaoNfs] => 2020-01-21T16:59:53
+                        )
+
+                    [17] => stdClass Object
+                        (
+                            [nrNfse] => 5209
+                            [cdAutenticacao] => 18A77A19AF5F0A80AD7CDB955F6658A5
+                            [dtEmissaoNfs] => 2020-01-21T17:00:17
+                        )
+
+                    [18] => stdClass Object
+                        (
+                            [nrNfse] => 5210
+                            [cdAutenticacao] => E44DF87D1D9D1BEAE6F221F2F3499FEA
+                            [dtEmissaoNfs] => 2020-01-21T17:00:40
+                        )
+
+                    [19] => stdClass Object
+                        (
+                            [nrNfse] => 5211
+                            [cdAutenticacao] => 48D17C179659F0A7314805A4A6354363
+                            [dtEmissaoNfs] => 2020-01-21T17:01:02
+                        )
+
+                    [20] => stdClass Object
+                        (
+                            [nrNfse] => 5212
+                            [cdAutenticacao] => E02101A524A7E1C8C7E1EC91C350E5FF
+                            [dtEmissaoNfs] => 2020-01-21T17:05:06
+                        )
+
+                    [21] => stdClass Object
+                        (
+                            [nrNfse] => 5213
+                            [cdAutenticacao] => 9A9B2279B1FC8F8685DF2973C19F8254
+                            [dtEmissaoNfs] => 2020-01-21T17:05:47
+                        )
+
+                    [22] => stdClass Object
+                        (
+                            [nrNfse] => 5214
+                            [cdAutenticacao] => 60C74315D0A12D5F6E15087A804813E4
+                            [dtEmissaoNfs] => 2020-01-21T17:06:06
+                        )
+
+                    [23] => stdClass Object
+                        (
+                            [nrNfse] => 5215
+                            [cdAutenticacao] => 36AD898EDFB6063A50B2E0A41D6B2421
+                            [dtEmissaoNfs] => 2020-01-21T17:06:26
+                        )
+
+                    [24] => stdClass Object
+                        (
+                            [nrNfse] => 5216
+                            [cdAutenticacao] => D2906A060B3F5C73F1A8048FADDAE89F
+                            [dtEmissaoNfs] => 2020-01-21T17:06:46
+                        )
+
+                    [25] => stdClass Object
+                        (
+                            [nrNfse] => 5217
+                            [cdAutenticacao] => 6D7BF43440E349B9821A26C632211CF9
+                            [dtEmissaoNfs] => 2020-01-21T17:08:07
+                        )
+
+                    [26] => stdClass Object
+                        (
+                            [nrNfse] => 5218
+                            [cdAutenticacao] => 2CF3482C10DE04003AC1273FADECAFFB
+                            [dtEmissaoNfs] => 2020-01-21T17:08:33
+                        )
+
+                    [27] => stdClass Object
+                        (
+                            [nrNfse] => 5219
+                            [cdAutenticacao] => 925F6207F33D1A09417ECF704637EE15
+                            [dtEmissaoNfs] => 2020-01-21T17:08:53
+                        )
+
+                    [28] => stdClass Object
+                        (
+                            [nrNfse] => 5220
+                            [cdAutenticacao] => 260A781C7A3BE73FDB406300D84043AF
+                            [dtEmissaoNfs] => 2020-01-21T17:09:14
+                        )
+
+                    [29] => stdClass Object
+                        (
+                            [nrNfse] => 5221
+                            [cdAutenticacao] => 1A8D04F3B5B268E6D09BBEB71156C713
+                            [dtEmissaoNfs] => 2020-01-21T17:09:34
+                        )
+
+                    [30] => stdClass Object
+                        (
+                            [nrNfse] => 5222
+                            [cdAutenticacao] => B20A899279AC7A2AA4C79B448E4380B7
+                            [dtEmissaoNfs] => 2020-01-21T17:09:55
+                        )
+
+                    [31] => stdClass Object
+                        (
+                            [nrNfse] => 5223
+                            [cdAutenticacao] => 2A027CFCB41BB6FE45CE92CE12AB7F5C
+                            [dtEmissaoNfs] => 2020-01-21T17:10:21
+                        )
+
+                    [32] => stdClass Object
+                        (
+                            [nrNfse] => 5224
+                            [cdAutenticacao] => 44532F1E7C7F4800EAC47784B8C77C16
+                            [dtEmissaoNfs] => 2020-01-21T17:11:14
+                        )
+
+                    [33] => stdClass Object
+                        (
+                            [nrNfse] => 5225
+                            [cdAutenticacao] => 33BED505D4E1362D917131CE890EA5D1
+                            [dtEmissaoNfs] => 2020-01-21T17:11:32
+                        )
+
+                    [34] => stdClass Object
+                        (
+                            [nrNfse] => 5226
+                            [cdAutenticacao] => 962354233BBF49CA8335C605911A7CD
+                            [dtEmissaoNfs] => 2020-01-21T17:11:50
+                        )
+
+                    [35] => stdClass Object
+                        (
+                            [nrNfse] => 5227
+                            [cdAutenticacao] => C8B917D8D15BF969BCAC4713E6E3A66C
+                            [dtEmissaoNfs] => 2020-01-21T17:12:09
+                        )
+
+                    [36] => stdClass Object
+                        (
+                            [nrNfse] => 5228
+                            [cdAutenticacao] => 4318AE6C4A499C23AA2114E78446FC40
+                            [dtEmissaoNfs] => 2020-01-21T17:12:32
+                        )
+
+                    [37] => stdClass Object
+                        (
+                            [nrNfse] => 5229
+                            [cdAutenticacao] => 9AE7A64354466247CF192DFCDE8F267F
+                            [dtEmissaoNfs] => 2020-01-21T17:12:50
+                        )
+
+                    [38] => stdClass Object
+                        (
+                            [nrNfse] => 5230
+                            [cdAutenticacao] => 1D8C7436043431DA476948967E103054
+                            [dtEmissaoNfs] => 2020-01-21T17:13:10
+                        )
+
+                    [39] => stdClass Object
+                        (
+                            [nrNfse] => 5231
+                            [cdAutenticacao] => B15263E4DE1724687BBA8BF7677BB43C
+                            [dtEmissaoNfs] => 2020-01-21T17:13:31
+                        )
+
+                    [40] => stdClass Object
+                        (
+                            [nrNfse] => 5232
+                            [cdAutenticacao] => A476B529F959129BC7A940810B1A6FA4
+                            [dtEmissaoNfs] => 2020-01-21T17:13:50
+                        )
+
+                    [41] => stdClass Object
+                        (
+                            [nrNfse] => 5233
+                            [cdAutenticacao] => 5F7CB972D9231D82E4D9A8BE3631F26B
+                            [dtEmissaoNfs] => 2020-01-21T17:14:10
+                        )
+
+                    [42] => stdClass Object
+                        (
+                            [nrNfse] => 5234
+                            [cdAutenticacao] => 94256237392D238A33DA3D8452151BDA
+                            [dtEmissaoNfs] => 2020-01-21T17:14:28
+                        )
+
+                    [43] => stdClass Object
+                        (
+                            [nrNfse] => 5235
+                            [cdAutenticacao] => 32167C8CF03C21768D221EB20244B7FC
+                            [dtEmissaoNfs] => 2020-01-21T17:14:48
+                        )
+
+                    [44] => stdClass Object
+                        (
+                            [nrNfse] => 5236
+                            [cdAutenticacao] => 1C8E983DD14AFA1E904B921AB5BDE0A8
+                            [dtEmissaoNfs] => 2020-01-21T17:15:09
+                        )
+
+                    [45] => stdClass Object
+                        (
+                            [nrNfse] => 5237
+                            [cdAutenticacao] => A35B6E1BD589A3D5C39BCBF3D897847F
+                            [dtEmissaoNfs] => 2020-01-21T17:15:31
+                        )
+
+                    [46] => stdClass Object
+                        (
+                            [nrNfse] => 5238
+                            [cdAutenticacao] => AECA9B8A876EFE6DA8BF16A3503618EF
+                            [dtEmissaoNfs] => 2020-01-21T17:15:50
+                        )
+
+                    [47] => stdClass Object
+                        (
+                            [nrNfse] => 5239
+                            [cdAutenticacao] => 5D2C9A634F2FF9D93B54E1AA192EED67
+                            [dtEmissaoNfs] => 2020-01-21T17:30:27
+                        )
+
+                    [48] => stdClass Object
+                        (
+                            [nrNfse] => 5240
+                            [cdAutenticacao] => 22EE5A96886E1C32372F3E250C9B4424
+                            [dtEmissaoNfs] => 2020-01-21T17:30:49
+                        )
+
+                    [49] => stdClass Object
+                        (
+                            [nrNfse] => 5241
+                            [cdAutenticacao] => 1BBF86352BF52FE660C74818053AB1DB
+                            [dtEmissaoNfs] => 2020-01-21T17:31:13
+                        )
+
+                    [50] => stdClass Object
+                        (
+                            [nrNfse] => 5242
+                            [cdAutenticacao] => 3F23B8DED5497FAEA8B30527965273CF
+                            [dtEmissaoNfs] => 2020-01-21T17:31:34
+                        )
+
+                    [51] => stdClass Object
+                        (
+                            [nrNfse] => 5243
+                            [cdAutenticacao] => 59E58682EE9A1A089E853BBA057D7A26
+                            [dtEmissaoNfs] => 2020-01-21T17:31:54
+                        )
+
+                    [52] => stdClass Object
+                        (
+                            [nrNfse] => 5244
+                            [cdAutenticacao] => CAC333A9BF96B62C7DB909CA57EC523D
+                            [dtEmissaoNfs] => 2020-01-21T17:32:25
+                        )
+
+                    [53] => stdClass Object
+                        (
+                            [nrNfse] => 5245
+                            [cdAutenticacao] => 1B5358B412950ECAA9198C7B118E92C4
+                            [dtEmissaoNfs] => 2020-01-21T17:32:44
+                        )
+
+                    [54] => stdClass Object
+                        (
+                            [nrNfse] => 5246
+                            [cdAutenticacao] => 36829AAAB9B273BD9DB8242ADC1FB8FF
+                            [dtEmissaoNfs] => 2020-01-21T17:33:02
+                        )
+
+                    [55] => stdClass Object
+                        (
+                            [nrNfse] => 5247
+                            [cdAutenticacao] => A09A7CE17CF16065D6D4F36471359B98
+                            [dtEmissaoNfs] => 2020-01-21T17:35:04
+                        )
+
+                    [56] => stdClass Object
+                        (
+                            [nrNfse] => 5248
+                            [cdAutenticacao] => 9107793E2FE99050BCC6709C7EBC8882
+                            [dtEmissaoNfs] => 2020-01-21T17:35:24
+                        )
+
+                    [57] => stdClass Object
+                        (
+                            [nrNfse] => 5249
+                            [cdAutenticacao] => 30FEB193FA809BA388A2FDD7882AD929
+                            [dtEmissaoNfs] => 2020-01-21T17:35:44
+                        )
+
+                    [58] => stdClass Object
+                        (
+                            [nrNfse] => 5250
+                            [cdAutenticacao] => A5FFA43D42C71727E732BB88979BC7A3
+                            [dtEmissaoNfs] => 2020-01-21T17:36:08
+                        )
+
+                    [59] => stdClass Object
+                        (
+                            [nrNfse] => 5251
+                            [cdAutenticacao] => 8483A7CCBDC17066C5D8DFB7CBDC7958
+                            [dtEmissaoNfs] => 2020-01-21T17:36:25
+                        )
+
+                    [60] => stdClass Object
+                        (
+                            [nrNfse] => 5252
+                            [cdAutenticacao] => 5B59E236974EE2C4D9064AC495B36DF0
+                            [dtEmissaoNfs] => 2020-01-21T17:36:45
+                        )
+
+                    [61] => stdClass Object
+                        (
+                            [nrNfse] => 5253
+                            [cdAutenticacao] => 166350B05F1FD81620E049FD539533E6
+                            [dtEmissaoNfs] => 2020-01-21T17:37:05
+                        )
+
+                    [62] => stdClass Object
+                        (
+                            [nrNfse] => 5254
+                            [cdAutenticacao] => 4D30B430D3ABBBA171637BCD5CFBB815
+                            [dtEmissaoNfs] => 2020-01-21T17:37:32
+                        )
+
+                    [63] => stdClass Object
+                        (
+                            [nrNfse] => 5255
+                            [cdAutenticacao] => 6ED1B8AC0AE21B08CA72C7744F16A772
+                            [dtEmissaoNfs] => 2020-01-21T17:41:36
+                        )
+
+                    [64] => stdClass Object
+                        (
+                            [nrNfse] => 5256
+                            [cdAutenticacao] => C7BA2882982F789CBE98BC21C4CA9458
+                            [dtEmissaoNfs] => 2020-01-21T17:41:55
+                        )
+
+                    [65] => stdClass Object
+                        (
+                            [nrNfse] => 5257
+                            [cdAutenticacao] => F1DC65B931007542AB06D4B91B8F5BF4
+                            [dtEmissaoNfs] => 2020-01-21T17:42:16
+                        )
+
+                    [66] => stdClass Object
+                        (
+                            [nrNfse] => 5258
+                            [cdAutenticacao] => BAD6195DEDA8AFCDCC36E4497F97790F
+                            [dtEmissaoNfs] => 2020-01-21T17:42:36
+                        )
+
+                    [67] => stdClass Object
+                        (
+                            [nrNfse] => 5259
+                            [cdAutenticacao] => C1CE2BC87E03E11655694216625A8485
+                            [dtEmissaoNfs] => 2020-01-21T17:42:57
+                        )
+
+                    [68] => stdClass Object
+                        (
+                            [nrNfse] => 5260
+                            [cdAutenticacao] => EB07EB1C02C3AA477DE0341CBD2E476
+                            [dtEmissaoNfs] => 2020-01-21T17:43:18
+                        )
+
+                    [69] => stdClass Object
+                        (
+                            [nrNfse] => 5261
+                            [cdAutenticacao] => 750331176610F9357644D88A5B6A5E8A
+                            [dtEmissaoNfs] => 2020-01-21T17:43:39
+                        )
+
+                    [70] => stdClass Object
+                        (
+                            [nrNfse] => 5262
+                            [cdAutenticacao] => C08EE1F314C68BAC83BF36F932E9ADB7
+                            [dtEmissaoNfs] => 2020-01-21T17:44:08
+                        )
+
+                    [71] => stdClass Object
+                        (
+                            [nrNfse] => 5263
+                            [cdAutenticacao] => 24CB03B1EE7B95E85DA3D79BAF6E366B
+                            [dtEmissaoNfs] => 2020-01-21T17:44:30
+                        )
+
+                    [72] => stdClass Object
+                        (
+                            [nrNfse] => 5264
+                            [cdAutenticacao] => 99DA5EC51A388AA84DBD99DFF836D43
+                            [dtEmissaoNfs] => 2020-01-21T17:44:54
+                        )
+
+                    [73] => stdClass Object
+                        (
+                            [nrNfse] => 5265
+                            [cdAutenticacao] => CB6A041DF3ED8FE2CD1E28BD9632DA39
+                            [dtEmissaoNfs] => 2020-01-21T17:45:18
+                        )
+
+                    [74] => stdClass Object
+                        (
+                            [nrNfse] => 5266
+                            [cdAutenticacao] => B265CA61D5A042639EE67E81BCD5A06B
+                            [dtEmissaoNfs] => 2020-01-21T17:45:35
+                        )
+
+                    [75] => stdClass Object
+                        (
+                            [nrNfse] => 5267
+                            [cdAutenticacao] => 86DAAB30A4E9012E4C514B1089E92B92
+                            [dtEmissaoNfs] => 2020-01-21T17:45:56
+                        )
+
+                    [76] => stdClass Object
+                        (
+                            [nrNfse] => 5268
+                            [cdAutenticacao] => A3B6A57F926DE30F9150CFA5964AA8EC
+                            [dtEmissaoNfs] => 2020-01-22T13:44:37
+                        )
+
+                    [77] => stdClass Object
+                        (
+                            [nrNfse] => 5269
+                            [cdAutenticacao] => 32E6B6C5D8128D88C22B399525A1F27E
+                            [dtEmissaoNfs] => 2020-01-22T13:44:59
+                        )
+
+                    [78] => stdClass Object
+                        (
+                            [nrNfse] => 5270
+                            [cdAutenticacao] => AAE3081642C1656FD9D85520B6C0C450
+                            [dtEmissaoNfs] => 2020-01-22T13:45:18
+                        )
+
+                    [79] => stdClass Object
+                        (
+                            [nrNfse] => 5271
+                            [cdAutenticacao] => ECA6A514251F6599EE2108F03B5EF2AC
+                            [dtEmissaoNfs] => 2020-01-22T13:45:41
+                        )
+
+                    [80] => stdClass Object
+                        (
+                            [nrNfse] => 5272
+                            [cdAutenticacao] => DC4115C44AA7C017D60C147653FDE781
+                            [dtEmissaoNfs] => 2020-01-22T13:46:02
+                        )
+
+                    [81] => stdClass Object
+                        (
+                            [nrNfse] => 5273
+                            [cdAutenticacao] => 204DF366DD1E1DD5EB2E66246D614963
+                            [dtEmissaoNfs] => 2020-01-22T13:46:44
+                        )
+
+                    [82] => stdClass Object
+                        (
+                            [nrNfse] => 5274
+                            [cdAutenticacao] => AD4AFDBE4811BF11C93B6649C0721A9E
+                            [dtEmissaoNfs] => 2020-01-22T13:47:04
+                        )
+
+                    [83] => stdClass Object
+                        (
+                            [nrNfse] => 5275
+                            [cdAutenticacao] => 5B52AF96DBE83CA7812C0DEFD810CD7E
+                            [dtEmissaoNfs] => 2020-01-22T13:47:28
+                        )
+
+                    [84] => stdClass Object
+                        (
+                            [nrNfse] => 5276
+                            [cdAutenticacao] => D854A8247D4EEB9E0F603BE58E13A2D7
+                            [dtEmissaoNfs] => 2020-01-22T13:47:47
+                        )
+
+                    [85] => stdClass Object
+                        (
+                            [nrNfse] => 5277
+                            [cdAutenticacao] => B841E8C6D9144D2271D731832CA9D922
+                            [dtEmissaoNfs] => 2020-01-22T13:48:07
+                        )
+
+                    [86] => stdClass Object
+                        (
+                            [nrNfse] => 5278
+                            [cdAutenticacao] => F1C0668D4EA714567FF07973529A5BCD
+                            [dtEmissaoNfs] => 2020-01-22T13:48:29
+                        )
+
+                    [87] => stdClass Object
+                        (
+                            [nrNfse] => 5279
+                            [cdAutenticacao] => B6A7EC52F4DE967C9F3D49F4F1D72981
+                            [dtEmissaoNfs] => 2020-01-22T13:48:49
+                        )
+
+                    [88] => stdClass Object
+                        (
+                            [nrNfse] => 5280
+                            [cdAutenticacao] => 36FE77821EE95F4214E67AE50C06C016
+                            [dtEmissaoNfs] => 2020-01-22T13:49:10
+                        )
+
+                    [89] => stdClass Object
+                        (
+                            [nrNfse] => 5281
+                            [cdAutenticacao] => 31444AFB476C661D7413D5F2BFB8F1D9
+                            [dtEmissaoNfs] => 2020-01-22T13:49:34
+                        )
+
+                    [90] => stdClass Object
+                        (
+                            [nrNfse] => 5282
+                            [cdAutenticacao] => 72D0378BC008344ADCADF82A26B0AA7A
+                            [dtEmissaoNfs] => 2020-01-22T13:50:05
+                        )
+
+                    [91] => stdClass Object
+                        (
+                            [nrNfse] => 5283
+                            [cdAutenticacao] => 958CF9208ADA31D75976A7DF3CCF9ADD
+                            [dtEmissaoNfs] => 2020-01-22T13:50:41
+                        )
+
+                    [92] => stdClass Object
+                        (
+                            [nrNfse] => 5284
+                            [cdAutenticacao] => BEC0E88F1FC480F344A94A0ED6F8C87C
+                            [dtEmissaoNfs] => 2020-01-22T13:51:00
+                        )
+
+                    [93] => stdClass Object
+                        (
+                            [nrNfse] => 5285
+                            [cdAutenticacao] => 886836E7A21B5B1C1A11819D09BC3697
+                            [dtEmissaoNfs] => 2020-01-22T13:51:21
+                        )
+
+                    [94] => stdClass Object
+                        (
+                            [nrNfse] => 5286
+                            [cdAutenticacao] => 6004B2A1033793FE50986ED347E2168E
+                            [dtEmissaoNfs] => 2020-01-22T13:51:39
+                        )
+
+                    [95] => stdClass Object
+                        (
+                            [nrNfse] => 5287
+                            [cdAutenticacao] => 6548C67D053DF283FC4A5D6328B15A2
+                            [dtEmissaoNfs] => 2020-01-22T13:51:58
+                        )
+
+                    [96] => stdClass Object
+                        (
+                            [nrNfse] => 5288
+                            [cdAutenticacao] => E32D6F2FA92EB6221797A7F71785EBBC
+                            [dtEmissaoNfs] => 2020-01-22T13:52:17
+                        )
+
+                    [97] => stdClass Object
+                        (
+                            [nrNfse] => 5289
+                            [cdAutenticacao] => 36FE727806B06F271FCE50E7555DF5E6
+                            [dtEmissaoNfs] => 2020-01-22T13:52:35
+                            [cancelamento] => stdClass Object
+                                (
+                                    [dtCancelamento] => 2020-01-22T15:13:07
+                                    [dsCancelamento] => Cliente cancelou o sistema
+                                )
+
+                        )
+
+                    [98] => stdClass Object
+                        (
+                            [nrNfse] => 5290
+                            [cdAutenticacao] => 240E104AD44021F1B61334E56E2C5B72
+                            [dtEmissaoNfs] => 2020-01-22T13:52:59
+                        )
+
+                    [99] => stdClass Object
+                        (
+                            [nrNfse] => 5291
+                            [cdAutenticacao] => 6FAA2917F4231FB390C9933587FCA9EA
+                            [dtEmissaoNfs] => 2020-01-22T13:53:20
+                        )
+
+                    [100] => stdClass Object
+                        (
+                            [nrNfse] => 5292
+                            [cdAutenticacao] => BE6C4967B9961B115AE170EE870E4E31
+                            [dtEmissaoNfs] => 2020-01-22T13:53:40
+                        )
+
+                    [101] => stdClass Object
+                        (
+                            [nrNfse] => 5293
+                            [cdAutenticacao] => 93127A5267418AF466B988764209AD8E
+                            [dtEmissaoNfs] => 2020-01-22T13:53:59
+                        )
+
+                    [102] => stdClass Object
+                        (
+                            [nrNfse] => 5294
+                            [cdAutenticacao] => 2BF652299C8A099FAC52010AA1633397
+                            [dtEmissaoNfs] => 2020-01-22T13:54:23
+                        )
+
+                    [103] => stdClass Object
+                        (
+                            [nrNfse] => 5295
+                            [cdAutenticacao] => 2171196D9908035CE6CF8AB3F46326B8
+                            [dtEmissaoNfs] => 2020-01-22T13:54:43
+                        )
+
+                    [104] => stdClass Object
+                        (
+                            [nrNfse] => 5296
+                            [cdAutenticacao] => 78EC3BFDA25B88773C0A6CC705BFCC9B
+                            [dtEmissaoNfs] => 2020-01-22T13:55:03
+                        )
+
+                    [105] => stdClass Object
+                        (
+                            [nrNfse] => 5297
+                            [cdAutenticacao] => 8C052CF155DABD67AF71E080DD4D429
+                            [dtEmissaoNfs] => 2020-01-22T14:05:29
+                        )
+
+                    [106] => stdClass Object
+                        (
+                            [nrNfse] => 5298
+                            [cdAutenticacao] => C9CB6D6E7F4552C4C6B54D0CBD241F8D
+                            [dtEmissaoNfs] => 2020-01-22T14:05:47
+                        )
+
+                    [107] => stdClass Object
+                        (
+                            [nrNfse] => 5299
+                            [cdAutenticacao] => 8B0CD2E901BBA22564649801B9CCF0CC
+                            [dtEmissaoNfs] => 2020-01-22T14:06:08
+                        )
+
+                    [108] => stdClass Object
+                        (
+                            [nrNfse] => 5300
+                            [cdAutenticacao] => F8CCF292BD56A17FA59CC912A827D2AC
+                            [dtEmissaoNfs] => 2020-01-22T14:06:28
+                        )
+
+                    [109] => stdClass Object
+                        (
+                            [nrNfse] => 5301
+                            [cdAutenticacao] => 5FF5F2231B472738480345007EA314D4
+                            [dtEmissaoNfs] => 2020-01-22T14:06:51
+                        )
+
+                    [110] => stdClass Object
+                        (
+                            [nrNfse] => 5302
+                            [cdAutenticacao] => 332E4075D2B6B652A990ADE5CAFC698B
+                            [dtEmissaoNfs] => 2020-01-22T14:11:07
+                        )
+
+                    [111] => stdClass Object
+                        (
+                            [nrNfse] => 5303
+                            [cdAutenticacao] => E9198256D94B75498385A1DA90163254
+                            [dtEmissaoNfs] => 2020-01-22T14:11:39
+                        )
+
+                    [112] => stdClass Object
+                        (
+                            [nrNfse] => 5304
+                            [cdAutenticacao] => D87B1EB8192F854774CB53A9DF9B92B0
+                            [dtEmissaoNfs] => 2020-01-22T14:12:03
+                        )
+
+                    [113] => stdClass Object
+                        (
+                            [nrNfse] => 5305
+                            [cdAutenticacao] => 4C332F8879206D0439E9B0831A2988E
+                            [dtEmissaoNfs] => 2020-01-22T14:12:21
+                        )
+
+                    [114] => stdClass Object
+                        (
+                            [nrNfse] => 5306
+                            [cdAutenticacao] => 2CBDD20A07329299DE008D6DDA71FDE9
+                            [dtEmissaoNfs] => 2020-01-22T14:12:41
+                        )
+
+                    [115] => stdClass Object
+                        (
+                            [nrNfse] => 5307
+                            [cdAutenticacao] => 57815141AD3E743C3C3C014827395BC8
+                            [dtEmissaoNfs] => 2020-01-22T14:12:59
+                        )
+
+                    [116] => stdClass Object
+                        (
+                            [nrNfse] => 5308
+                            [cdAutenticacao] => B72F77A6FBA5B17BCD7906BED08412C5
+                            [dtEmissaoNfs] => 2020-01-22T14:24:08
+                        )
+
+                    [117] => stdClass Object
+                        (
+                            [nrNfse] => 5309
+                            [cdAutenticacao] => A4BAF5522B1F0B037357C7130DFE6509
+                            [dtEmissaoNfs] => 2020-01-22T14:24:27
+                        )
+
+                    [118] => stdClass Object
+                        (
+                            [nrNfse] => 5310
+                            [cdAutenticacao] => D1A6DEC74C35E7CF8AB6E51CE60EC966
+                            [dtEmissaoNfs] => 2020-01-22T14:24:54
+                        )
+
+                    [119] => stdClass Object
+                        (
+                            [nrNfse] => 5311
+                            [cdAutenticacao] => 64DC7584FE5F401887144C170C0AFD86
+                            [dtEmissaoNfs] => 2020-01-22T14:25:13
+                        )
+
+                    [120] => stdClass Object
+                        (
+                            [nrNfse] => 5312
+                            [cdAutenticacao] => 2A24876FCECF2D858EF12362629310A4
+                            [dtEmissaoNfs] => 2020-01-22T14:25:37
+                        )
+
+                    [121] => stdClass Object
+                        (
+                            [nrNfse] => 5313
+                            [cdAutenticacao] => 6798A2A4278729FCD7D9AABF11448CB7
+                            [dtEmissaoNfs] => 2020-01-22T14:25:57
+                        )
+
+                    [122] => stdClass Object
+                        (
+                            [nrNfse] => 5314
+                            [cdAutenticacao] => E44A59F758222B31F4209B31F17E9955
+                            [dtEmissaoNfs] => 2020-01-22T14:26:18
+                        )
+
+                    [123] => stdClass Object
+                        (
+                            [nrNfse] => 5315
+                            [cdAutenticacao] => 9B4B019F01BF874261F9645AABBC9FF2
+                            [dtEmissaoNfs] => 2020-01-22T14:26:40
+                        )
+
+                    [124] => stdClass Object
+                        (
+                            [nrNfse] => 5316
+                            [cdAutenticacao] => 7C237DB731380CFBC1D3D61C6DC11EE7
+                            [dtEmissaoNfs] => 2020-01-22T14:26:58
+                        )
+
+                    [125] => stdClass Object
+                        (
+                            [nrNfse] => 5317
+                            [cdAutenticacao] => 1176C32C1A5CA4DF1AFE32F19F5402D8
+                            [dtEmissaoNfs] => 2020-01-22T14:27:16
+                        )
+
+                    [126] => stdClass Object
+                        (
+                            [nrNfse] => 5318
+                            [cdAutenticacao] => 15147A6D1883098C6841B7060985D381
+                            [dtEmissaoNfs] => 2020-01-22T14:27:35
+                        )
+
+                    [127] => stdClass Object
+                        (
+                            [nrNfse] => 5319
+                            [cdAutenticacao] => A3FD32D2EE8FF4EE1F1E69BF0534239A
+                            [dtEmissaoNfs] => 2020-01-22T14:27:53
+                        )
+
+                    [128] => stdClass Object
+                        (
+                            [nrNfse] => 5320
+                            [cdAutenticacao] => EAFB53661CC42AA34C723C076D9D91FC
+                            [dtEmissaoNfs] => 2020-01-22T14:28:12
+                        )
+
+                    [129] => stdClass Object
+                        (
+                            [nrNfse] => 5321
+                            [cdAutenticacao] => D7EDE0A9D6397824E1311FC0EE792EF9
+                            [dtEmissaoNfs] => 2020-01-22T14:29:22
+                        )
+
+                    [130] => stdClass Object
+                        (
+                            [nrNfse] => 5322
+                            [cdAutenticacao] => 3A7CA44C84A6A3204D9F3E45741F0ED1
+                            [dtEmissaoNfs] => 2020-01-22T14:29:39
+                        )
+
+                    [131] => stdClass Object
+                        (
+                            [nrNfse] => 5323
+                            [cdAutenticacao] => A1E83BB85C7E965E6A7565E8EF29EAB7
+                            [dtEmissaoNfs] => 2020-01-22T14:29:58
+                        )
+
+                    [132] => stdClass Object
+                        (
+                            [nrNfse] => 5324
+                            [cdAutenticacao] => 7670B06A79E7B98BBECDB65D729E0635
+                            [dtEmissaoNfs] => 2020-01-22T14:30:16
+                        )
+
+                    [133] => stdClass Object
+                        (
+                            [nrNfse] => 5325
+                            [cdAutenticacao] => 7371418A906991566A49A03F44F53228
+                            [dtEmissaoNfs] => 2020-01-22T14:30:37
+                        )
+
+                    [134] => stdClass Object
+                        (
+                            [nrNfse] => 5326
+                            [cdAutenticacao] => 2D11A4771E7F418C1756DC54920B1FF7
+                            [dtEmissaoNfs] => 2020-01-22T14:39:29
+                        )
+
+                    [135] => stdClass Object
+                        (
+                            [nrNfse] => 5327
+                            [cdAutenticacao] => 987F6BE63FA1E2BFCA4FD54C3FA75748
+                            [dtEmissaoNfs] => 2020-01-22T14:39:50
+                        )
+
+                    [136] => stdClass Object
+                        (
+                            [nrNfse] => 5328
+                            [cdAutenticacao] => 48C3F7D91239AF3AED6FAC57748B2815
+                            [dtEmissaoNfs] => 2020-01-22T14:40:09
+                        )
+
+                    [137] => stdClass Object
+                        (
+                            [nrNfse] => 5329
+                            [cdAutenticacao] => FF71C53728E944D296637CA793D68308
+                            [dtEmissaoNfs] => 2020-01-22T14:40:27
+                        )
+
+                    [138] => stdClass Object
+                        (
+                            [nrNfse] => 5330
+                            [cdAutenticacao] => 53E591023DF2C7EEA1E85D7EB3D9DBD7
+                            [dtEmissaoNfs] => 2020-01-22T14:40:44
+                        )
+
+                    [139] => stdClass Object
+                        (
+                            [nrNfse] => 5331
+                            [cdAutenticacao] => BD501731D071529A75181AE5688DB502
+                            [dtEmissaoNfs] => 2020-01-22T14:41:02
+                        )
+
+                    [140] => stdClass Object
+                        (
+                            [nrNfse] => 5332
+                            [cdAutenticacao] => 193D0838CED3604785C8981EAE68A267
+                            [dtEmissaoNfs] => 2020-01-22T14:41:22
+                        )
+
+                    [141] => stdClass Object
+                        (
+                            [nrNfse] => 5333
+                            [cdAutenticacao] => D444D2BC79F0EEBBFA8481406D0FA2A3
+                            [dtEmissaoNfs] => 2020-01-22T14:41:40
+                        )
+
+                    [142] => stdClass Object
+                        (
+                            [nrNfse] => 5334
+                            [cdAutenticacao] => D70357FF3BA8A2939176E8805DCC8BCD
+                            [dtEmissaoNfs] => 2020-01-22T14:41:58
+                        )
+
+                    [143] => stdClass Object
+                        (
+                            [nrNfse] => 5335
+                            [cdAutenticacao] => 7422F172E7AC143EA032C096D3EC646
+                            [dtEmissaoNfs] => 2020-01-22T14:47:21
+                        )
+
+                    [144] => stdClass Object
+                        (
+                            [nrNfse] => 5336
+                            [cdAutenticacao] => 28C34A3382D38769083AC678B2C1A3DE
+                            [dtEmissaoNfs] => 2020-01-22T14:47:41
+                        )
+
+                    [145] => stdClass Object
+                        (
+                            [nrNfse] => 5337
+                            [cdAutenticacao] => CEAA6F40C76C1EABAF3FCD903B6608F5
+                            [dtEmissaoNfs] => 2020-01-22T14:48:01
+                        )
+
+                    [146] => stdClass Object
+                        (
+                            [nrNfse] => 5338
+                            [cdAutenticacao] => C1948E14F19E590E02FE17545DD853D2
+                            [dtEmissaoNfs] => 2020-01-22T14:48:23
+                        )
+
+                    [147] => stdClass Object
+                        (
+                            [nrNfse] => 5339
+                            [cdAutenticacao] => 72D376A8F2FFC0530A14B1797D528BF6
+                            [dtEmissaoNfs] => 2020-01-22T14:48:41
+                        )
+
+                    [148] => stdClass Object
+                        (
+                            [nrNfse] => 5340
+                            [cdAutenticacao] => F7BB5FDF8694BE7A3EF35B41FC70BC9E
+                            [dtEmissaoNfs] => 2020-01-22T14:49:22
+                        )
+
+                    [149] => stdClass Object
+                        (
+                            [nrNfse] => 5341
+                            [cdAutenticacao] => 549AD4AF4E0C6745ED4216D559B4BB88
+                            [dtEmissaoNfs] => 2020-01-22T14:49:42
+                        )
+
+                    [150] => stdClass Object
+                        (
+                            [nrNfse] => 5342
+                            [cdAutenticacao] => DAFD1F62BC14793D30E9B63BA3703916
+                            [dtEmissaoNfs] => 2020-01-22T14:50:02
+                        )
+
+                    [151] => stdClass Object
+                        (
+                            [nrNfse] => 5343
+                            [cdAutenticacao] => 5F2EC96B9080128A2701BB9B3C3065C7
+                            [dtEmissaoNfs] => 2020-01-22T14:50:27
+                        )
+
+                    [152] => stdClass Object
+                        (
+                            [nrNfse] => 5344
+                            [cdAutenticacao] => 4E2A3CAC16D7FD6C765FD3F986C3D565
+                            [dtEmissaoNfs] => 2020-01-22T14:50:48
+                        )
+
+                    [153] => stdClass Object
+                        (
+                            [nrNfse] => 5345
+                            [cdAutenticacao] => CBA16B3C9EB61D4CACC87192215ABFDC
+                            [dtEmissaoNfs] => 2020-01-22T14:51:08
+                        )
+
+                    [154] => stdClass Object
+                        (
+                            [nrNfse] => 5346
+                            [cdAutenticacao] => 4E2487AC6FEE0A0DE11A7B513EBB32F4
+                            [dtEmissaoNfs] => 2020-01-22T14:51:27
+                        )
+
+                    [155] => stdClass Object
+                        (
+                            [nrNfse] => 5347
+                            [cdAutenticacao] => 2EEB8C97AE39DDAF7E399B68ABC03FFE
+                            [dtEmissaoNfs] => 2020-01-22T14:51:50
+                        )
+
+                    [156] => stdClass Object
+                        (
+                            [nrNfse] => 5348
+                            [cdAutenticacao] => 9CC2D386716D9BD2A4E57C63365BAE83
+                            [dtEmissaoNfs] => 2020-01-22T14:52:10
+                        )
+
+                    [157] => stdClass Object
+                        (
+                            [nrNfse] => 5349
+                            [cdAutenticacao] => D186346B47D678E4DE07246217F3D266
+                            [dtEmissaoNfs] => 2020-01-22T14:52:39
+                        )
+
+                    [158] => stdClass Object
+                        (
+                            [nrNfse] => 5350
+                            [cdAutenticacao] => 67F8F6A370A979B7D86F629509EC7D7B
+                            [dtEmissaoNfs] => 2020-01-22T14:53:11
+                        )
+
+                    [159] => stdClass Object
+                        (
+                            [nrNfse] => 5351
+                            [cdAutenticacao] => 560DF6F13739F6E5E3CB8DB37CEC844E
+                            [dtEmissaoNfs] => 2020-01-22T15:12:06
+                        )
+
+                    [160] => stdClass Object
+                        (
+                            [nrNfse] => 5352
+                            [cdAutenticacao] => 7D587BE76354B73BEAF0C1CE932E9E6D
+                            [dtEmissaoNfs] => 2020-01-22T15:20:55
+                        )
+
+                    [161] => stdClass Object
+                        (
+                            [nrNfse] => 5353
+                            [cdAutenticacao] => 6FBC403DC2022ED171E20C6CB5AEE0D2
+                            [dtEmissaoNfs] => 2020-01-22T15:21:16
+                        )
+
+                    [162] => stdClass Object
+                        (
+                            [nrNfse] => 5354
+                            [cdAutenticacao] => 83F763003B507271B6FF7D559C7087EB
+                            [dtEmissaoNfs] => 2020-01-22T15:21:38
+                        )
+
+                    [163] => stdClass Object
+                        (
+                            [nrNfse] => 5355
+                            [cdAutenticacao] => 89B8C2AFEC9001CD025F1AAE92738EAB
+                            [dtEmissaoNfs] => 2020-01-22T15:21:57
+                        )
+
+                    [164] => stdClass Object
+                        (
+                            [nrNfse] => 5356
+                            [cdAutenticacao] => EA413871EE0BD994C1772850F7D6F9F0
+                            [dtEmissaoNfs] => 2020-01-22T15:22:18
+                        )
+
+                    [165] => stdClass Object
+                        (
+                            [nrNfse] => 5357
+                            [cdAutenticacao] => 783684CF6DBC2C5C0FC03E5571CF4685
+                            [dtEmissaoNfs] => 2020-01-22T15:22:37
+                        )
+
+                    [166] => stdClass Object
+                        (
+                            [nrNfse] => 5358
+                            [cdAutenticacao] => B23DBD0AAEF342AF1F63A1633EB373B0
+                            [dtEmissaoNfs] => 2020-01-22T15:22:57
+                        )
+
+                    [167] => stdClass Object
+                        (
+                            [nrNfse] => 5359
+                            [cdAutenticacao] => 6C32543CBA67CBDC5F3A6908691A2C71
+                            [dtEmissaoNfs] => 2020-01-22T15:23:17
+                        )
+
+                    [168] => stdClass Object
+                        (
+                            [nrNfse] => 5360
+                            [cdAutenticacao] => 3F51D01777B5612F34ED658A037254B9
+                            [dtEmissaoNfs] => 2020-01-22T15:23:36
+                        )
+
+                    [169] => stdClass Object
+                        (
+                            [nrNfse] => 5361
+                            [cdAutenticacao] => 1400113B768247F9648E3E7F54B330AB
+                            [dtEmissaoNfs] => 2020-01-22T15:23:57
+                        )
+
+                    [170] => stdClass Object
+                        (
+                            [nrNfse] => 5362
+                            [cdAutenticacao] => CF1D233022B38B0F8539DA187F9752D3
+                            [dtEmissaoNfs] => 2020-01-22T15:24:18
+                        )
+
+                    [171] => stdClass Object
+                        (
+                            [nrNfse] => 5363
+                            [cdAutenticacao] => D49AB83C7E6AD7E9E73E6A7E27FC18A9
+                            [dtEmissaoNfs] => 2020-01-22T15:24:36
+                        )
+
+                    [172] => stdClass Object
+                        (
+                            [nrNfse] => 5364
+                            [cdAutenticacao] => 8578E3B98A9456466AE35FE83DC9FEF5
+                            [dtEmissaoNfs] => 2020-01-22T15:25:17
+                        )
+
+                    [173] => stdClass Object
+                        (
+                            [nrNfse] => 5365
+                            [cdAutenticacao] => E01DCB80499A43AB384F69261F52EE50
+                            [dtEmissaoNfs] => 2020-01-22T15:25:36
+                        )
+
+                    [174] => stdClass Object
+                        (
+                            [nrNfse] => 5366
+                            [cdAutenticacao] => 6838DBB813C25ACF8293A01378BECA97
+                            [dtEmissaoNfs] => 2020-01-22T15:25:55
+                        )
+
+                    [175] => stdClass Object
+                        (
+                            [nrNfse] => 5367
+                            [cdAutenticacao] => 38A50FBA7337C6577D012D6E97D8C877
+                            [dtEmissaoNfs] => 2020-01-22T16:18:26
+                        )
+
+                    [176] => stdClass Object
+                        (
+                            [nrNfse] => 5368
+                            [cdAutenticacao] => 96D49CD8957498D9012804A3EAF1DFD7
+                            [dtEmissaoNfs] => 2020-01-22T16:18:53
+                        )
+
+                    [177] => stdClass Object
+                        (
+                            [nrNfse] => 5369
+                            [cdAutenticacao] => 1DD568A19FF44D84020773B3D6CEE40
+                            [dtEmissaoNfs] => 2020-01-22T16:19:13
+                        )
+
+                    [178] => stdClass Object
+                        (
+                            [nrNfse] => 5370
+                            [cdAutenticacao] => 3C5C8C133537142EC08F45D1B6EC019F
+                            [dtEmissaoNfs] => 2020-01-22T16:20:21
+                        )
+
+                    [179] => stdClass Object
+                        (
+                            [nrNfse] => 5371
+                            [cdAutenticacao] => C4AF996FE15B4898E34BBFA1DA120B27
+                            [dtEmissaoNfs] => 2020-01-22T16:20:40
+                        )
+
+                    [180] => stdClass Object
+                        (
+                            [nrNfse] => 5372
+                            [cdAutenticacao] => E165AC398CEECA180B096248DD64E055
+                            [dtEmissaoNfs] => 2020-01-22T16:21:01
+                        )
+
+                    [181] => stdClass Object
+                        (
+                            [nrNfse] => 5373
+                            [cdAutenticacao] => 72F355A3DB674DDB985C37FA7F564073
+                            [dtEmissaoNfs] => 2020-01-22T16:21:30
+                        )
+
+                    [182] => stdClass Object
+                        (
+                            [nrNfse] => 5374
+                            [cdAutenticacao] => 922C7CFCF2795F59D5A2B376E9348EC2
+                            [dtEmissaoNfs] => 2020-01-22T16:24:16
+                        )
+
+                    [183] => stdClass Object
+                        (
+                            [nrNfse] => 5375
+                            [cdAutenticacao] => EDBA1E1E9E2EFEC7E30585A78713486E
+                            [dtEmissaoNfs] => 2020-01-22T16:24:39
+                        )
+
+                    [184] => stdClass Object
+                        (
+                            [nrNfse] => 5376
+                            [cdAutenticacao] => 16E60C0E21D2A639F4FF16C166BB9717
+                            [dtEmissaoNfs] => 2020-01-22T16:24:58
+                        )
+
+                    [185] => stdClass Object
+                        (
+                            [nrNfse] => 5377
+                            [cdAutenticacao] => 12AC68708A40E48F4BFA6CC72E79F689
+                            [dtEmissaoNfs] => 2020-01-22T16:25:17
+                        )
+
+                    [186] => stdClass Object
+                        (
+                            [nrNfse] => 5378
+                            [cdAutenticacao] => 5682008055CCCA77BA411E589594B493
+                            [dtEmissaoNfs] => 2020-01-22T16:25:38
+                        )
+
+                    [187] => stdClass Object
+                        (
+                            [nrNfse] => 5379
+                            [cdAutenticacao] => 1AB0957578955E82A479C9727528FA95
+                            [dtEmissaoNfs] => 2020-01-22T16:25:58
+                        )
+
+                    [188] => stdClass Object
+                        (
+                            [nrNfse] => 5380
+                            [cdAutenticacao] => 50215DB8D3577D1676496193E37A4169
+                            [dtEmissaoNfs] => 2020-01-22T16:28:38
+                        )
+
+                    [189] => stdClass Object
+                        (
+                            [nrNfse] => 5381
+                            [cdAutenticacao] => CB4F363BF7D7BA3BE99730BC12A0BB8A
+                            [dtEmissaoNfs] => 2020-01-22T16:29:09
+                        )
+
+                    [190] => stdClass Object
+                        (
+                            [nrNfse] => 5382
+                            [cdAutenticacao] => A30B6837CD5F733E6ABC7B9AD04DAB70
+                            [dtEmissaoNfs] => 2020-01-22T16:33:32
+                        )
+
+                    [191] => stdClass Object
+                        (
+                            [nrNfse] => 5383
+                            [cdAutenticacao] => 2CC4C99B9F1FE539945A73B31DC8CC8D
+                            [dtEmissaoNfs] => 2020-01-22T16:33:54
+                        )
+
+                    [192] => stdClass Object
+                        (
+                            [nrNfse] => 5384
+                            [cdAutenticacao] => 1C8EE6D8474041A55F638AE2068816A
+                            [dtEmissaoNfs] => 2020-01-22T16:34:13
+                        )
+
+                    [193] => stdClass Object
+                        (
+                            [nrNfse] => 5385
+                            [cdAutenticacao] => 962FDB239A90FB2502764ACF7A282013
+                            [dtEmissaoNfs] => 2020-01-22T16:34:32
+                        )
+
+                    [194] => stdClass Object
+                        (
+                            [nrNfse] => 5386
+                            [cdAutenticacao] => BECCE7CA069AFE33C88100FBE0DF5199
+                            [dtEmissaoNfs] => 2020-01-22T16:34:50
+                        )
+
+                    [195] => stdClass Object
+                        (
+                            [nrNfse] => 5387
+                            [cdAutenticacao] => 5E40DD6222E3A3257B646FB1E60CFA27
+                            [dtEmissaoNfs] => 2020-01-22T16:35:08
+                        )
+
+                    [196] => stdClass Object
+                        (
+                            [nrNfse] => 5388
+                            [cdAutenticacao] => C57F65B90131A094687C74107BC11248
+                            [dtEmissaoNfs] => 2020-01-22T16:35:36
+                        )
+
+                    [197] => stdClass Object
+                        (
+                            [nrNfse] => 5389
+                            [cdAutenticacao] => 99CD5BB0DC7DE4A9247389230D730D19
+                            [dtEmissaoNfs] => 2020-01-22T16:35:56
+                        )
+
+                    [198] => stdClass Object
+                        (
+                            [nrNfse] => 5390
+                            [cdAutenticacao] => C66B14F6019370F68831063E80AC1082
+                            [dtEmissaoNfs] => 2020-01-22T16:36:18
+                        )
+
+                    [199] => stdClass Object
+                        (
+                            [nrNfse] => 5391
+                            [cdAutenticacao] => 8FCBE37232971E375B8D9CEAA9BD7C5B
+                            [dtEmissaoNfs] => 2020-01-22T16:36:40
+                        )
+
+                    [200] => stdClass Object
+                        (
+                            [nrNfse] => 5392
+                            [cdAutenticacao] => 92DE8B2E1D7EF4FA4503D0DAE4214B58
+                            [dtEmissaoNfs] => 2020-01-22T16:36:59
+                        )
+
+                    [201] => stdClass Object
+                        (
+                            [nrNfse] => 5393
+                            [cdAutenticacao] => D394E4913BE5AF422DDBB4A54718FBB8
+                            [dtEmissaoNfs] => 2020-01-22T16:37:21
+                        )
+
+                    [202] => stdClass Object
+                        (
+                            [nrNfse] => 5394
+                            [cdAutenticacao] => D2CA0B4C5680F5FD51CDEFE832BA2C13
+                            [dtEmissaoNfs] => 2020-01-22T16:37:41
+                        )
+
+                    [203] => stdClass Object
+                        (
+                            [nrNfse] => 5395
+                            [cdAutenticacao] => 9B174FC9940B84AEEC5DDE4EECE9CCFB
+                            [dtEmissaoNfs] => 2020-01-22T16:53:01
+                        )
+
+                    [204] => stdClass Object
+                        (
+                            [nrNfse] => 5396
+                            [cdAutenticacao] => 81C0FE696CBF631D83075500B94EA6BA
+                            [dtEmissaoNfs] => 2020-01-22T16:53:25
+                        )
+
+                    [205] => stdClass Object
+                        (
+                            [nrNfse] => 5397
+                            [cdAutenticacao] => 4057ED68AE474DB858F39E3798D0B06
+                            [dtEmissaoNfs] => 2020-01-22T16:53:44
+                        )
+
+                    [206] => stdClass Object
+                        (
+                            [nrNfse] => 5398
+                            [cdAutenticacao] => A792CBAFCB599A16F19C9BE4CB3F64AD
+                            [dtEmissaoNfs] => 2020-01-22T16:54:02
+                        )
+
+                    [207] => stdClass Object
+                        (
+                            [nrNfse] => 5399
+                            [cdAutenticacao] => A4DB831FB06F8A7EF80625922BAB0DD0
+                            [dtEmissaoNfs] => 2020-01-22T16:54:22
+                        )
+
+                    [208] => stdClass Object
+                        (
+                            [nrNfse] => 5400
+                            [cdAutenticacao] => F6757729523FE80884EEB8D3ADA9AA53
+                            [dtEmissaoNfs] => 2020-01-22T16:54:49
+                        )
+
+                    [209] => stdClass Object
+                        (
+                            [nrNfse] => 5401
+                            [cdAutenticacao] => 9DE7CCD2D890D9CF64E776992B4ECA2B
+                            [dtEmissaoNfs] => 2020-01-22T16:55:11
+                        )
+
+                    [210] => stdClass Object
+                        (
+                            [nrNfse] => 5402
+                            [cdAutenticacao] => 9E097EED55FFBE50C66E2301B78F4C72
+                            [dtEmissaoNfs] => 2020-01-22T16:55:33
+                        )
+
+                    [211] => stdClass Object
+                        (
+                            [nrNfse] => 5403
+                            [cdAutenticacao] => F06ACF8C6718B450BA37F33860E093B8
+                            [dtEmissaoNfs] => 2020-01-22T16:57:49
+                        )
+
+                    [212] => stdClass Object
+                        (
+                            [nrNfse] => 5404
+                            [cdAutenticacao] => 1DF7636C9D44B18199D8D0F01B554AAF
+                            [dtEmissaoNfs] => 2020-01-22T16:59:08
+                        )
+
+                    [213] => stdClass Object
+                        (
+                            [nrNfse] => 5405
+                            [cdAutenticacao] => 7B52D965CC6793C023AE084713187ADE
+                            [dtEmissaoNfs] => 2020-01-22T16:59:28
+                        )
+
+                    [214] => stdClass Object
+                        (
+                            [nrNfse] => 5406
+                            [cdAutenticacao] => 48917183919C500D86C3207BF1B6FAB0
+                            [dtEmissaoNfs] => 2020-01-22T17:01:21
+                        )
+
+                    [215] => stdClass Object
+                        (
+                            [nrNfse] => 5407
+                            [cdAutenticacao] => CEA60E0202A7A6AF85DA21AC8C53B09B
+                            [dtEmissaoNfs] => 2020-01-22T17:01:39
+                        )
+
+                    [216] => stdClass Object
+                        (
+                            [nrNfse] => 5408
+                            [cdAutenticacao] => 4384B93AEEBD236E77888A64E599A331
+                            [dtEmissaoNfs] => 2020-01-22T17:01:59
+                        )
+
+                    [217] => stdClass Object
+                        (
+                            [nrNfse] => 5409
+                            [cdAutenticacao] => 5EC661DAE06A126D2CE66D0A8C67842F
+                            [dtEmissaoNfs] => 2020-01-22T17:02:30
+                        )
+
+                    [218] => stdClass Object
+                        (
+                            [nrNfse] => 5410
+                            [cdAutenticacao] => B53F6A66E5F16E1B899947B68B4B5F1E
+                            [dtEmissaoNfs] => 2020-01-22T17:02:53
+                        )
+
+                    [219] => stdClass Object
+                        (
+                            [nrNfse] => 5411
+                            [cdAutenticacao] => C7EA69BE014F21322961854C41EC502F
+                            [dtEmissaoNfs] => 2020-01-22T17:03:14
+                        )
+
+                    [220] => stdClass Object
+                        (
+                            [nrNfse] => 5412
+                            [cdAutenticacao] => A15D1BCB982A37B8DD422DA0947BD763
+                            [dtEmissaoNfs] => 2020-01-22T17:03:33
+                        )
+
+                    [221] => stdClass Object
+                        (
+                            [nrNfse] => 5413
+                            [cdAutenticacao] => FBB894436D8674CB7C77FE17CF674077
+                            [dtEmissaoNfs] => 2020-01-22T17:03:56
+                        )
+
+                    [222] => stdClass Object
+                        (
+                            [nrNfse] => 5414
+                            [cdAutenticacao] => 552F560D3C4279A32C9C408E9C9F18D3
+                            [dtEmissaoNfs] => 2020-01-22T17:04:16
+                        )
+
+                    [223] => stdClass Object
+                        (
+                            [nrNfse] => 5415
+                            [cdAutenticacao] => DAF47A18FF4CF9EC79136EA97F53900F
+                            [dtEmissaoNfs] => 2020-01-22T17:04:41
+                        )
+
+                    [224] => stdClass Object
+                        (
+                            [nrNfse] => 5416
+                            [cdAutenticacao] => E9C99F39E79FC2166E522CF61FB632E
+                            [dtEmissaoNfs] => 2020-01-22T17:05:00
+                        )
+
+                    [225] => stdClass Object
+                        (
+                            [nrNfse] => 5417
+                            [cdAutenticacao] => 2DAD4E73E511336858AC9B77CF1DCED2
+                            [dtEmissaoNfs] => 2020-01-22T17:05:20
+                        )
+
+                    [226] => stdClass Object
+                        (
+                            [nrNfse] => 5418
+                            [cdAutenticacao] => 6661B374D274D83742D3A16E7628EFA9
+                            [dtEmissaoNfs] => 2020-01-22T17:05:39
+                        )
+
+                    [227] => stdClass Object
+                        (
+                            [nrNfse] => 5419
+                            [cdAutenticacao] => 9604E4AA71B9B5DCE95A4A0EF9B4D967
+                            [dtEmissaoNfs] => 2020-01-22T17:07:53
+                        )
+
+                    [228] => stdClass Object
+                        (
+                            [nrNfse] => 5420
+                            [cdAutenticacao] => CFEDFF7F70149AF60CAF2DE3C32B9273
+                            [dtEmissaoNfs] => 2020-01-22T17:08:13
+                        )
+
+                    [229] => stdClass Object
+                        (
+                            [nrNfse] => 5421
+                            [cdAutenticacao] => 3B5CBBDFFB7DC7346C46A9A952FB7218
+                            [dtEmissaoNfs] => 2020-01-22T17:08:32
+                        )
+
+                    [230] => stdClass Object
+                        (
+                            [nrNfse] => 5422
+                            [cdAutenticacao] => CA5430B0AEC5D0457D7B6155F078D5AA
+                            [dtEmissaoNfs] => 2020-01-22T17:08:53
+                        )
+
+                    [231] => stdClass Object
+                        (
+                            [nrNfse] => 5423
+                            [cdAutenticacao] => 61E18EDD8208F9E30F19FFE38E4A9041
+                            [dtEmissaoNfs] => 2020-01-22T17:09:13
+                        )
+
+                    [232] => stdClass Object
+                        (
+                            [nrNfse] => 5424
+                            [cdAutenticacao] => 91CE85682F42C38B409177D7E7F6FC58
+                            [dtEmissaoNfs] => 2020-01-22T17:09:33
+                        )
+
+                    [233] => stdClass Object
+                        (
+                            [nrNfse] => 5425
+                            [cdAutenticacao] => 87666885D7AEE5E5476B9690D6AF6D56
+                            [dtEmissaoNfs] => 2020-01-22T17:09:51
+                        )
+
+                    [234] => stdClass Object
+                        (
+                            [nrNfse] => 5426
+                            [cdAutenticacao] => 6EE83BE577997C6437E9CA5B94B96067
+                            [dtEmissaoNfs] => 2020-01-22T17:10:12
+                        )
+
+                    [235] => stdClass Object
+                        (
+                            [nrNfse] => 5427
+                            [cdAutenticacao] => 32D88CEC575F3E4866251450F5D66C5A
+                            [dtEmissaoNfs] => 2020-01-22T17:10:31
+                        )
+
+                    [236] => stdClass Object
+                        (
+                            [nrNfse] => 5428
+                            [cdAutenticacao] => D6817E723F7310DF3A365733630D6016
+                            [dtEmissaoNfs] => 2020-01-22T17:12:43
+                        )
+
+                    [237] => stdClass Object
+                        (
+                            [nrNfse] => 5429
+                            [cdAutenticacao] => D473EF442905324C283FDB1C7F1B888C
+                            [dtEmissaoNfs] => 2020-01-22T17:13:03
+                        )
+
+                    [238] => stdClass Object
+                        (
+                            [nrNfse] => 5430
+                            [cdAutenticacao] => 3A01C3943597B703B96684AFFAD4656E
+                            [dtEmissaoNfs] => 2020-01-22T17:14:02
+                        )
+
+                    [239] => stdClass Object
+                        (
+                            [nrNfse] => 5431
+                            [cdAutenticacao] => 47E6651B512F463517691791A055D946
+                            [dtEmissaoNfs] => 2020-01-22T17:14:22
+                        )
+
+                    [240] => stdClass Object
+                        (
+                            [nrNfse] => 5432
+                            [cdAutenticacao] => 9B6A5F8DF45C23544C201A22BC1D15A2
+                            [dtEmissaoNfs] => 2020-01-22T17:15:55
+                        )
+
+                    [241] => stdClass Object
+                        (
+                            [nrNfse] => 5433
+                            [cdAutenticacao] => 8AE50286234EEE2CF37A305F6ABE38C3
+                            [dtEmissaoNfs] => 2020-01-22T17:16:23
+                        )
+
+                    [242] => stdClass Object
+                        (
+                            [nrNfse] => 5434
+                            [cdAutenticacao] => 764445871CB3BF5BCEFB47EC718CBCD
+                            [dtEmissaoNfs] => 2020-01-22T17:16:42
+                        )
+
+                    [243] => stdClass Object
+                        (
+                            [nrNfse] => 5435
+                            [cdAutenticacao] => 29FE82A4CAD5C4EBFDCB8BBF687CD4C3
+                            [dtEmissaoNfs] => 2020-01-22T17:17:03
+                        )
+
+                    [244] => stdClass Object
+                        (
+                            [nrNfse] => 5436
+                            [cdAutenticacao] => 5758D4C440FC6CC27543B1A56C387D4E
+                            [dtEmissaoNfs] => 2020-01-22T17:17:22
+                        )
+
+                    [245] => stdClass Object
+                        (
+                            [nrNfse] => 5437
+                            [cdAutenticacao] => DF57556E296A38D6D6B3120D1CDA82DB
+                            [dtEmissaoNfs] => 2020-01-22T17:17:43
+                        )
+
+                    [246] => stdClass Object
+                        (
+                            [nrNfse] => 5438
+                            [cdAutenticacao] => E2016705E52EA43BA39DD178C4E87CF5
+                            [dtEmissaoNfs] => 2020-01-22T17:18:00
+                        )
+
+                    [247] => stdClass Object
+                        (
+                            [nrNfse] => 5439
+                            [cdAutenticacao] => D1693D25786E734D59AC1B416D3FD28F
+                            [dtEmissaoNfs] => 2020-01-22T17:18:24
+                        )
+
+                    [248] => stdClass Object
+                        (
+                            [nrNfse] => 5440
+                            [cdAutenticacao] => 8FABB11156F725685EBDBF03A59E2B79
+                            [dtEmissaoNfs] => 2020-01-23T08:41:25
+                        )
+
+                    [249] => stdClass Object
+                        (
+                            [nrNfse] => 5441
+                            [cdAutenticacao] => 46A02BF57F2A2858315D72DD5B62E2BD
+                            [dtEmissaoNfs] => 2020-01-23T08:41:45
+                        )
+
+                    [250] => stdClass Object
+                        (
+                            [nrNfse] => 5442
+                            [cdAutenticacao] => B1C5795DD9034130108D47C5477EDB04
+                            [dtEmissaoNfs] => 2020-01-23T08:42:03
+                        )
+
+                    [251] => stdClass Object
+                        (
+                            [nrNfse] => 5443
+                            [cdAutenticacao] => 613685B8BB4AFAF1467F1D281CAF5AFF
+                            [dtEmissaoNfs] => 2020-01-23T08:42:21
+                        )
+
+                    [252] => stdClass Object
+                        (
+                            [nrNfse] => 5444
+                            [cdAutenticacao] => 487F9543581666A108231DF37C3D81E4
+                            [dtEmissaoNfs] => 2020-01-23T08:42:43
+                        )
+
+                    [253] => stdClass Object
+                        (
+                            [nrNfse] => 5445
+                            [cdAutenticacao] => FEADF17ABD009F734D9F5684A6D0EC4C
+                            [dtEmissaoNfs] => 2020-01-23T08:43:04
+                        )
+
+                    [254] => stdClass Object
+                        (
+                            [nrNfse] => 5446
+                            [cdAutenticacao] => 620C15A821E22D5608623748CA6894FA
+                            [dtEmissaoNfs] => 2020-01-23T08:43:25
+                        )
+
+                    [255] => stdClass Object
+                        (
+                            [nrNfse] => 5447
+                            [cdAutenticacao] => A61A58511B38DAC2CF7B88766ECAF03C
+                            [dtEmissaoNfs] => 2020-01-23T08:43:45
+                        )
+
+                    [256] => stdClass Object
+                        (
+                            [nrNfse] => 5448
+                            [cdAutenticacao] => D7464880722E555918BFCC13570E8B41
+                            [dtEmissaoNfs] => 2020-01-23T08:44:05
+                        )
+
+                    [257] => stdClass Object
+                        (
+                            [nrNfse] => 5449
+                            [cdAutenticacao] => C33A30741BBE9C7B764F3A6A9733B36
+                            [dtEmissaoNfs] => 2020-01-23T08:44:24
+                        )
+
+                    [258] => stdClass Object
+                        (
+                            [nrNfse] => 5450
+                            [cdAutenticacao] => 84BFFD008AD4B7AF308471CAFFB4C10
+                            [dtEmissaoNfs] => 2020-01-23T08:44:44
+                        )
+
+                    [259] => stdClass Object
+                        (
+                            [nrNfse] => 5451
+                            [cdAutenticacao] => EAC1474EB007D6CB3CA9AEBB3368B361
+                            [dtEmissaoNfs] => 2020-01-23T08:45:05
+                        )
+
+                    [260] => stdClass Object
+                        (
+                            [nrNfse] => 5452
+                            [cdAutenticacao] => E70EF739EDB4D23D12D2BB767032A185
+                            [dtEmissaoNfs] => 2020-01-23T08:45:24
+                        )
+
+                    [261] => stdClass Object
+                        (
+                            [nrNfse] => 5453
+                            [cdAutenticacao] => 10876D507C28A0B89508F752AC268C02
+                            [dtEmissaoNfs] => 2020-01-23T08:45:43
+                        )
+
+                    [262] => stdClass Object
+                        (
+                            [nrNfse] => 5454
+                            [cdAutenticacao] => 4B34625142B0A4B487931CF8943E433A
+                            [dtEmissaoNfs] => 2020-01-23T08:46:03
+                        )
+
+                    [263] => stdClass Object
+                        (
+                            [nrNfse] => 5455
+                            [cdAutenticacao] => 6C7B71C107281FCFCD1F79924DD46E85
+                            [dtEmissaoNfs] => 2020-01-23T08:46:25
+                        )
+
+                    [264] => stdClass Object
+                        (
+                            [nrNfse] => 5456
+                            [cdAutenticacao] => E2833D858CC81DFDC516B5996539D1FD
+                            [dtEmissaoNfs] => 2020-01-23T08:46:50
+                        )
+
+                    [265] => stdClass Object
+                        (
+                            [nrNfse] => 5457
+                            [cdAutenticacao] => 617A94D96451B23CBD31FD7C05077394
+                            [dtEmissaoNfs] => 2020-01-23T08:47:08
+                            [cancelamento] => stdClass Object
+                                (
+                                    [dtCancelamento] => 2020-01-23T08:54:12
+                                    [dsCancelamento] => nota fiscal emitida em duplicidade 
+                                )
+
+                        )
+
+                    [266] => stdClass Object
+                        (
+                            [nrNfse] => 5458
+                            [cdAutenticacao] => 7C31001C2600D6EF84795E6F24CB31FC
+                            [dtEmissaoNfs] => 2020-01-23T08:47:27
+                        )
+
+                    [267] => stdClass Object
+                        (
+                            [nrNfse] => 5459
+                            [cdAutenticacao] => D43A0150218DB30BA2566E3F49A0E89E
+                            [dtEmissaoNfs] => 2020-01-23T08:47:47
+                        )
+
+                    [268] => stdClass Object
+                        (
+                            [nrNfse] => 5460
+                            [cdAutenticacao] => E91EE55926046E2A68FC70FB95999224
+                            [dtEmissaoNfs] => 2020-01-23T08:48:06
+                        )
+
+                    [269] => stdClass Object
+                        (
+                            [nrNfse] => 5461
+                            [cdAutenticacao] => F09F58C64FC5158751270325A8BBBB67
+                            [dtEmissaoNfs] => 2020-01-23T08:48:26
+                        )
+
+                    [270] => stdClass Object
+                        (
+                            [nrNfse] => 5462
+                            [cdAutenticacao] => 847D159E48184D423515E03C30FA803A
+                            [dtEmissaoNfs] => 2020-01-23T08:48:47
+                        )
+
+                    [271] => stdClass Object
+                        (
+                            [nrNfse] => 5463
+                            [cdAutenticacao] => 2482E4B1867EBE78C56F0BA2D8290A3
+                            [dtEmissaoNfs] => 2020-01-23T08:49:09
+                        )
+
+                    [272] => stdClass Object
+                        (
+                            [nrNfse] => 5464
+                            [cdAutenticacao] => 8F2CEDEBDC8CCE9736BD63B3911298E3
+                            [dtEmissaoNfs] => 2020-01-23T08:49:28
+                        )
+
+                )
+
+        )
+
+)
+
+
+res_esConsultarNfse_1580904715.xml
+stdClass Object
+(
+    [listaNfse] => stdClass Object
+        (
+            [attributes] => stdClass Object
+                (
+                    [class] => list
+                )
+
+            [nfse] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [nrNfse] => 5192
+                            [cdAutenticacao] => E6872FE53F89663F5EBAAED78BD6EDF8
+                            [dtEmissaoNfs] => 2020-01-10T17:00:41
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [nrNfse] => 5193
+                            [cdAutenticacao] => CFBD5B8D2238A6E270F93D7FEA7665F6
+                            [dtEmissaoNfs] => 2020-01-21T15:09:58
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [nrNfse] => 5194
+                            [cdAutenticacao] => A0A966DDF437B340B2CF39A469809FF
+                            [dtEmissaoNfs] => 2020-01-21T15:30:31
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [nrNfse] => 5195
+                            [cdAutenticacao] => E94DEF48091C6DB4E733E95E7CEAF9CB
+                            [dtEmissaoNfs] => 2020-01-21T15:30:54
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [nrNfse] => 5196
+                            [cdAutenticacao] => 2A2DF91F8287C5D418F5D2C224F39851
+                            [dtEmissaoNfs] => 2020-01-21T15:31:26
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [nrNfse] => 5197
+                            [cdAutenticacao] => 314716BB6C39CF86C898B51F4A9C5FD2
+                            [dtEmissaoNfs] => 2020-01-21T15:32:00
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [nrNfse] => 5198
+                            [cdAutenticacao] => E0175C0B73D32729A77762E1CDD3E3B3
+                            [dtEmissaoNfs] => 2020-01-21T16:45:50
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [nrNfse] => 5199
+                            [cdAutenticacao] => 5B11BD35EC57AB86F95E8E81D1E25728
+                            [dtEmissaoNfs] => 2020-01-21T16:46:15
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [nrNfse] => 5200
+                            [cdAutenticacao] => 1ABCAA43D658272F2C8B8525BAE1038B
+                            [dtEmissaoNfs] => 2020-01-21T16:46:58
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [nrNfse] => 5201
+                            [cdAutenticacao] => 258B40413B942228F84FF218525CB3D
+                            [dtEmissaoNfs] => 2020-01-21T16:47:23
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [nrNfse] => 5202
+                            [cdAutenticacao] => C9FFEB086D95D3ECE422D8AAEAE8B6A0
+                            [dtEmissaoNfs] => 2020-01-21T16:47:47
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [nrNfse] => 5203
+                            [cdAutenticacao] => D1545DC8D2168A4BDA768CFD539ADE5
+                            [dtEmissaoNfs] => 2020-01-21T16:48:09
+                        )
+
+                    [12] => stdClass Object
+                        (
+                            [nrNfse] => 5204
+                            [cdAutenticacao] => 2CAE4196213AE403DC162EF64F7AA4A
+                            [dtEmissaoNfs] => 2020-01-21T16:48:41
+                        )
+
+                    [13] => stdClass Object
+                        (
+                            [nrNfse] => 5205
+                            [cdAutenticacao] => 4794142BF6A3609E52362C69356EA5FC
+                            [dtEmissaoNfs] => 2020-01-21T16:49:06
+                        )
+
+                    [14] => stdClass Object
+                        (
+                            [nrNfse] => 5206
+                            [cdAutenticacao] => 4C1F69B15930C13BC18EA90932257711
+                            [dtEmissaoNfs] => 2020-01-21T16:59:06
+                        )
+
+                    [15] => stdClass Object
+                        (
+                            [nrNfse] => 5207
+                            [cdAutenticacao] => FDDF92C0BF6F25B31A04AD2F65362C67
+                            [dtEmissaoNfs] => 2020-01-21T16:59:30
+                        )
+
+                    [16] => stdClass Object
+                        (
+                            [nrNfse] => 5208
+                            [cdAutenticacao] => 707620E5A066CED9CA5C11656A728E60
+                            [dtEmissaoNfs] => 2020-01-21T16:59:53
+                        )
+
+                    [17] => stdClass Object
+                        (
+                            [nrNfse] => 5209
+                            [cdAutenticacao] => 18A77A19AF5F0A80AD7CDB955F6658A5
+                            [dtEmissaoNfs] => 2020-01-21T17:00:17
+                        )
+
+                    [18] => stdClass Object
+                        (
+                            [nrNfse] => 5210
+                            [cdAutenticacao] => E44DF87D1D9D1BEAE6F221F2F3499FEA
+                            [dtEmissaoNfs] => 2020-01-21T17:00:40
+                        )
+
+                    [19] => stdClass Object
+                        (
+                            [nrNfse] => 5211
+                            [cdAutenticacao] => 48D17C179659F0A7314805A4A6354363
+                            [dtEmissaoNfs] => 2020-01-21T17:01:02
+                        )
+
+                    [20] => stdClass Object
+                        (
+                            [nrNfse] => 5212
+                            [cdAutenticacao] => E02101A524A7E1C8C7E1EC91C350E5FF
+                            [dtEmissaoNfs] => 2020-01-21T17:05:06
+                        )
+
+                    [21] => stdClass Object
+                        (
+                            [nrNfse] => 5213
+                            [cdAutenticacao] => 9A9B2279B1FC8F8685DF2973C19F8254
+                            [dtEmissaoNfs] => 2020-01-21T17:05:47
+                        )
+
+                    [22] => stdClass Object
+                        (
+                            [nrNfse] => 5214
+                            [cdAutenticacao] => 60C74315D0A12D5F6E15087A804813E4
+                            [dtEmissaoNfs] => 2020-01-21T17:06:06
+                        )
+
+                    [23] => stdClass Object
+                        (
+                            [nrNfse] => 5215
+                            [cdAutenticacao] => 36AD898EDFB6063A50B2E0A41D6B2421
+                            [dtEmissaoNfs] => 2020-01-21T17:06:26
+                        )
+
+                    [24] => stdClass Object
+                        (
+                            [nrNfse] => 5216
+                            [cdAutenticacao] => D2906A060B3F5C73F1A8048FADDAE89F
+                            [dtEmissaoNfs] => 2020-01-21T17:06:46
+                        )
+
+                    [25] => stdClass Object
+                        (
+                            [nrNfse] => 5217
+                            [cdAutenticacao] => 6D7BF43440E349B9821A26C632211CF9
+                            [dtEmissaoNfs] => 2020-01-21T17:08:07
+                        )
+
+                    [26] => stdClass Object
+                        (
+                            [nrNfse] => 5218
+                            [cdAutenticacao] => 2CF3482C10DE04003AC1273FADECAFFB
+                            [dtEmissaoNfs] => 2020-01-21T17:08:33
+                        )
+
+                    [27] => stdClass Object
+                        (
+                            [nrNfse] => 5219
+                            [cdAutenticacao] => 925F6207F33D1A09417ECF704637EE15
+                            [dtEmissaoNfs] => 2020-01-21T17:08:53
+                        )
+
+                    [28] => stdClass Object
+                        (
+                            [nrNfse] => 5220
+                            [cdAutenticacao] => 260A781C7A3BE73FDB406300D84043AF
+                            [dtEmissaoNfs] => 2020-01-21T17:09:14
+                        )
+
+                    [29] => stdClass Object
+                        (
+                            [nrNfse] => 5221
+                            [cdAutenticacao] => 1A8D04F3B5B268E6D09BBEB71156C713
+                            [dtEmissaoNfs] => 2020-01-21T17:09:34
+                        )
+
+                    [30] => stdClass Object
+                        (
+                            [nrNfse] => 5222
+                            [cdAutenticacao] => B20A899279AC7A2AA4C79B448E4380B7
+                            [dtEmissaoNfs] => 2020-01-21T17:09:55
+                        )
+
+                    [31] => stdClass Object
+                        (
+                            [nrNfse] => 5223
+                            [cdAutenticacao] => 2A027CFCB41BB6FE45CE92CE12AB7F5C
+                            [dtEmissaoNfs] => 2020-01-21T17:10:21
+                        )
+
+                    [32] => stdClass Object
+                        (
+                            [nrNfse] => 5224
+                            [cdAutenticacao] => 44532F1E7C7F4800EAC47784B8C77C16
+                            [dtEmissaoNfs] => 2020-01-21T17:11:14
+                        )
+
+                    [33] => stdClass Object
+                        (
+                            [nrNfse] => 5225
+                            [cdAutenticacao] => 33BED505D4E1362D917131CE890EA5D1
+                            [dtEmissaoNfs] => 2020-01-21T17:11:32
+                        )
+
+                    [34] => stdClass Object
+                        (
+                            [nrNfse] => 5226
+                            [cdAutenticacao] => 962354233BBF49CA8335C605911A7CD
+                            [dtEmissaoNfs] => 2020-01-21T17:11:50
+                        )
+
+                    [35] => stdClass Object
+                        (
+                            [nrNfse] => 5227
+                            [cdAutenticacao] => C8B917D8D15BF969BCAC4713E6E3A66C
+                            [dtEmissaoNfs] => 2020-01-21T17:12:09
+                        )
+
+                    [36] => stdClass Object
+                        (
+                            [nrNfse] => 5228
+                            [cdAutenticacao] => 4318AE6C4A499C23AA2114E78446FC40
+                            [dtEmissaoNfs] => 2020-01-21T17:12:32
+                        )
+
+                    [37] => stdClass Object
+                        (
+                            [nrNfse] => 5229
+                            [cdAutenticacao] => 9AE7A64354466247CF192DFCDE8F267F
+                            [dtEmissaoNfs] => 2020-01-21T17:12:50
+                        )
+
+                    [38] => stdClass Object
+                        (
+                            [nrNfse] => 5230
+                            [cdAutenticacao] => 1D8C7436043431DA476948967E103054
+                            [dtEmissaoNfs] => 2020-01-21T17:13:10
+                        )
+
+                    [39] => stdClass Object
+                        (
+                            [nrNfse] => 5231
+                            [cdAutenticacao] => B15263E4DE1724687BBA8BF7677BB43C
+                            [dtEmissaoNfs] => 2020-01-21T17:13:31
+                        )
+
+                    [40] => stdClass Object
+                        (
+                            [nrNfse] => 5232
+                            [cdAutenticacao] => A476B529F959129BC7A940810B1A6FA4
+                            [dtEmissaoNfs] => 2020-01-21T17:13:50
+                        )
+
+                    [41] => stdClass Object
+                        (
+                            [nrNfse] => 5233
+                            [cdAutenticacao] => 5F7CB972D9231D82E4D9A8BE3631F26B
+                            [dtEmissaoNfs] => 2020-01-21T17:14:10
+                        )
+
+                    [42] => stdClass Object
+                        (
+                            [nrNfse] => 5234
+                            [cdAutenticacao] => 94256237392D238A33DA3D8452151BDA
+                            [dtEmissaoNfs] => 2020-01-21T17:14:28
+                        )
+
+                    [43] => stdClass Object
+                        (
+                            [nrNfse] => 5235
+                            [cdAutenticacao] => 32167C8CF03C21768D221EB20244B7FC
+                            [dtEmissaoNfs] => 2020-01-21T17:14:48
+                        )
+
+                    [44] => stdClass Object
+                        (
+                            [nrNfse] => 5236
+                            [cdAutenticacao] => 1C8E983DD14AFA1E904B921AB5BDE0A8
+                            [dtEmissaoNfs] => 2020-01-21T17:15:09
+                        )
+
+                    [45] => stdClass Object
+                        (
+                            [nrNfse] => 5237
+                            [cdAutenticacao] => A35B6E1BD589A3D5C39BCBF3D897847F
+                            [dtEmissaoNfs] => 2020-01-21T17:15:31
+                        )
+
+                    [46] => stdClass Object
+                        (
+                            [nrNfse] => 5238
+                            [cdAutenticacao] => AECA9B8A876EFE6DA8BF16A3503618EF
+                            [dtEmissaoNfs] => 2020-01-21T17:15:50
+                        )
+
+                    [47] => stdClass Object
+                        (
+                            [nrNfse] => 5239
+                            [cdAutenticacao] => 5D2C9A634F2FF9D93B54E1AA192EED67
+                            [dtEmissaoNfs] => 2020-01-21T17:30:27
+                        )
+
+                    [48] => stdClass Object
+                        (
+                            [nrNfse] => 5240
+                            [cdAutenticacao] => 22EE5A96886E1C32372F3E250C9B4424
+                            [dtEmissaoNfs] => 2020-01-21T17:30:49
+                        )
+
+                    [49] => stdClass Object
+                        (
+                            [nrNfse] => 5241
+                            [cdAutenticacao] => 1BBF86352BF52FE660C74818053AB1DB
+                            [dtEmissaoNfs] => 2020-01-21T17:31:13
+                        )
+
+                    [50] => stdClass Object
+                        (
+                            [nrNfse] => 5242
+                            [cdAutenticacao] => 3F23B8DED5497FAEA8B30527965273CF
+                            [dtEmissaoNfs] => 2020-01-21T17:31:34
+                        )
+
+                    [51] => stdClass Object
+                        (
+                            [nrNfse] => 5243
+                            [cdAutenticacao] => 59E58682EE9A1A089E853BBA057D7A26
+                            [dtEmissaoNfs] => 2020-01-21T17:31:54
+                        )
+
+                    [52] => stdClass Object
+                        (
+                            [nrNfse] => 5244
+                            [cdAutenticacao] => CAC333A9BF96B62C7DB909CA57EC523D
+                            [dtEmissaoNfs] => 2020-01-21T17:32:25
+                        )
+
+                    [53] => stdClass Object
+                        (
+                            [nrNfse] => 5245
+                            [cdAutenticacao] => 1B5358B412950ECAA9198C7B118E92C4
+                            [dtEmissaoNfs] => 2020-01-21T17:32:44
+                        )
+
+                    [54] => stdClass Object
+                        (
+                            [nrNfse] => 5246
+                            [cdAutenticacao] => 36829AAAB9B273BD9DB8242ADC1FB8FF
+                            [dtEmissaoNfs] => 2020-01-21T17:33:02
+                        )
+
+                    [55] => stdClass Object
+                        (
+                            [nrNfse] => 5247
+                            [cdAutenticacao] => A09A7CE17CF16065D6D4F36471359B98
+                            [dtEmissaoNfs] => 2020-01-21T17:35:04
+                        )
+
+                    [56] => stdClass Object
+                        (
+                            [nrNfse] => 5248
+                            [cdAutenticacao] => 9107793E2FE99050BCC6709C7EBC8882
+                            [dtEmissaoNfs] => 2020-01-21T17:35:24
+                        )
+
+                    [57] => stdClass Object
+                        (
+                            [nrNfse] => 5249
+                            [cdAutenticacao] => 30FEB193FA809BA388A2FDD7882AD929
+                            [dtEmissaoNfs] => 2020-01-21T17:35:44
+                        )
+
+                    [58] => stdClass Object
+                        (
+                            [nrNfse] => 5250
+                            [cdAutenticacao] => A5FFA43D42C71727E732BB88979BC7A3
+                            [dtEmissaoNfs] => 2020-01-21T17:36:08
+                        )
+
+                    [59] => stdClass Object
+                        (
+                            [nrNfse] => 5251
+                            [cdAutenticacao] => 8483A7CCBDC17066C5D8DFB7CBDC7958
+                            [dtEmissaoNfs] => 2020-01-21T17:36:25
+                        )
+
+                    [60] => stdClass Object
+                        (
+                            [nrNfse] => 5252
+                            [cdAutenticacao] => 5B59E236974EE2C4D9064AC495B36DF0
+                            [dtEmissaoNfs] => 2020-01-21T17:36:45
+                        )
+
+                    [61] => stdClass Object
+                        (
+                            [nrNfse] => 5253
+                            [cdAutenticacao] => 166350B05F1FD81620E049FD539533E6
+                            [dtEmissaoNfs] => 2020-01-21T17:37:05
+                        )
+
+                    [62] => stdClass Object
+                        (
+                            [nrNfse] => 5254
+                            [cdAutenticacao] => 4D30B430D3ABBBA171637BCD5CFBB815
+                            [dtEmissaoNfs] => 2020-01-21T17:37:32
+                        )
+
+                    [63] => stdClass Object
+                        (
+                            [nrNfse] => 5255
+                            [cdAutenticacao] => 6ED1B8AC0AE21B08CA72C7744F16A772
+                            [dtEmissaoNfs] => 2020-01-21T17:41:36
+                        )
+
+                    [64] => stdClass Object
+                        (
+                            [nrNfse] => 5256
+                            [cdAutenticacao] => C7BA2882982F789CBE98BC21C4CA9458
+                            [dtEmissaoNfs] => 2020-01-21T17:41:55
+                        )
+
+                    [65] => stdClass Object
+                        (
+                            [nrNfse] => 5257
+                            [cdAutenticacao] => F1DC65B931007542AB06D4B91B8F5BF4
+                            [dtEmissaoNfs] => 2020-01-21T17:42:16
+                        )
+
+                    [66] => stdClass Object
+                        (
+                            [nrNfse] => 5258
+                            [cdAutenticacao] => BAD6195DEDA8AFCDCC36E4497F97790F
+                            [dtEmissaoNfs] => 2020-01-21T17:42:36
+                        )
+
+                    [67] => stdClass Object
+                        (
+                            [nrNfse] => 5259
+                            [cdAutenticacao] => C1CE2BC87E03E11655694216625A8485
+                            [dtEmissaoNfs] => 2020-01-21T17:42:57
+                        )
+
+                    [68] => stdClass Object
+                        (
+                            [nrNfse] => 5260
+                            [cdAutenticacao] => EB07EB1C02C3AA477DE0341CBD2E476
+                            [dtEmissaoNfs] => 2020-01-21T17:43:18
+                        )
+
+                    [69] => stdClass Object
+                        (
+                            [nrNfse] => 5261
+                            [cdAutenticacao] => 750331176610F9357644D88A5B6A5E8A
+                            [dtEmissaoNfs] => 2020-01-21T17:43:39
+                        )
+
+                    [70] => stdClass Object
+                        (
+                            [nrNfse] => 5262
+                            [cdAutenticacao] => C08EE1F314C68BAC83BF36F932E9ADB7
+                            [dtEmissaoNfs] => 2020-01-21T17:44:08
+                        )
+
+                    [71] => stdClass Object
+                        (
+                            [nrNfse] => 5263
+                            [cdAutenticacao] => 24CB03B1EE7B95E85DA3D79BAF6E366B
+                            [dtEmissaoNfs] => 2020-01-21T17:44:30
+                        )
+
+                    [72] => stdClass Object
+                        (
+                            [nrNfse] => 5264
+                            [cdAutenticacao] => 99DA5EC51A388AA84DBD99DFF836D43
+                            [dtEmissaoNfs] => 2020-01-21T17:44:54
+                        )
+
+                    [73] => stdClass Object
+                        (
+                            [nrNfse] => 5265
+                            [cdAutenticacao] => CB6A041DF3ED8FE2CD1E28BD9632DA39
+                            [dtEmissaoNfs] => 2020-01-21T17:45:18
+                        )
+
+                    [74] => stdClass Object
+                        (
+                            [nrNfse] => 5266
+                            [cdAutenticacao] => B265CA61D5A042639EE67E81BCD5A06B
+                            [dtEmissaoNfs] => 2020-01-21T17:45:35
+                        )
+
+                    [75] => stdClass Object
+                        (
+                            [nrNfse] => 5267
+                            [cdAutenticacao] => 86DAAB30A4E9012E4C514B1089E92B92
+                            [dtEmissaoNfs] => 2020-01-21T17:45:56
+                        )
+
+                    [76] => stdClass Object
+                        (
+                            [nrNfse] => 5268
+                            [cdAutenticacao] => A3B6A57F926DE30F9150CFA5964AA8EC
+                            [dtEmissaoNfs] => 2020-01-22T13:44:37
+                        )
+
+                    [77] => stdClass Object
+                        (
+                            [nrNfse] => 5269
+                            [cdAutenticacao] => 32E6B6C5D8128D88C22B399525A1F27E
+                            [dtEmissaoNfs] => 2020-01-22T13:44:59
+                        )
+
+                    [78] => stdClass Object
+                        (
+                            [nrNfse] => 5270
+                            [cdAutenticacao] => AAE3081642C1656FD9D85520B6C0C450
+                            [dtEmissaoNfs] => 2020-01-22T13:45:18
+                        )
+
+                    [79] => stdClass Object
+                        (
+                            [nrNfse] => 5271
+                            [cdAutenticacao] => ECA6A514251F6599EE2108F03B5EF2AC
+                            [dtEmissaoNfs] => 2020-01-22T13:45:41
+                        )
+
+                    [80] => stdClass Object
+                        (
+                            [nrNfse] => 5272
+                            [cdAutenticacao] => DC4115C44AA7C017D60C147653FDE781
+                            [dtEmissaoNfs] => 2020-01-22T13:46:02
+                        )
+
+                    [81] => stdClass Object
+                        (
+                            [nrNfse] => 5273
+                            [cdAutenticacao] => 204DF366DD1E1DD5EB2E66246D614963
+                            [dtEmissaoNfs] => 2020-01-22T13:46:44
+                        )
+
+                    [82] => stdClass Object
+                        (
+                            [nrNfse] => 5274
+                            [cdAutenticacao] => AD4AFDBE4811BF11C93B6649C0721A9E
+                            [dtEmissaoNfs] => 2020-01-22T13:47:04
+                        )
+
+                    [83] => stdClass Object
+                        (
+                            [nrNfse] => 5275
+                            [cdAutenticacao] => 5B52AF96DBE83CA7812C0DEFD810CD7E
+                            [dtEmissaoNfs] => 2020-01-22T13:47:28
+                        )
+
+                    [84] => stdClass Object
+                        (
+                            [nrNfse] => 5276
+                            [cdAutenticacao] => D854A8247D4EEB9E0F603BE58E13A2D7
+                            [dtEmissaoNfs] => 2020-01-22T13:47:47
+                        )
+
+                    [85] => stdClass Object
+                        (
+                            [nrNfse] => 5277
+                            [cdAutenticacao] => B841E8C6D9144D2271D731832CA9D922
+                            [dtEmissaoNfs] => 2020-01-22T13:48:07
+                        )
+
+                    [86] => stdClass Object
+                        (
+                            [nrNfse] => 5278
+                            [cdAutenticacao] => F1C0668D4EA714567FF07973529A5BCD
+                            [dtEmissaoNfs] => 2020-01-22T13:48:29
+                        )
+
+                    [87] => stdClass Object
+                        (
+                            [nrNfse] => 5279
+                            [cdAutenticacao] => B6A7EC52F4DE967C9F3D49F4F1D72981
+                            [dtEmissaoNfs] => 2020-01-22T13:48:49
+                        )
+
+                    [88] => stdClass Object
+                        (
+                            [nrNfse] => 5280
+                            [cdAutenticacao] => 36FE77821EE95F4214E67AE50C06C016
+                            [dtEmissaoNfs] => 2020-01-22T13:49:10
+                        )
+
+                    [89] => stdClass Object
+                        (
+                            [nrNfse] => 5281
+                            [cdAutenticacao] => 31444AFB476C661D7413D5F2BFB8F1D9
+                            [dtEmissaoNfs] => 2020-01-22T13:49:34
+                        )
+
+                    [90] => stdClass Object
+                        (
+                            [nrNfse] => 5282
+                            [cdAutenticacao] => 72D0378BC008344ADCADF82A26B0AA7A
+                            [dtEmissaoNfs] => 2020-01-22T13:50:05
+                        )
+
+                    [91] => stdClass Object
+                        (
+                            [nrNfse] => 5283
+                            [cdAutenticacao] => 958CF9208ADA31D75976A7DF3CCF9ADD
+                            [dtEmissaoNfs] => 2020-01-22T13:50:41
+                        )
+
+                    [92] => stdClass Object
+                        (
+                            [nrNfse] => 5284
+                            [cdAutenticacao] => BEC0E88F1FC480F344A94A0ED6F8C87C
+                            [dtEmissaoNfs] => 2020-01-22T13:51:00
+                        )
+
+                    [93] => stdClass Object
+                        (
+                            [nrNfse] => 5285
+                            [cdAutenticacao] => 886836E7A21B5B1C1A11819D09BC3697
+                            [dtEmissaoNfs] => 2020-01-22T13:51:21
+                        )
+
+                    [94] => stdClass Object
+                        (
+                            [nrNfse] => 5286
+                            [cdAutenticacao] => 6004B2A1033793FE50986ED347E2168E
+                            [dtEmissaoNfs] => 2020-01-22T13:51:39
+                        )
+
+                    [95] => stdClass Object
+                        (
+                            [nrNfse] => 5287
+                            [cdAutenticacao] => 6548C67D053DF283FC4A5D6328B15A2
+                            [dtEmissaoNfs] => 2020-01-22T13:51:58
+                        )
+
+                    [96] => stdClass Object
+                        (
+                            [nrNfse] => 5288
+                            [cdAutenticacao] => E32D6F2FA92EB6221797A7F71785EBBC
+                            [dtEmissaoNfs] => 2020-01-22T13:52:17
+                        )
+
+                    [97] => stdClass Object
+                        (
+                            [nrNfse] => 5289
+                            [cdAutenticacao] => 36FE727806B06F271FCE50E7555DF5E6
+                            [dtEmissaoNfs] => 2020-01-22T13:52:35
+                            [cancelamento] => stdClass Object
+                                (
+                                    [dtCancelamento] => 2020-01-22T15:13:07
+                                    [dsCancelamento] => Cliente cancelou o sistema
+                                )
+
+                        )
+
+                    [98] => stdClass Object
+                        (
+                            [nrNfse] => 5290
+                            [cdAutenticacao] => 240E104AD44021F1B61334E56E2C5B72
+                            [dtEmissaoNfs] => 2020-01-22T13:52:59
+                        )
+
+                    [99] => stdClass Object
+                        (
+                            [nrNfse] => 5291
+                            [cdAutenticacao] => 6FAA2917F4231FB390C9933587FCA9EA
+                            [dtEmissaoNfs] => 2020-01-22T13:53:20
+                        )
+
+                    [100] => stdClass Object
+                        (
+                            [nrNfse] => 5292
+                            [cdAutenticacao] => BE6C4967B9961B115AE170EE870E4E31
+                            [dtEmissaoNfs] => 2020-01-22T13:53:40
+                        )
+
+                    [101] => stdClass Object
+                        (
+                            [nrNfse] => 5293
+                            [cdAutenticacao] => 93127A5267418AF466B988764209AD8E
+                            [dtEmissaoNfs] => 2020-01-22T13:53:59
+                        )
+
+                    [102] => stdClass Object
+                        (
+                            [nrNfse] => 5294
+                            [cdAutenticacao] => 2BF652299C8A099FAC52010AA1633397
+                            [dtEmissaoNfs] => 2020-01-22T13:54:23
+                        )
+
+                    [103] => stdClass Object
+                        (
+                            [nrNfse] => 5295
+                            [cdAutenticacao] => 2171196D9908035CE6CF8AB3F46326B8
+                            [dtEmissaoNfs] => 2020-01-22T13:54:43
+                        )
+
+                    [104] => stdClass Object
+                        (
+                            [nrNfse] => 5296
+                            [cdAutenticacao] => 78EC3BFDA25B88773C0A6CC705BFCC9B
+                            [dtEmissaoNfs] => 2020-01-22T13:55:03
+                        )
+
+                    [105] => stdClass Object
+                        (
+                            [nrNfse] => 5297
+                            [cdAutenticacao] => 8C052CF155DABD67AF71E080DD4D429
+                            [dtEmissaoNfs] => 2020-01-22T14:05:29
+                        )
+
+                    [106] => stdClass Object
+                        (
+                            [nrNfse] => 5298
+                            [cdAutenticacao] => C9CB6D6E7F4552C4C6B54D0CBD241F8D
+                            [dtEmissaoNfs] => 2020-01-22T14:05:47
+                        )
+
+                    [107] => stdClass Object
+                        (
+                            [nrNfse] => 5299
+                            [cdAutenticacao] => 8B0CD2E901BBA22564649801B9CCF0CC
+                            [dtEmissaoNfs] => 2020-01-22T14:06:08
+                        )
+
+                    [108] => stdClass Object
+                        (
+                            [nrNfse] => 5300
+                            [cdAutenticacao] => F8CCF292BD56A17FA59CC912A827D2AC
+                            [dtEmissaoNfs] => 2020-01-22T14:06:28
+                        )
+
+                    [109] => stdClass Object
+                        (
+                            [nrNfse] => 5301
+                            [cdAutenticacao] => 5FF5F2231B472738480345007EA314D4
+                            [dtEmissaoNfs] => 2020-01-22T14:06:51
+                        )
+
+                    [110] => stdClass Object
+                        (
+                            [nrNfse] => 5302
+                            [cdAutenticacao] => 332E4075D2B6B652A990ADE5CAFC698B
+                            [dtEmissaoNfs] => 2020-01-22T14:11:07
+                        )
+
+                    [111] => stdClass Object
+                        (
+                            [nrNfse] => 5303
+                            [cdAutenticacao] => E9198256D94B75498385A1DA90163254
+                            [dtEmissaoNfs] => 2020-01-22T14:11:39
+                        )
+
+                    [112] => stdClass Object
+                        (
+                            [nrNfse] => 5304
+                            [cdAutenticacao] => D87B1EB8192F854774CB53A9DF9B92B0
+                            [dtEmissaoNfs] => 2020-01-22T14:12:03
+                        )
+
+                    [113] => stdClass Object
+                        (
+                            [nrNfse] => 5305
+                            [cdAutenticacao] => 4C332F8879206D0439E9B0831A2988E
+                            [dtEmissaoNfs] => 2020-01-22T14:12:21
+                        )
+
+                    [114] => stdClass Object
+                        (
+                            [nrNfse] => 5306
+                            [cdAutenticacao] => 2CBDD20A07329299DE008D6DDA71FDE9
+                            [dtEmissaoNfs] => 2020-01-22T14:12:41
+                        )
+
+                    [115] => stdClass Object
+                        (
+                            [nrNfse] => 5307
+                            [cdAutenticacao] => 57815141AD3E743C3C3C014827395BC8
+                            [dtEmissaoNfs] => 2020-01-22T14:12:59
+                        )
+
+                    [116] => stdClass Object
+                        (
+                            [nrNfse] => 5308
+                            [cdAutenticacao] => B72F77A6FBA5B17BCD7906BED08412C5
+                            [dtEmissaoNfs] => 2020-01-22T14:24:08
+                        )
+
+                    [117] => stdClass Object
+                        (
+                            [nrNfse] => 5309
+                            [cdAutenticacao] => A4BAF5522B1F0B037357C7130DFE6509
+                            [dtEmissaoNfs] => 2020-01-22T14:24:27
+                        )
+
+                    [118] => stdClass Object
+                        (
+                            [nrNfse] => 5310
+                            [cdAutenticacao] => D1A6DEC74C35E7CF8AB6E51CE60EC966
+                            [dtEmissaoNfs] => 2020-01-22T14:24:54
+                        )
+
+                    [119] => stdClass Object
+                        (
+                            [nrNfse] => 5311
+                            [cdAutenticacao] => 64DC7584FE5F401887144C170C0AFD86
+                            [dtEmissaoNfs] => 2020-01-22T14:25:13
+                        )
+
+                    [120] => stdClass Object
+                        (
+                            [nrNfse] => 5312
+                            [cdAutenticacao] => 2A24876FCECF2D858EF12362629310A4
+                            [dtEmissaoNfs] => 2020-01-22T14:25:37
+                        )
+
+                    [121] => stdClass Object
+                        (
+                            [nrNfse] => 5313
+                            [cdAutenticacao] => 6798A2A4278729FCD7D9AABF11448CB7
+                            [dtEmissaoNfs] => 2020-01-22T14:25:57
+                        )
+
+                    [122] => stdClass Object
+                        (
+                            [nrNfse] => 5314
+                            [cdAutenticacao] => E44A59F758222B31F4209B31F17E9955
+                            [dtEmissaoNfs] => 2020-01-22T14:26:18
+                        )
+
+                    [123] => stdClass Object
+                        (
+                            [nrNfse] => 5315
+                            [cdAutenticacao] => 9B4B019F01BF874261F9645AABBC9FF2
+                            [dtEmissaoNfs] => 2020-01-22T14:26:40
+                        )
+
+                    [124] => stdClass Object
+                        (
+                            [nrNfse] => 5316
+                            [cdAutenticacao] => 7C237DB731380CFBC1D3D61C6DC11EE7
+                            [dtEmissaoNfs] => 2020-01-22T14:26:58
+                        )
+
+                    [125] => stdClass Object
+                        (
+                            [nrNfse] => 5317
+                            [cdAutenticacao] => 1176C32C1A5CA4DF1AFE32F19F5402D8
+                            [dtEmissaoNfs] => 2020-01-22T14:27:16
+                        )
+
+                    [126] => stdClass Object
+                        (
+                            [nrNfse] => 5318
+                            [cdAutenticacao] => 15147A6D1883098C6841B7060985D381
+                            [dtEmissaoNfs] => 2020-01-22T14:27:35
+                        )
+
+                    [127] => stdClass Object
+                        (
+                            [nrNfse] => 5319
+                            [cdAutenticacao] => A3FD32D2EE8FF4EE1F1E69BF0534239A
+                            [dtEmissaoNfs] => 2020-01-22T14:27:53
+                        )
+
+                    [128] => stdClass Object
+                        (
+                            [nrNfse] => 5320
+                            [cdAutenticacao] => EAFB53661CC42AA34C723C076D9D91FC
+                            [dtEmissaoNfs] => 2020-01-22T14:28:12
+                        )
+
+                    [129] => stdClass Object
+                        (
+                            [nrNfse] => 5321
+                            [cdAutenticacao] => D7EDE0A9D6397824E1311FC0EE792EF9
+                            [dtEmissaoNfs] => 2020-01-22T14:29:22
+                        )
+
+                    [130] => stdClass Object
+                        (
+                            [nrNfse] => 5322
+                            [cdAutenticacao] => 3A7CA44C84A6A3204D9F3E45741F0ED1
+                            [dtEmissaoNfs] => 2020-01-22T14:29:39
+                        )
+
+                    [131] => stdClass Object
+                        (
+                            [nrNfse] => 5323
+                            [cdAutenticacao] => A1E83BB85C7E965E6A7565E8EF29EAB7
+                            [dtEmissaoNfs] => 2020-01-22T14:29:58
+                        )
+
+                    [132] => stdClass Object
+                        (
+                            [nrNfse] => 5324
+                            [cdAutenticacao] => 7670B06A79E7B98BBECDB65D729E0635
+                            [dtEmissaoNfs] => 2020-01-22T14:30:16
+                        )
+
+                    [133] => stdClass Object
+                        (
+                            [nrNfse] => 5325
+                            [cdAutenticacao] => 7371418A906991566A49A03F44F53228
+                            [dtEmissaoNfs] => 2020-01-22T14:30:37
+                        )
+
+                    [134] => stdClass Object
+                        (
+                            [nrNfse] => 5326
+                            [cdAutenticacao] => 2D11A4771E7F418C1756DC54920B1FF7
+                            [dtEmissaoNfs] => 2020-01-22T14:39:29
+                        )
+
+                    [135] => stdClass Object
+                        (
+                            [nrNfse] => 5327
+                            [cdAutenticacao] => 987F6BE63FA1E2BFCA4FD54C3FA75748
+                            [dtEmissaoNfs] => 2020-01-22T14:39:50
+                        )
+
+                    [136] => stdClass Object
+                        (
+                            [nrNfse] => 5328
+                            [cdAutenticacao] => 48C3F7D91239AF3AED6FAC57748B2815
+                            [dtEmissaoNfs] => 2020-01-22T14:40:09
+                        )
+
+                    [137] => stdClass Object
+                        (
+                            [nrNfse] => 5329
+                            [cdAutenticacao] => FF71C53728E944D296637CA793D68308
+                            [dtEmissaoNfs] => 2020-01-22T14:40:27
+                        )
+
+                    [138] => stdClass Object
+                        (
+                            [nrNfse] => 5330
+                            [cdAutenticacao] => 53E591023DF2C7EEA1E85D7EB3D9DBD7
+                            [dtEmissaoNfs] => 2020-01-22T14:40:44
+                        )
+
+                    [139] => stdClass Object
+                        (
+                            [nrNfse] => 5331
+                            [cdAutenticacao] => BD501731D071529A75181AE5688DB502
+                            [dtEmissaoNfs] => 2020-01-22T14:41:02
+                        )
+
+                    [140] => stdClass Object
+                        (
+                            [nrNfse] => 5332
+                            [cdAutenticacao] => 193D0838CED3604785C8981EAE68A267
+                            [dtEmissaoNfs] => 2020-01-22T14:41:22
+                        )
+
+                    [141] => stdClass Object
+                        (
+                            [nrNfse] => 5333
+                            [cdAutenticacao] => D444D2BC79F0EEBBFA8481406D0FA2A3
+                            [dtEmissaoNfs] => 2020-01-22T14:41:40
+                        )
+
+                    [142] => stdClass Object
+                        (
+                            [nrNfse] => 5334
+                            [cdAutenticacao] => D70357FF3BA8A2939176E8805DCC8BCD
+                            [dtEmissaoNfs] => 2020-01-22T14:41:58
+                        )
+
+                    [143] => stdClass Object
+                        (
+                            [nrNfse] => 5335
+                            [cdAutenticacao] => 7422F172E7AC143EA032C096D3EC646
+                            [dtEmissaoNfs] => 2020-01-22T14:47:21
+                        )
+
+                    [144] => stdClass Object
+                        (
+                            [nrNfse] => 5336
+                            [cdAutenticacao] => 28C34A3382D38769083AC678B2C1A3DE
+                            [dtEmissaoNfs] => 2020-01-22T14:47:41
+                        )
+
+                    [145] => stdClass Object
+                        (
+                            [nrNfse] => 5337
+                            [cdAutenticacao] => CEAA6F40C76C1EABAF3FCD903B6608F5
+                            [dtEmissaoNfs] => 2020-01-22T14:48:01
+                        )
+
+                    [146] => stdClass Object
+                        (
+                            [nrNfse] => 5338
+                            [cdAutenticacao] => C1948E14F19E590E02FE17545DD853D2
+                            [dtEmissaoNfs] => 2020-01-22T14:48:23
+                        )
+
+                    [147] => stdClass Object
+                        (
+                            [nrNfse] => 5339
+                            [cdAutenticacao] => 72D376A8F2FFC0530A14B1797D528BF6
+                            [dtEmissaoNfs] => 2020-01-22T14:48:41
+                        )
+
+                    [148] => stdClass Object
+                        (
+                            [nrNfse] => 5340
+                            [cdAutenticacao] => F7BB5FDF8694BE7A3EF35B41FC70BC9E
+                            [dtEmissaoNfs] => 2020-01-22T14:49:22
+                        )
+
+                    [149] => stdClass Object
+                        (
+                            [nrNfse] => 5341
+                            [cdAutenticacao] => 549AD4AF4E0C6745ED4216D559B4BB88
+                            [dtEmissaoNfs] => 2020-01-22T14:49:42
+                        )
+
+                    [150] => stdClass Object
+                        (
+                            [nrNfse] => 5342
+                            [cdAutenticacao] => DAFD1F62BC14793D30E9B63BA3703916
+                            [dtEmissaoNfs] => 2020-01-22T14:50:02
+                        )
+
+                    [151] => stdClass Object
+                        (
+                            [nrNfse] => 5343
+                            [cdAutenticacao] => 5F2EC96B9080128A2701BB9B3C3065C7
+                            [dtEmissaoNfs] => 2020-01-22T14:50:27
+                        )
+
+                    [152] => stdClass Object
+                        (
+                            [nrNfse] => 5344
+                            [cdAutenticacao] => 4E2A3CAC16D7FD6C765FD3F986C3D565
+                            [dtEmissaoNfs] => 2020-01-22T14:50:48
+                        )
+
+                    [153] => stdClass Object
+                        (
+                            [nrNfse] => 5345
+                            [cdAutenticacao] => CBA16B3C9EB61D4CACC87192215ABFDC
+                            [dtEmissaoNfs] => 2020-01-22T14:51:08
+                        )
+
+                    [154] => stdClass Object
+                        (
+                            [nrNfse] => 5346
+                            [cdAutenticacao] => 4E2487AC6FEE0A0DE11A7B513EBB32F4
+                            [dtEmissaoNfs] => 2020-01-22T14:51:27
+                        )
+
+                    [155] => stdClass Object
+                        (
+                            [nrNfse] => 5347
+                            [cdAutenticacao] => 2EEB8C97AE39DDAF7E399B68ABC03FFE
+                            [dtEmissaoNfs] => 2020-01-22T14:51:50
+                        )
+
+                    [156] => stdClass Object
+                        (
+                            [nrNfse] => 5348
+                            [cdAutenticacao] => 9CC2D386716D9BD2A4E57C63365BAE83
+                            [dtEmissaoNfs] => 2020-01-22T14:52:10
+                        )
+
+                    [157] => stdClass Object
+                        (
+                            [nrNfse] => 5349
+                            [cdAutenticacao] => D186346B47D678E4DE07246217F3D266
+                            [dtEmissaoNfs] => 2020-01-22T14:52:39
+                        )
+
+                    [158] => stdClass Object
+                        (
+                            [nrNfse] => 5350
+                            [cdAutenticacao] => 67F8F6A370A979B7D86F629509EC7D7B
+                            [dtEmissaoNfs] => 2020-01-22T14:53:11
+                        )
+
+                    [159] => stdClass Object
+                        (
+                            [nrNfse] => 5351
+                            [cdAutenticacao] => 560DF6F13739F6E5E3CB8DB37CEC844E
+                            [dtEmissaoNfs] => 2020-01-22T15:12:06
+                        )
+
+                    [160] => stdClass Object
+                        (
+                            [nrNfse] => 5352
+                            [cdAutenticacao] => 7D587BE76354B73BEAF0C1CE932E9E6D
+                            [dtEmissaoNfs] => 2020-01-22T15:20:55
+                        )
+
+                    [161] => stdClass Object
+                        (
+                            [nrNfse] => 5353
+                            [cdAutenticacao] => 6FBC403DC2022ED171E20C6CB5AEE0D2
+                            [dtEmissaoNfs] => 2020-01-22T15:21:16
+                        )
+
+                    [162] => stdClass Object
+                        (
+                            [nrNfse] => 5354
+                            [cdAutenticacao] => 83F763003B507271B6FF7D559C7087EB
+                            [dtEmissaoNfs] => 2020-01-22T15:21:38
+                        )
+
+                    [163] => stdClass Object
+                        (
+                            [nrNfse] => 5355
+                            [cdAutenticacao] => 89B8C2AFEC9001CD025F1AAE92738EAB
+                            [dtEmissaoNfs] => 2020-01-22T15:21:57
+                        )
+
+                    [164] => stdClass Object
+                        (
+                            [nrNfse] => 5356
+                            [cdAutenticacao] => EA413871EE0BD994C1772850F7D6F9F0
+                            [dtEmissaoNfs] => 2020-01-22T15:22:18
+                        )
+
+                    [165] => stdClass Object
+                        (
+                            [nrNfse] => 5357
+                            [cdAutenticacao] => 783684CF6DBC2C5C0FC03E5571CF4685
+                            [dtEmissaoNfs] => 2020-01-22T15:22:37
+                        )
+
+                    [166] => stdClass Object
+                        (
+                            [nrNfse] => 5358
+                            [cdAutenticacao] => B23DBD0AAEF342AF1F63A1633EB373B0
+                            [dtEmissaoNfs] => 2020-01-22T15:22:57
+                        )
+
+                    [167] => stdClass Object
+                        (
+                            [nrNfse] => 5359
+                            [cdAutenticacao] => 6C32543CBA67CBDC5F3A6908691A2C71
+                            [dtEmissaoNfs] => 2020-01-22T15:23:17
+                        )
+
+                    [168] => stdClass Object
+                        (
+                            [nrNfse] => 5360
+                            [cdAutenticacao] => 3F51D01777B5612F34ED658A037254B9
+                            [dtEmissaoNfs] => 2020-01-22T15:23:36
+                        )
+
+                    [169] => stdClass Object
+                        (
+                            [nrNfse] => 5361
+                            [cdAutenticacao] => 1400113B768247F9648E3E7F54B330AB
+                            [dtEmissaoNfs] => 2020-01-22T15:23:57
+                        )
+
+                    [170] => stdClass Object
+                        (
+                            [nrNfse] => 5362
+                            [cdAutenticacao] => CF1D233022B38B0F8539DA187F9752D3
+                            [dtEmissaoNfs] => 2020-01-22T15:24:18
+                        )
+
+                    [171] => stdClass Object
+                        (
+                            [nrNfse] => 5363
+                            [cdAutenticacao] => D49AB83C7E6AD7E9E73E6A7E27FC18A9
+                            [dtEmissaoNfs] => 2020-01-22T15:24:36
+                        )
+
+                    [172] => stdClass Object
+                        (
+                            [nrNfse] => 5364
+                            [cdAutenticacao] => 8578E3B98A9456466AE35FE83DC9FEF5
+                            [dtEmissaoNfs] => 2020-01-22T15:25:17
+                        )
+
+                    [173] => stdClass Object
+                        (
+                            [nrNfse] => 5365
+                            [cdAutenticacao] => E01DCB80499A43AB384F69261F52EE50
+                            [dtEmissaoNfs] => 2020-01-22T15:25:36
+                        )
+
+                    [174] => stdClass Object
+                        (
+                            [nrNfse] => 5366
+                            [cdAutenticacao] => 6838DBB813C25ACF8293A01378BECA97
+                            [dtEmissaoNfs] => 2020-01-22T15:25:55
+                        )
+
+                    [175] => stdClass Object
+                        (
+                            [nrNfse] => 5367
+                            [cdAutenticacao] => 38A50FBA7337C6577D012D6E97D8C877
+                            [dtEmissaoNfs] => 2020-01-22T16:18:26
+                        )
+
+                    [176] => stdClass Object
+                        (
+                            [nrNfse] => 5368
+                            [cdAutenticacao] => 96D49CD8957498D9012804A3EAF1DFD7
+                            [dtEmissaoNfs] => 2020-01-22T16:18:53
+                        )
+
+                    [177] => stdClass Object
+                        (
+                            [nrNfse] => 5369
+                            [cdAutenticacao] => 1DD568A19FF44D84020773B3D6CEE40
+                            [dtEmissaoNfs] => 2020-01-22T16:19:13
+                        )
+
+                    [178] => stdClass Object
+                        (
+                            [nrNfse] => 5370
+                            [cdAutenticacao] => 3C5C8C133537142EC08F45D1B6EC019F
+                            [dtEmissaoNfs] => 2020-01-22T16:20:21
+                        )
+
+                    [179] => stdClass Object
+                        (
+                            [nrNfse] => 5371
+                            [cdAutenticacao] => C4AF996FE15B4898E34BBFA1DA120B27
+                            [dtEmissaoNfs] => 2020-01-22T16:20:40
+                        )
+
+                    [180] => stdClass Object
+                        (
+                            [nrNfse] => 5372
+                            [cdAutenticacao] => E165AC398CEECA180B096248DD64E055
+                            [dtEmissaoNfs] => 2020-01-22T16:21:01
+                        )
+
+                    [181] => stdClass Object
+                        (
+                            [nrNfse] => 5373
+                            [cdAutenticacao] => 72F355A3DB674DDB985C37FA7F564073
+                            [dtEmissaoNfs] => 2020-01-22T16:21:30
+                        )
+
+                    [182] => stdClass Object
+                        (
+                            [nrNfse] => 5374
+                            [cdAutenticacao] => 922C7CFCF2795F59D5A2B376E9348EC2
+                            [dtEmissaoNfs] => 2020-01-22T16:24:16
+                        )
+
+                    [183] => stdClass Object
+                        (
+                            [nrNfse] => 5375
+                            [cdAutenticacao] => EDBA1E1E9E2EFEC7E30585A78713486E
+                            [dtEmissaoNfs] => 2020-01-22T16:24:39
+                        )
+
+                    [184] => stdClass Object
+                        (
+                            [nrNfse] => 5376
+                            [cdAutenticacao] => 16E60C0E21D2A639F4FF16C166BB9717
+                            [dtEmissaoNfs] => 2020-01-22T16:24:58
+                        )
+
+                    [185] => stdClass Object
+                        (
+                            [nrNfse] => 5377
+                            [cdAutenticacao] => 12AC68708A40E48F4BFA6CC72E79F689
+                            [dtEmissaoNfs] => 2020-01-22T16:25:17
+                        )
+
+                    [186] => stdClass Object
+                        (
+                            [nrNfse] => 5378
+                            [cdAutenticacao] => 5682008055CCCA77BA411E589594B493
+                            [dtEmissaoNfs] => 2020-01-22T16:25:38
+                        )
+
+                    [187] => stdClass Object
+                        (
+                            [nrNfse] => 5379
+                            [cdAutenticacao] => 1AB0957578955E82A479C9727528FA95
+                            [dtEmissaoNfs] => 2020-01-22T16:25:58
+                        )
+
+                    [188] => stdClass Object
+                        (
+                            [nrNfse] => 5380
+                            [cdAutenticacao] => 50215DB8D3577D1676496193E37A4169
+                            [dtEmissaoNfs] => 2020-01-22T16:28:38
+                        )
+
+                    [189] => stdClass Object
+                        (
+                            [nrNfse] => 5381
+                            [cdAutenticacao] => CB4F363BF7D7BA3BE99730BC12A0BB8A
+                            [dtEmissaoNfs] => 2020-01-22T16:29:09
+                        )
+
+                    [190] => stdClass Object
+                        (
+                            [nrNfse] => 5382
+                            [cdAutenticacao] => A30B6837CD5F733E6ABC7B9AD04DAB70
+                            [dtEmissaoNfs] => 2020-01-22T16:33:32
+                        )
+
+                    [191] => stdClass Object
+                        (
+                            [nrNfse] => 5383
+                            [cdAutenticacao] => 2CC4C99B9F1FE539945A73B31DC8CC8D
+                            [dtEmissaoNfs] => 2020-01-22T16:33:54
+                        )
+
+                    [192] => stdClass Object
+                        (
+                            [nrNfse] => 5384
+                            [cdAutenticacao] => 1C8EE6D8474041A55F638AE2068816A
+                            [dtEmissaoNfs] => 2020-01-22T16:34:13
+                        )
+
+                    [193] => stdClass Object
+                        (
+                            [nrNfse] => 5385
+                            [cdAutenticacao] => 962FDB239A90FB2502764ACF7A282013
+                            [dtEmissaoNfs] => 2020-01-22T16:34:32
+                        )
+
+                    [194] => stdClass Object
+                        (
+                            [nrNfse] => 5386
+                            [cdAutenticacao] => BECCE7CA069AFE33C88100FBE0DF5199
+                            [dtEmissaoNfs] => 2020-01-22T16:34:50
+                        )
+
+                    [195] => stdClass Object
+                        (
+                            [nrNfse] => 5387
+                            [cdAutenticacao] => 5E40DD6222E3A3257B646FB1E60CFA27
+                            [dtEmissaoNfs] => 2020-01-22T16:35:08
+                        )
+
+                    [196] => stdClass Object
+                        (
+                            [nrNfse] => 5388
+                            [cdAutenticacao] => C57F65B90131A094687C74107BC11248
+                            [dtEmissaoNfs] => 2020-01-22T16:35:36
+                        )
+
+                    [197] => stdClass Object
+                        (
+                            [nrNfse] => 5389
+                            [cdAutenticacao] => 99CD5BB0DC7DE4A9247389230D730D19
+                            [dtEmissaoNfs] => 2020-01-22T16:35:56
+                        )
+
+                    [198] => stdClass Object
+                        (
+                            [nrNfse] => 5390
+                            [cdAutenticacao] => C66B14F6019370F68831063E80AC1082
+                            [dtEmissaoNfs] => 2020-01-22T16:36:18
+                        )
+
+                    [199] => stdClass Object
+                        (
+                            [nrNfse] => 5391
+                            [cdAutenticacao] => 8FCBE37232971E375B8D9CEAA9BD7C5B
+                            [dtEmissaoNfs] => 2020-01-22T16:36:40
+                        )
+
+                    [200] => stdClass Object
+                        (
+                            [nrNfse] => 5392
+                            [cdAutenticacao] => 92DE8B2E1D7EF4FA4503D0DAE4214B58
+                            [dtEmissaoNfs] => 2020-01-22T16:36:59
+                        )
+
+                    [201] => stdClass Object
+                        (
+                            [nrNfse] => 5393
+                            [cdAutenticacao] => D394E4913BE5AF422DDBB4A54718FBB8
+                            [dtEmissaoNfs] => 2020-01-22T16:37:21
+                        )
+
+                    [202] => stdClass Object
+                        (
+                            [nrNfse] => 5394
+                            [cdAutenticacao] => D2CA0B4C5680F5FD51CDEFE832BA2C13
+                            [dtEmissaoNfs] => 2020-01-22T16:37:41
+                        )
+
+                    [203] => stdClass Object
+                        (
+                            [nrNfse] => 5395
+                            [cdAutenticacao] => 9B174FC9940B84AEEC5DDE4EECE9CCFB
+                            [dtEmissaoNfs] => 2020-01-22T16:53:01
+                        )
+
+                    [204] => stdClass Object
+                        (
+                            [nrNfse] => 5396
+                            [cdAutenticacao] => 81C0FE696CBF631D83075500B94EA6BA
+                            [dtEmissaoNfs] => 2020-01-22T16:53:25
+                        )
+
+                    [205] => stdClass Object
+                        (
+                            [nrNfse] => 5397
+                            [cdAutenticacao] => 4057ED68AE474DB858F39E3798D0B06
+                            [dtEmissaoNfs] => 2020-01-22T16:53:44
+                        )
+
+                    [206] => stdClass Object
+                        (
+                            [nrNfse] => 5398
+                            [cdAutenticacao] => A792CBAFCB599A16F19C9BE4CB3F64AD
+                            [dtEmissaoNfs] => 2020-01-22T16:54:02
+                        )
+
+                    [207] => stdClass Object
+                        (
+                            [nrNfse] => 5399
+                            [cdAutenticacao] => A4DB831FB06F8A7EF80625922BAB0DD0
+                            [dtEmissaoNfs] => 2020-01-22T16:54:22
+                        )
+
+                    [208] => stdClass Object
+                        (
+                            [nrNfse] => 5400
+                            [cdAutenticacao] => F6757729523FE80884EEB8D3ADA9AA53
+                            [dtEmissaoNfs] => 2020-01-22T16:54:49
+                        )
+
+                    [209] => stdClass Object
+                        (
+                            [nrNfse] => 5401
+                            [cdAutenticacao] => 9DE7CCD2D890D9CF64E776992B4ECA2B
+                            [dtEmissaoNfs] => 2020-01-22T16:55:11
+                        )
+
+                    [210] => stdClass Object
+                        (
+                            [nrNfse] => 5402
+                            [cdAutenticacao] => 9E097EED55FFBE50C66E2301B78F4C72
+                            [dtEmissaoNfs] => 2020-01-22T16:55:33
+                        )
+
+                    [211] => stdClass Object
+                        (
+                            [nrNfse] => 5403
+                            [cdAutenticacao] => F06ACF8C6718B450BA37F33860E093B8
+                            [dtEmissaoNfs] => 2020-01-22T16:57:49
+                        )
+
+                    [212] => stdClass Object
+                        (
+                            [nrNfse] => 5404
+                            [cdAutenticacao] => 1DF7636C9D44B18199D8D0F01B554AAF
+                            [dtEmissaoNfs] => 2020-01-22T16:59:08
+                        )
+
+                    [213] => stdClass Object
+                        (
+                            [nrNfse] => 5405
+                            [cdAutenticacao] => 7B52D965CC6793C023AE084713187ADE
+                            [dtEmissaoNfs] => 2020-01-22T16:59:28
+                        )
+
+                    [214] => stdClass Object
+                        (
+                            [nrNfse] => 5406
+                            [cdAutenticacao] => 48917183919C500D86C3207BF1B6FAB0
+                            [dtEmissaoNfs] => 2020-01-22T17:01:21
+                        )
+
+                    [215] => stdClass Object
+                        (
+                            [nrNfse] => 5407
+                            [cdAutenticacao] => CEA60E0202A7A6AF85DA21AC8C53B09B
+                            [dtEmissaoNfs] => 2020-01-22T17:01:39
+                        )
+
+                    [216] => stdClass Object
+                        (
+                            [nrNfse] => 5408
+                            [cdAutenticacao] => 4384B93AEEBD236E77888A64E599A331
+                            [dtEmissaoNfs] => 2020-01-22T17:01:59
+                        )
+
+                    [217] => stdClass Object
+                        (
+                            [nrNfse] => 5409
+                            [cdAutenticacao] => 5EC661DAE06A126D2CE66D0A8C67842F
+                            [dtEmissaoNfs] => 2020-01-22T17:02:30
+                        )
+
+                    [218] => stdClass Object
+                        (
+                            [nrNfse] => 5410
+                            [cdAutenticacao] => B53F6A66E5F16E1B899947B68B4B5F1E
+                            [dtEmissaoNfs] => 2020-01-22T17:02:53
+                        )
+
+                    [219] => stdClass Object
+                        (
+                            [nrNfse] => 5411
+                            [cdAutenticacao] => C7EA69BE014F21322961854C41EC502F
+                            [dtEmissaoNfs] => 2020-01-22T17:03:14
+                        )
+
+                    [220] => stdClass Object
+                        (
+                            [nrNfse] => 5412
+                            [cdAutenticacao] => A15D1BCB982A37B8DD422DA0947BD763
+                            [dtEmissaoNfs] => 2020-01-22T17:03:33
+                        )
+
+                    [221] => stdClass Object
+                        (
+                            [nrNfse] => 5413
+                            [cdAutenticacao] => FBB894436D8674CB7C77FE17CF674077
+                            [dtEmissaoNfs] => 2020-01-22T17:03:56
+                        )
+
+                    [222] => stdClass Object
+                        (
+                            [nrNfse] => 5414
+                            [cdAutenticacao] => 552F560D3C4279A32C9C408E9C9F18D3
+                            [dtEmissaoNfs] => 2020-01-22T17:04:16
+                        )
+
+                    [223] => stdClass Object
+                        (
+                            [nrNfse] => 5415
+                            [cdAutenticacao] => DAF47A18FF4CF9EC79136EA97F53900F
+                            [dtEmissaoNfs] => 2020-01-22T17:04:41
+                        )
+
+                    [224] => stdClass Object
+                        (
+                            [nrNfse] => 5416
+                            [cdAutenticacao] => E9C99F39E79FC2166E522CF61FB632E
+                            [dtEmissaoNfs] => 2020-01-22T17:05:00
+                        )
+
+                    [225] => stdClass Object
+                        (
+                            [nrNfse] => 5417
+                            [cdAutenticacao] => 2DAD4E73E511336858AC9B77CF1DCED2
+                            [dtEmissaoNfs] => 2020-01-22T17:05:20
+                        )
+
+                    [226] => stdClass Object
+                        (
+                            [nrNfse] => 5418
+                            [cdAutenticacao] => 6661B374D274D83742D3A16E7628EFA9
+                            [dtEmissaoNfs] => 2020-01-22T17:05:39
+                        )
+
+                    [227] => stdClass Object
+                        (
+                            [nrNfse] => 5419
+                            [cdAutenticacao] => 9604E4AA71B9B5DCE95A4A0EF9B4D967
+                            [dtEmissaoNfs] => 2020-01-22T17:07:53
+                        )
+
+                    [228] => stdClass Object
+                        (
+                            [nrNfse] => 5420
+                            [cdAutenticacao] => CFEDFF7F70149AF60CAF2DE3C32B9273
+                            [dtEmissaoNfs] => 2020-01-22T17:08:13
+                        )
+
+                    [229] => stdClass Object
+                        (
+                            [nrNfse] => 5421
+                            [cdAutenticacao] => 3B5CBBDFFB7DC7346C46A9A952FB7218
+                            [dtEmissaoNfs] => 2020-01-22T17:08:32
+                        )
+
+                    [230] => stdClass Object
+                        (
+                            [nrNfse] => 5422
+                            [cdAutenticacao] => CA5430B0AEC5D0457D7B6155F078D5AA
+                            [dtEmissaoNfs] => 2020-01-22T17:08:53
+                        )
+
+                    [231] => stdClass Object
+                        (
+                            [nrNfse] => 5423
+                            [cdAutenticacao] => 61E18EDD8208F9E30F19FFE38E4A9041
+                            [dtEmissaoNfs] => 2020-01-22T17:09:13
+                        )
+
+                    [232] => stdClass Object
+                        (
+                            [nrNfse] => 5424
+                            [cdAutenticacao] => 91CE85682F42C38B409177D7E7F6FC58
+                            [dtEmissaoNfs] => 2020-01-22T17:09:33
+                        )
+
+                    [233] => stdClass Object
+                        (
+                            [nrNfse] => 5425
+                            [cdAutenticacao] => 87666885D7AEE5E5476B9690D6AF6D56
+                            [dtEmissaoNfs] => 2020-01-22T17:09:51
+                        )
+
+                    [234] => stdClass Object
+                        (
+                            [nrNfse] => 5426
+                            [cdAutenticacao] => 6EE83BE577997C6437E9CA5B94B96067
+                            [dtEmissaoNfs] => 2020-01-22T17:10:12
+                        )
+
+                    [235] => stdClass Object
+                        (
+                            [nrNfse] => 5427
+                            [cdAutenticacao] => 32D88CEC575F3E4866251450F5D66C5A
+                            [dtEmissaoNfs] => 2020-01-22T17:10:31
+                        )
+
+                    [236] => stdClass Object
+                        (
+                            [nrNfse] => 5428
+                            [cdAutenticacao] => D6817E723F7310DF3A365733630D6016
+                            [dtEmissaoNfs] => 2020-01-22T17:12:43
+                        )
+
+                    [237] => stdClass Object
+                        (
+                            [nrNfse] => 5429
+                            [cdAutenticacao] => D473EF442905324C283FDB1C7F1B888C
+                            [dtEmissaoNfs] => 2020-01-22T17:13:03
+                        )
+
+                    [238] => stdClass Object
+                        (
+                            [nrNfse] => 5430
+                            [cdAutenticacao] => 3A01C3943597B703B96684AFFAD4656E
+                            [dtEmissaoNfs] => 2020-01-22T17:14:02
+                        )
+
+                    [239] => stdClass Object
+                        (
+                            [nrNfse] => 5431
+                            [cdAutenticacao] => 47E6651B512F463517691791A055D946
+                            [dtEmissaoNfs] => 2020-01-22T17:14:22
+                        )
+
+                    [240] => stdClass Object
+                        (
+                            [nrNfse] => 5432
+                            [cdAutenticacao] => 9B6A5F8DF45C23544C201A22BC1D15A2
+                            [dtEmissaoNfs] => 2020-01-22T17:15:55
+                        )
+
+                    [241] => stdClass Object
+                        (
+                            [nrNfse] => 5433
+                            [cdAutenticacao] => 8AE50286234EEE2CF37A305F6ABE38C3
+                            [dtEmissaoNfs] => 2020-01-22T17:16:23
+                        )
+
+                    [242] => stdClass Object
+                        (
+                            [nrNfse] => 5434
+                            [cdAutenticacao] => 764445871CB3BF5BCEFB47EC718CBCD
+                            [dtEmissaoNfs] => 2020-01-22T17:16:42
+                        )
+
+                    [243] => stdClass Object
+                        (
+                            [nrNfse] => 5435
+                            [cdAutenticacao] => 29FE82A4CAD5C4EBFDCB8BBF687CD4C3
+                            [dtEmissaoNfs] => 2020-01-22T17:17:03
+                        )
+
+                    [244] => stdClass Object
+                        (
+                            [nrNfse] => 5436
+                            [cdAutenticacao] => 5758D4C440FC6CC27543B1A56C387D4E
+                            [dtEmissaoNfs] => 2020-01-22T17:17:22
+                        )
+
+                    [245] => stdClass Object
+                        (
+                            [nrNfse] => 5437
+                            [cdAutenticacao] => DF57556E296A38D6D6B3120D1CDA82DB
+                            [dtEmissaoNfs] => 2020-01-22T17:17:43
+                        )
+
+                    [246] => stdClass Object
+                        (
+                            [nrNfse] => 5438
+                            [cdAutenticacao] => E2016705E52EA43BA39DD178C4E87CF5
+                            [dtEmissaoNfs] => 2020-01-22T17:18:00
+                        )
+
+                    [247] => stdClass Object
+                        (
+                            [nrNfse] => 5439
+                            [cdAutenticacao] => D1693D25786E734D59AC1B416D3FD28F
+                            [dtEmissaoNfs] => 2020-01-22T17:18:24
+                        )
+
+                    [248] => stdClass Object
+                        (
+                            [nrNfse] => 5440
+                            [cdAutenticacao] => 8FABB11156F725685EBDBF03A59E2B79
+                            [dtEmissaoNfs] => 2020-01-23T08:41:25
+                        )
+
+                    [249] => stdClass Object
+                        (
+                            [nrNfse] => 5441
+                            [cdAutenticacao] => 46A02BF57F2A2858315D72DD5B62E2BD
+                            [dtEmissaoNfs] => 2020-01-23T08:41:45
+                        )
+
+                    [250] => stdClass Object
+                        (
+                            [nrNfse] => 5442
+                            [cdAutenticacao] => B1C5795DD9034130108D47C5477EDB04
+                            [dtEmissaoNfs] => 2020-01-23T08:42:03
+                        )
+
+                    [251] => stdClass Object
+                        (
+                            [nrNfse] => 5443
+                            [cdAutenticacao] => 613685B8BB4AFAF1467F1D281CAF5AFF
+                            [dtEmissaoNfs] => 2020-01-23T08:42:21
+                        )
+
+                    [252] => stdClass Object
+                        (
+                            [nrNfse] => 5444
+                            [cdAutenticacao] => 487F9543581666A108231DF37C3D81E4
+                            [dtEmissaoNfs] => 2020-01-23T08:42:43
+                        )
+
+                    [253] => stdClass Object
+                        (
+                            [nrNfse] => 5445
+                            [cdAutenticacao] => FEADF17ABD009F734D9F5684A6D0EC4C
+                            [dtEmissaoNfs] => 2020-01-23T08:43:04
+                        )
+
+                    [254] => stdClass Object
+                        (
+                            [nrNfse] => 5446
+                            [cdAutenticacao] => 620C15A821E22D5608623748CA6894FA
+                            [dtEmissaoNfs] => 2020-01-23T08:43:25
+                        )
+
+                    [255] => stdClass Object
+                        (
+                            [nrNfse] => 5447
+                            [cdAutenticacao] => A61A58511B38DAC2CF7B88766ECAF03C
+                            [dtEmissaoNfs] => 2020-01-23T08:43:45
+                        )
+
+                    [256] => stdClass Object
+                        (
+                            [nrNfse] => 5448
+                            [cdAutenticacao] => D7464880722E555918BFCC13570E8B41
+                            [dtEmissaoNfs] => 2020-01-23T08:44:05
+                        )
+
+                    [257] => stdClass Object
+                        (
+                            [nrNfse] => 5449
+                            [cdAutenticacao] => C33A30741BBE9C7B764F3A6A9733B36
+                            [dtEmissaoNfs] => 2020-01-23T08:44:24
+                        )
+
+                    [258] => stdClass Object
+                        (
+                            [nrNfse] => 5450
+                            [cdAutenticacao] => 84BFFD008AD4B7AF308471CAFFB4C10
+                            [dtEmissaoNfs] => 2020-01-23T08:44:44
+                        )
+
+                    [259] => stdClass Object
+                        (
+                            [nrNfse] => 5451
+                            [cdAutenticacao] => EAC1474EB007D6CB3CA9AEBB3368B361
+                            [dtEmissaoNfs] => 2020-01-23T08:45:05
+                        )
+
+                    [260] => stdClass Object
+                        (
+                            [nrNfse] => 5452
+                            [cdAutenticacao] => E70EF739EDB4D23D12D2BB767032A185
+                            [dtEmissaoNfs] => 2020-01-23T08:45:24
+                        )
+
+                    [261] => stdClass Object
+                        (
+                            [nrNfse] => 5453
+                            [cdAutenticacao] => 10876D507C28A0B89508F752AC268C02
+                            [dtEmissaoNfs] => 2020-01-23T08:45:43
+                        )
+
+                    [262] => stdClass Object
+                        (
+                            [nrNfse] => 5454
+                            [cdAutenticacao] => 4B34625142B0A4B487931CF8943E433A
+                            [dtEmissaoNfs] => 2020-01-23T08:46:03
+                        )
+
+                    [263] => stdClass Object
+                        (
+                            [nrNfse] => 5455
+                            [cdAutenticacao] => 6C7B71C107281FCFCD1F79924DD46E85
+                            [dtEmissaoNfs] => 2020-01-23T08:46:25
+                        )
+
+                    [264] => stdClass Object
+                        (
+                            [nrNfse] => 5456
+                            [cdAutenticacao] => E2833D858CC81DFDC516B5996539D1FD
+                            [dtEmissaoNfs] => 2020-01-23T08:46:50
+                        )
+
+                    [265] => stdClass Object
+                        (
+                            [nrNfse] => 5457
+                            [cdAutenticacao] => 617A94D96451B23CBD31FD7C05077394
+                            [dtEmissaoNfs] => 2020-01-23T08:47:08
+                            [cancelamento] => stdClass Object
+                                (
+                                    [dtCancelamento] => 2020-01-23T08:54:12
+                                    [dsCancelamento] => nota fiscal emitida em duplicidade 
+                                )
+
+                        )
+
+                    [266] => stdClass Object
+                        (
+                            [nrNfse] => 5458
+                            [cdAutenticacao] => 7C31001C2600D6EF84795E6F24CB31FC
+                            [dtEmissaoNfs] => 2020-01-23T08:47:27
+                        )
+
+                    [267] => stdClass Object
+                        (
+                            [nrNfse] => 5459
+                            [cdAutenticacao] => D43A0150218DB30BA2566E3F49A0E89E
+                            [dtEmissaoNfs] => 2020-01-23T08:47:47
+                        )
+
+                    [268] => stdClass Object
+                        (
+                            [nrNfse] => 5460
+                            [cdAutenticacao] => E91EE55926046E2A68FC70FB95999224
+                            [dtEmissaoNfs] => 2020-01-23T08:48:06
+                        )
+
+                    [269] => stdClass Object
+                        (
+                            [nrNfse] => 5461
+                            [cdAutenticacao] => F09F58C64FC5158751270325A8BBBB67
+                            [dtEmissaoNfs] => 2020-01-23T08:48:26
+                        )
+
+                    [270] => stdClass Object
+                        (
+                            [nrNfse] => 5462
+                            [cdAutenticacao] => 847D159E48184D423515E03C30FA803A
+                            [dtEmissaoNfs] => 2020-01-23T08:48:47
+                        )
+
+                    [271] => stdClass Object
+                        (
+                            [nrNfse] => 5463
+                            [cdAutenticacao] => 2482E4B1867EBE78C56F0BA2D8290A3
+                            [dtEmissaoNfs] => 2020-01-23T08:49:09
+                        )
+
+                    [272] => stdClass Object
+                        (
+                            [nrNfse] => 5464
+                            [cdAutenticacao] => 8F2CEDEBDC8CCE9736BD63B3911298E3
+                            [dtEmissaoNfs] => 2020-01-23T08:49:28
+                        )
+
+                )
+
+        )
+
+)
+
+res_esConsultarSituacaoLoteRps_1580907008.xml
+stdClass Object
+(
+    [nrLoteRps] => 1
+    [stLote] => 3
+)
+
+res_esRecepcionarLoteRps_1580905116.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 1057
+                            [dsMensagem] => Rejeição: Assinatura difere do calculado.
+                        )
+
+                )
+
+        )
+
+)
+
+res_esRecepcionarLoteRps_1580905170.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 1056
+                            [dsMensagem] => Rejeição: Assinatura - Digest difere do calculado.
+                        )
+
+                )
+
+        )
+
+)
+
+res_esRecepcionarLoteRps_1580905351.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 1204
+                            [dsMensagem] => Valor Total de Serviços não confere com o enviado ().
+                        )
+
+                )
+
+        )
+
+)
+
+res_esRecepcionarLoteRps_1580905697.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 21
+                            [dsMensagem] => O tomador é obrigatório para o serviço: RPS:1/1 
+                        )
+
+                )
+
+        )
+
+)
+
+res_esRecepcionarLoteRps_1580905993.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 40
+                            [dsMensagem] => O serviço especificado não pertence ao prestador: RPS:1/1 serviço:1.1
+                        )
+
+                )
+
+        )
+
+)
+
+res_esRecepcionarLoteRps_1580906044.xml
+stdClass Object
+(
+    [mensagemRetorno] => stdClass Object
+        (
+            [listaErros] => stdClass Object
+                (
+                    [erro] => stdClass Object
+                        (
+                            [cdMensagem] => 51
+                            [dsMensagem] => O serviço da LC 116 é inválido: RPS:1/1 
+                        )
+
+                )
+
+        )
+
+)
+
+res_esRecepcionarLoteRps_1580906217.xml
+stdClass Object
+(
+    [protocolo] => stdClass Object
+        (
+            [nrLote] => 1
+            [dtRecebimento] => 2020-02-05T09:36:57
+            [nrProtocolo] => 211630
+        )
+
+)

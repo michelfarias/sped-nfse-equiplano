@@ -54,10 +54,6 @@ class SoapCurl extends SoapBase implements SoapInterface
         $this->requestHead = implode("\n", $parameters);
         $this->requestBody = $envelope;
         
-        $ts = time();
-        $ac = str_replace('urn:', '', $action);
-        //file_put_contents("/var/www/sped/sped-nfse-equiplano/local/fixtures/req_{$ac}_{$ts}.xml", $envelope);
-        
         try {
             $this->saveTemporarilyKeyFiles();
             $oCurl = curl_init();
@@ -115,49 +111,7 @@ class SoapCurl extends SoapBase implements SoapInterface
                 . $this->getFaultString($this->responseBody)
             );
         }
-        //file_put_contents("/var/www/sped/sped-nfse-equiplano/local/fixtures/res_{$ac}_{$ts}.xml", $this->responseBody);
-        
-        header("Content-type: text/xml");
-        echo $this->responseBody;
-        die;
-        
         return $this->responseBody;
-    }
-    
-    /**
-     * Recover WSDL form given URL
-     * @param string $url
-     * @return string
-     */
-    public function wsdl($url)
-    {
-        $response = '';
-        $this->saveTemporarilyKeyFiles();
-        $url .= '?Wsdl'; //singleWsdl
-        $oCurl = curl_init();
-        curl_setopt($oCurl, CURLOPT_URL, $url);
-        curl_setopt($oCurl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
-        curl_setopt($oCurl, CURLOPT_CONNECTTIMEOUT, $this->soaptimeout);
-        curl_setopt($oCurl, CURLOPT_TIMEOUT, $this->soaptimeout + 20);
-        curl_setopt($oCurl, CURLOPT_SSL_VERIFYHOST, 0);
-        curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, 0);
-        curl_setopt($oCurl, CURLOPT_SSLVERSION, $this->soapprotocol);
-        curl_setopt($oCurl, CURLOPT_SSLCERT, $this->tempdir . $this->certfile);
-        curl_setopt($oCurl, CURLOPT_SSLKEY, $this->tempdir . $this->prifile);
-        if (!empty($this->temppass)) {
-            curl_setopt($oCurl, CURLOPT_KEYPASSWD, $this->temppass);
-        }
-        curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, true);
-        $response = curl_exec($oCurl);
-        $soaperror = curl_error($oCurl);
-        $ainfo = curl_getinfo($oCurl);
-        $headsize = curl_getinfo($oCurl, CURLINFO_HEADER_SIZE);
-        $httpcode = curl_getinfo($oCurl, CURLINFO_HTTP_CODE);
-        curl_close($oCurl);
-        if ($httpcode != 200) {
-            return '';
-        }
-        return $response;
     }
     
     /**

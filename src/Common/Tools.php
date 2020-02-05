@@ -97,22 +97,19 @@ class Tools
      * Sign XML passing in content
      * @param string $content
      * @param string $tagname
-     * @param string $mark
      * @return string XML signed
      */
-    public function sign($content, $tagname, $mark)
+    public function sign($content, $tagname)
     {
-        $xml = Signer::sign(
+        return Signer::sign(
             $this->certificate,
             $content,
-            $tagname,
-            $mark
+            "$tagname",
+            '',
+            OPENSSL_ALGO_SHA1,
+            [false,false,null,null],
+            "$tagname"
         );
-        $dom = new Dom('1.0', 'UTF-8');
-        $dom->preserveWhiteSpace = false;
-        $dom->formatOutput = false;
-        $dom->loadXML($xml);
-        return $dom->saveXML($dom->documentElement);
     }
     
     /**
@@ -141,9 +138,6 @@ class Tools
         }
         $msgSize = strlen($request);
         $parameters = [
-            //"Content-Type: text/xml;charset=UTF-8;action=$action",
-            //"Accept-Encoding: gzip,deflate",
-            //"POST /enfsws/services/Enfs.EnfsHttpsSoap12Endpoint",
             "Content-Type: application/soap+xml;charset=UTF-8;action=\"{$action}\"",
             "Content-length: $msgSize"
             ];
@@ -154,6 +148,30 @@ class Tools
             $request,
             $parameters
         );
+        return $this->extractContentFromResponse($response);
+    }
+    
+    /**
+     * Extract xml response from CDATA outputXML tag
+     * @param string $response Return from webservice
+     * @return string XML extracted from response
+     */
+    public function extractContentFromResponse($response)
+    {
+        $dom = new \DOMDocument();
+        $dom->preserveWhiteSpace = false;
+        $dom->formatOutput = false;
+        $dom->loadXML($response);
+        //extrai conteudo da resposta
+        if (!empty($dom->getElementsByTagName('return')->item(0))) {
+            $node = $dom->getElementsByTagName('return')->item(0);
+            return $node->textContent;
+        }
+        //extrai conteudo da requisição
+        if (!empty($dom->getElementsByTagName('xml')->item(0))) {
+            $node = $dom->getElementsByTagName('xml')->item(0);
+            return $node->textContent;
+        }
         return $response;
     }
 

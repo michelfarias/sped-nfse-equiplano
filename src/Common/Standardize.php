@@ -46,7 +46,7 @@ class Standardize
         'esConsultarNfsePorRpsResposta',
         'esConsultarNfseResposta',
         'esConsultarSituacaoLoteRpsResposta',
-        'enviarLoteRpsResposta',
+        'esEnviarLoteRpsResposta',
         'rps'
     ];
     
