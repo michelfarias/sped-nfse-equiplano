@@ -348,6 +348,12 @@ class Factory
             return;
         }
         $ret = $this->std->retencoes;
+        $sum = $ret->vlcofins + $ret->vlcsll + $ret->vlinss
+            + $ret->vlinss + $ret->vlinss + $ret->vlirrf + $ret->vlpis;
+        if ($sum == 0) {
+            return;
+        }
+        
         $retencoes = $this->dom->createElement('retencoes');
         $this->dom->addChild(
             $retencoes,
