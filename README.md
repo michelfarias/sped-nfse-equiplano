@@ -82,7 +82,7 @@
 
 ## Observações
 
-
+- Caonsule sua prefeitura para detlhes de preenchimento do RPS
 
 
 ## Dependências
