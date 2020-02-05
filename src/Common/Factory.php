@@ -192,12 +192,14 @@ class Factory
             !empty($tom->uf) ? :  null,
             false
         );
-        $this->dom->addChild(
-            $tomador,
-            "nmCidadeEstrangeira",
-            !empty($tom->cidadeestrangeira) ? $tom->cidadeestrangeira :  null,
-            false
-        );
+        if ($tom->tpdocumento == 3) {
+            $this->dom->addChild(
+                $tomador,
+                "nmCidadeEstrangeira",
+                !empty($tom->cidadeestrangeira) ? $tom->cidadeestrangeira :  null,
+                false
+            );
+        }
         $this->dom->addChild(
             $tomador,
             "nmPais",

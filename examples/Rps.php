@@ -20,7 +20,7 @@ $std->vlliquidorps = 100.00;
 $std->tomador = new \stdClass();
 $std->tomador->nrdocumento = '12345678901234';
 $std->tomador->tpdocumento = 2; //1=cpf, 2=cnpj, 3=estrangeiro
-$std->tomador->DocumentoEstrangeiro = null; //obrigatório se tpDocumento=3 max 30 caracteres
+$std->tomador->DocEstrangeiro = null; //obrigatório se tpDocumento=3 max 30 caracteres
 $std->tomador->nome = 'Fulano da Tal';
 $std->tomador->email = null;
 $std->tomador->ie = null;
