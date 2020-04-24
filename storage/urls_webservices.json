@@ -429,16 +429,6 @@
         "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
         "soapns": "http:\/\/services.enfsws.es"
     },
-    "4127601": {
-        "municipio": "Tijucas do Sul",
-        "uf": "PR",
-        "entidade": "25",
-        "homologacao": "https:\/\/www.esnfs.com.br:9444\/homologacaows\/services\/Enfs",
-        "producao": "https:\/\/www.esnfs.com.br:8444\/enfsws\/services\/Enfs",
-        "version": "1",
-        "msgns": "http:\/\/www.equiplano.com.br\/esnfs",
-        "soapns": "http:\/\/services.enfsws.es"
-    },
     "4127700": {
         "municipio": "Toledo",
         "uf": "PR",
