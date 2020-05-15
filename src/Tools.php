@@ -125,7 +125,7 @@ class Tools extends BaseTools
         $operation = 'esConsultarNfse';
         $xsd = "{$operation}Envio_v01.xsd";
         $tom = '';
-        if (!empty($tomador)) {
+        if (!empty($tomador->numero)) {
             $tom = "<tomador>"
                 . "<documento>"
                 . "<nrDocumento>{$tomador->numero}</nrDocumento>"

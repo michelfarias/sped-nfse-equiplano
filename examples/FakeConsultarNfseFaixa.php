@@ -42,7 +42,8 @@ try {
         //'nome' => 'Fulano de Tal' //Opcional nome do tomador (80)
     ];
 
-
+    $tomador = new \stdClass();
+    
     $response = $tools->consultarNfse($dtini, $dtfim, $tomador);
     
     echo FakePretty::prettyPrint($response, '');
